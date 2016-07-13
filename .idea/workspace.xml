@@ -2,1264 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e53ba2c-0b7c-472a-99f8-d0529b14f6fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Public/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Public/check.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Public/check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Public/checked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Public/head_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/center.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/checked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/collected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/default/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/default/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/default/center.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/default/collected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/default/share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/item_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/temp1/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/temp1/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/temp1/center.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/temp1/collected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/temp1/share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/TemplateDetail/default/icon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/TemplateDetail/temp1/icon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/cake.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card_bg_9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/cover_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/exchange_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/gift.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/gift_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/give.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/i_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/i_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/intro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/item_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/key.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/king.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/lists_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/me_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/money_ticket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/navi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/no_coupon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/notice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/phone_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/phone_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/privilege.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/r_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/score_method.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/score_method_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/setting.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/setting_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/stamp_gift.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/tel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/ticket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/vip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/vip_card.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/vip_card_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/vip_head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/vip_y.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/yes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Public/arw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Public/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Public/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Public/pic_money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Wap/Wap-copy.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/ConfigureAccount/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/arw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/cover_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/head_style.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/pic_money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/store.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/arrow_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/dzp_cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/egg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/gift.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/gua_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/gua_pic_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/guaguale_cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/hua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/loading_prize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_begin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_begin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_file.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_gift.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_gold.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_jie.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_star.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/nine_star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/pan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/stage.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/title.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/transparent.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/ungeted_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/zjd_cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/zpbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Public/bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Public/content.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Public/cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Public/mid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Public/top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Public/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Public/intro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Public/bg_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Public/bg_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Public/bg_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Public/default_game_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Public/head.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/arw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/bottom_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/arw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/cover_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/head_style.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/openbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/pic_money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/store.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/title_con.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/unopenbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/cover_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/get_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/gift.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/head_style.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/help_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/intro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/main_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/main_share_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/openbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/pic_money.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/prize_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/share_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/store.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/title_con.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/unopenbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Public/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Public/content.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Public/temp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Public/top_pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/View/default/Public/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/View/default/Public/qrcode_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/NoAnswer/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/Public/h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/Public/head_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/Public/index_head_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Public/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Public/intro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/activity/head_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/simple/buy_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/simple/item_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/add_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/alipay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/arrow_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/card_pay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/center.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/icon_pencil.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/pay_failed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/pay_succeed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/radio_check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/radio_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/rech_pay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/safe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/shop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/ten_pay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/waiting_list_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/wx_pay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/back_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/cate_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/center.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/favorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/icon_search_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/shop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/back_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/cate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/cate_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/center.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/detail_v1_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/favorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/head_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/icon_search_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/shop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Public/checked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Public/finish.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Public/q.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/content.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/mid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/article_mid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/bind_info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/bind_mobile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/card.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/default_head.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/head_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/icon_search_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/no_coupon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/order.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/score.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/shop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/item_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/remark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/smile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/tou.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/yes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/zan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Public/default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Public/iphone0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Public/iphone1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V1/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V2/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V3/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V4/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/PopV1/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/empty/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/images/ico_llan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/images/ico_pl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/big/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/img/thumbs/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/img/gallery-7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/img/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/img/gallery-7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/#sidebarbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/@wo--gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/@wo-.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/addbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/app_channel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/app_event.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/app_group.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/app_people.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/app_weiba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/app_weibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/arrowB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/arrowR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/arrowT.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/arrow_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/arrow_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/attach.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/backbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/blue_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/checkdiv_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/deletebtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/discover_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/fa-btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/favorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/find.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/fixedbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/followboxicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/gray_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/hackbg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/headMenu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/headerbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic-close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic-share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_comment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_del.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_search_d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_teacher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_totop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_zan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ic_zan2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ico-bar-fine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ico-bar-image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ico-bar-recd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/ico-bar-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/index_btn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/login-account.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/login-pwd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/login.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/menubtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/message.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/mob-ico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/myLink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/new_add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/people_typenav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/pinlun-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/pinlun.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/profile_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/search_del.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/searchbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/share_tips_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/sidebarbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/sixin-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/sixin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/tongzhi-gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/tongzhi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/unfavorite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/weibaMenu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/weibobtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/writebtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/wx_share_pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sys/yes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/weiphp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/AskAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Controller/AnswerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Controller/AskController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Controller/QuestionController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Model/AskAnswerModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Model/AskModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Model/AskQuestionModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/ask.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/fail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/finish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/percent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Ask/wait.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Ask/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/AutoReplyAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/Controller/AutoReplyController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/Model/AutoReplyModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/View/default/AutoReply/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/View/default/AutoReply/image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/View/default/AutoReply/news.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/View/default/AutoReply/video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/View/default/AutoReply/voice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/AutoReply/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/BusinessCardAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/Controller/BusinessCardColunmController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/Controller/BusinessCardController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/Model/BusinessCardModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/BusinessCard/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/default/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Public/temp1/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/TemplateDetail/default/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/TemplateDetail/default/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/TemplateDetail/temp1/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/TemplateDetail/temp1/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Wap/choose_template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/View/default/Wap/collect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/BusinessCard/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/CardAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/CardController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/CardLevelController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/CardPrivilegeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/CardSetController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/CustomController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/MemberController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/MemberMarketingController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/MemberTransitionController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/NoticeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/RechargeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/RewardController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/ScoreController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/ShopMemberController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/TongjiController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Model/CardCustomModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Model/CardLevelModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Model/CardModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Card/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Custom/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Member/do_buy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Member/do_recharge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Member/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Member/update_score.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberMarketing/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/buy_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/buy_tongji.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/duihuang.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/recharge_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/score_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/MemberTransition/score_tongji.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Notice/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Public/card.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Recharge/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Reward/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Score/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Tongji/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/bind_card.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/card_center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/custom_privilege.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/day_recommend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/exchange.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/get_success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/introduction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/level_intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/me.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/money.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/password.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/privilege.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/recharge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/recharge_give.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/score.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/score_exchange.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/score_method.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/score_rule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/share.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/sign_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/signin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/stamp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/storeList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/unget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/View/default/Wap/write_cardinfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Card/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/CardVouchersAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/Controller/CardVouchersController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/Model/CardVouchersModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/CardVouchers/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/CardVouchers/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/CardVouchers/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CardVouchers/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/CommentAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/Controller/CommentController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/Model/CommentModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Comment/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/ConfigureAccount/ConfigureAccountAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/ConfigureAccount/Controller/ConfigureAccountController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/ConfigureAccount/Model/ConfigureAccountModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/ConfigureAccount/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/ConfigureAccount/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/Controller/CouponController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/Controller/ShopController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/Controller/SnController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/CouponAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/Model/CouponModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Coupon/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Coupon/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Coupon/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Coupon/sncode_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/Coupon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Public/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Shop/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Shop/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Shop/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Shop/lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/coupon_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/do_pay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/do_pay_ok.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/has_get.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/over.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/personal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/prev.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/qr_code.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/sn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/View/default/Wap/store_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Coupon/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/Controller/CustomMenuController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/CustomMenuAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/Model/CustomMenuModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/View/default/CustomMenu/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/View/default/CustomMenu/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/View/default/CustomMenu/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/keywork.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomMenu/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/Controller/CustomReplyController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/Controller/CustomReplyMultController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/Controller/CustomReplyTextController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/CustomReplyAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/Model/CustomReplyModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/View/default/CustomReply/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/View/default/CustomReplyMult/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/View/default/Public/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/keywork.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/CustomReply/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/Controller/DeveloperToolController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/DeveloperToolAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/Model/DeveloperToolModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/View/default/DeveloperTool/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/View/default/DeveloperTool/define.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/View/default/DeveloperTool/init.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/View/default/DeveloperTool/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/View/default/DeveloperTool/manager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/DeveloperTool/View/default/DeveloperTool/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Controller/AwardController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Controller/DrawController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Controller/GamesController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Controller/LotteryPrizeListController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Controller/LuckyFollowController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/DrawAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/AwardModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/DrawFollowLogModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/DrawModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/GamesModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/LotteryGamesAwardLinkModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/LotteryPrizeListModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/LuckyFollowModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Award/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Award/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Award/lzwg_add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Award/lzwg_edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Award/lzwg_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Draw/lzwg_activities_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Draw/lzwg_add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Draw/lzwg_edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Games/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Games/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Games/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LotteryPrizeList/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/do_fafang.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/games_lucky_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/getlistByAwardId.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/luckyFollowDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/lzwgFollowDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/LuckyFollow/lzwg_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/Draw.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/Draw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/initDzp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/initGuaguale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/initNine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/initZjd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/jQueryRotate.2.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Public/jquery.easing.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/dzp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/get_prize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/guaguale.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/my_prize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/nine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/ninegrid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/prize_log.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/View/default/Wap/zajindan.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Draw/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/Controller/AnswerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/Controller/ExamController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/Controller/QuestionController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/ExamAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/Model/ExamModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Exam/exam.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Exam/finish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Exam/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Exam/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Exam/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/Controller/FormsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/Controller/FormsValueController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/FormsAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/Model/FormsModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Forms/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Forms/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Forms/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/FormsValue/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/FormsValue/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Wap/forms_success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/View/default/Wap/scan_success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Forms/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/Controller/GameController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/GameAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/Model/GameModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Wap/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Game/View/default/Wap/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/Controller/GuessController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/GuessAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/Model/GuessLogModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/Model/GuessModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/Model/GuessOptionModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/View/default/Guess/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/View/default/Guess/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/View/default/Guess/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/View/default/Guess/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Guess/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/Controller/HelpOpenController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/HelpOpenAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/Model/HelpOpenModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/Model/HelpOpenPrizeModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/Model/HelpOpenUserModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/HelpOpen/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/HelpOpen/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/HelpOpen/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/HelpOpen/edit_20151017bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/HelpOpen/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/HelpOpen/sncode_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/Coupon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/Coupon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/copy/userCenter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Public/userCenter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/coupon_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/error_tips.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/my_prize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/prize_log.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/View/default/Wap/store_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/HelpOpen/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/Controller/InviteController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/InviteAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/Model/InviteMemberModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/Model/InviteModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Invite/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Invite/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Invite/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Public/css1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Wap/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Wap/finish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Wap/introduction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Wap/invite.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/View/default/Wap/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Invite/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/Controller/LeafletsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/LeafletsAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/Model/LeafletsModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/View/default/Leaflets/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/View/default/Leaflets/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/View/default/Public/leaflets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Leaflets/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/NoAnswer/Controller/NoAnswerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/NoAnswer/Model/NoAnswerModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/NoAnswer/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/NoAnswer/NoAnswerAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/NoAnswer/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Alipay/AlipayNotify.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Alipay/AlipaySubmit.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Alipay/alipay_core.function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Alipay/alipay_md5.function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Alipay/cacert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/AlipayController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/AlipaytypeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/PaymentController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/PaymentOrderController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/QuickpayController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/DeliveryAddressInfo.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/DeliveryAddressQueryRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/DeliveryAddressQueryRespone.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/DownloadBillRequestHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/MicroBlogSendRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/NotifyQueryRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/NotifyQueryResponse.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/OrderQueryRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/OrderQueryResponse.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/PayRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/PayResponse.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/RequestHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/ResponseHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/ShareLoginState.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/WapJumpToTenpayRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/WapLoginRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/WapNotifyResponseHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/WapPayInitResponse.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/WapPayRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/WapResponseHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/client/ClientResponseHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/client/TenpayHttpClient.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/CommonRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/CommonResponse.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/Constants.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/RetXmlRequest.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/SDKRuntimeException.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/util/CommonUtil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/util/HttpClientUtil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/util/MD5SignUtil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Tenpay/common/util/XmlParseUtil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayComputer/RequestHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayComputer/ResponseHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayComputer/client/ClientResponseHandler.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayComputer/client/TenpayHttpClient.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayComputer/function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayComputerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/TenpayController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/WeixinController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/CommonUtil.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/MD5SignUtil.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/SDKRuntimeException.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayApi.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayConfig.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayData.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayHelper.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayJsApiPay.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/WxPayNotify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/cert/apiclient_cert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/cert/apiclient_key.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/Weixinpay/notify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/quickpay/quickpay_conf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Controller/quickpay/quickpay_service.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Model/PaymentModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Model/PaymentOrderModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/PaymentAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/View/default/Payment/confirm.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/View/default/Payment/testpay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/View/default/Payment/wxpay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/View/default/PaymentOrder/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/View/default/Public/pay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/View/default/Weixin/pay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Payment/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/Controller/CallBackController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/Controller/PingppController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/Model/PingppModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/PingppAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/View/default/Pingpp/set.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Pingpp/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/Controller/PublicBindController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/Model/PublicBindModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/PublicBindAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/View/default/PublicBind/bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/PublicBind/wxBizMsgCrypt.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/QrAdmin/Controller/QrAdminController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/QrAdmin/Model/QrAdminModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/QrAdmin/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/QrAdmin/QrAdminAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/QrAdmin/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/QrAdmin/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/Controller/RealPrizeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/Model/PrizeAddressModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/Model/RealPrizeModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/RealPrizeAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/RealPrize/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/RealPrize/address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/RealPrize/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/RealPrize/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/View/default/RealPrize/result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RealPrize/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/Controller/RedBagController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/Model/RedBagModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/RedBagAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/Public/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/RedBag/add-copy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/RedBag/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/RedBag/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/RedBag/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/Wap/collect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/RedBag/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Controller/ReserveAttributeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Controller/ReserveController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Controller/ReserveValueController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Model/ReserveModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/ReserveAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Reserve/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Reserve/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Reserve/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/ReserveAttribute/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/ReserveAttribute/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/ReserveAttribute/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/ReserveValue/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/ReserveValue/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Wap/reserve_success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/View/default/Wap/scan_success.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Reserve/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Servicer/Controller/ServicerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Servicer/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Servicer/Model/ServicerModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Servicer/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Servicer/ServicerAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Servicer/View/default/Wap/do_login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/AddressController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/ApiController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/CategoryController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/GoodsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/OrderController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/ShopController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/SlideshowController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/TemplateController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/UserController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/AddressModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/CartModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/CategoryModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/CollectModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/GoodsModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/OrderModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/ShopModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/SlideshowModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/ShopAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Order/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/activity/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/activity/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/simple/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Package/simple/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Public/mobile/shop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Shop/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Shop/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Shop/summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Template/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/Public/shop.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/_category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/product_model.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/jd/shop_intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/Public/shop.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/_category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/product_model.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/Template/tmall/shop_intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/add_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/cart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/choose_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/choose_pay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/choose_sku.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/confirm_order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/myAddress.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/myCollect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/orderDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/order_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/View/default/Wap/user_center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Shop/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/Controller/SingInController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/Model/SingInModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/SingInAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/View/default/SingIn/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/View/default/SingIn/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/SingIn/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/Controller/SmsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/Model/SmsModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/SmsAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Sms/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Controller/AnswerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Controller/QuestionController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Controller/SurveyController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Model/SurveyAnswerModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Model/SurveyModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Model/SurveyQuestionModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/SurveyAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/finish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/View/default/Survey/survey.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Survey/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/Controller/AnswerController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/Controller/QuestionController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/Controller/TestController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/TestAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Public/css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Test/finish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Test/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Test/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/View/default/Test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Test/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/Controller/UserCenterController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/Model/UserCenterModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/UserCenterAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Public/userCenter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/UserCenter/add_userinfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/UserCenter/admin_lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/UserCenter/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/UserCenter/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/UserCenter/lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/bind_info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/bind_mobile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/bind_prize_info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/check.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/check2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/storeCenter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/View/default/Wap/userCenter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/UserCenter/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Controller/ShopVoteController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Controller/VoteController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Model/ShopVoteModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Model/ShopVoteOptionModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Model/VoteLogModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Model/VoteModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Model/VoteOptionModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/shop_vote.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Public/vote.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/ShopVote/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/add_bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/ajax_lists_data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Vote/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Wap/option_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/View/default/Wap/verify.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/VoteAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/config-copy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Vote/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/Controller/WecomeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/Model/WecomeModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/WecomeAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Wecome/keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/CategoryController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/CmsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/FooterController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/IntefoController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/LeafletsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/MyaddressController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/PayController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/SiyuanController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/SlideshowController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/TemplateController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/WeiSiteController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/YuanController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Controller/ZhongfoxController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Model/FooterModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Model/WeiSiteModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Category/edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Category/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Cms/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Footer/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Footer/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Footer/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Slideshow/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Template/ajax_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Template/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Template/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Template/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/Template/lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V1/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V1/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V1/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V2/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V2/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V2/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V3/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V3/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V3/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V4/detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V4/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateDetail/V4/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/PopV1/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/PopV1/footer2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/PopV1/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/empty/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/View/default/TemplateFooter/empty/info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/WeiSite/uninstall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Controller/CategoryController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Controller/PostController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Controller/SearchController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Controller/WapController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Controller/WeibaController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Model/WeibaModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/Model/WeixinAddonModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Post/edit_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/appframework.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/appframework.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/css.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/iscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/jquery-2.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/jquery.tap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/js.min.w3g.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/sendAttach.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/css/appstore.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/css/idangerous.swiper.3dflow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/css/idangerous.swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/js/appstore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/js/idangerous.swiper-2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/js/idangerous.swiper.3dflow-2.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/appstore/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/css/gallery-app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/css/idangerous.swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/js/gallery-app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/js/idangerous.swiper-2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/gallery/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/css/idangerous.swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/css/movies-app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/js/idangerous.swiper-2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/movies/js/movies-app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/css/idangerous.swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/css/idangerous.swiper.scrollbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/css/simple-app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/js/idangerous.swiper-2.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/js/idangerous.swiper.scrollbar-2.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/demo-apps/simple/js/simple-app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/dist/idangerous.swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/dist/idangerous.swiper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/dist/idangerous.swiper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/src/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/src/idangerous.swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/swiper/src/idangerous.swiper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/ui4jq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Public/zepto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Search/_search.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Search/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Search/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Search/person.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Search/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/cityList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/forum.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/header_ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/index_body.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/index_header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/my.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/myDownload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/postDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/View/default/Wap/reply.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/WeibaAddon.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/install.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Addons/Weiba/uninstall.sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Web/View/default/Enter/addForm.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Web/Controller/EnterController.class.php" afterPath="$PROJECT_DIR$/Application/Web/Controller/EnterController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Web/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Web/Controller/IndexController.class.php" />
     </list>
     <ignored path="weiphp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1314,8 +60,8 @@
       <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Web/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="755">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1331,21 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Plat/index.html">
+      <file leaf-file-name="enter.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Index/enter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Temple/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="720">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -1374,8 +110,8 @@
       <file leaf-file-name="EnterController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Web/Controller/EnterController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="384">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -1397,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Mall/View/default/Index/index.html" />
         <option value="$PROJECT_DIR$/Html/html/tab-shop.html" />
         <option value="$PROJECT_DIR$/Application/Wap/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Wap/Controller/HomeController.class.php" />
@@ -1445,9 +180,10 @@
         <option value="$PROJECT_DIR$/Application/Web/View/default/Enter/addForm.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/VerifyController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Verify/index.html" />
+        <option value="$PROJECT_DIR$/Application/Web/View/default/Index/index1.html" />
         <option value="$PROJECT_DIR$/Application/Web/Controller/EnterController.class.php" />
         <option value="$PROJECT_DIR$/Application/Web/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Web/View/default/Index/index1.html" />
+        <option value="$PROJECT_DIR$/Application/Web/View/default/Index/enter.html" />
       </list>
     </option>
   </component>
@@ -1836,6 +572,36 @@
               <option name="myItemId" value="Web" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weiphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weiphp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1957,12 +723,12 @@
       <workItem from="1467972423835" duration="115000" />
       <workItem from="1468198547651" duration="21593000" />
       <workItem from="1468283256515" duration="24758000" />
-      <workItem from="1468373338277" duration="968000" />
+      <workItem from="1468373338277" duration="1362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71889000" />
+    <option name="totallyTimeSpent" value="72283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -2006,13 +772,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Plugins/ChinaCity/chinacity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Sms.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -2318,26 +1077,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Web/Controller/EnterController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Index/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="245" column="19" selection-start-line="245" selection-start-column="19" selection-end-line="245" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Web/Controller/IndexController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Temple/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/News/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -2350,18 +1101,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Index/index1.html">
+    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/News/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="245" column="19" selection-start-line="245" selection-start-column="19" selection-end-line="245" selection-end-column="19" />
+        <state relative-caret-position="336">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Temple/index.html">
+    <entry file="file://$PROJECT_DIR$/Application/Web/Controller/EnterController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="384">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Web/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Web/View/default/Index/enter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding />
         </state>
       </provider>
