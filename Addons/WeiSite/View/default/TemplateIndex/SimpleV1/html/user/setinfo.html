@@ -1,0 +1,22 @@
+<ion-view view-title="信息设置">
+  <ion-content class="has-header padding">
+    <form name="setWork" ng-controller="WorkersCtrl"  ng-submit="WorkForm()">
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-paperclip"></i>
+          <span class="input-label">标题</span>
+          <textarea placeholder="不多于15字" required ng-model='setWork.title' maxlength="15"></textarea>
+        </label>
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-compose"></i>
+          <span class="input-label">描述</span>
+          <textarea placeholder="不多于30字" required  ng-model='setWork.desc' maxlength="150" rows="8"></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="button icon-right ion-chevron-right button-energized button-block" ng-disabled="setWork.$invalid">发布</button>
+    </form>
+  </ion-content>
+</ion-view>

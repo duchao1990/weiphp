@@ -1,0 +1,42 @@
+<style>
+  .tab-nav{display: none;}
+  .has-tabs{bottom: 0;}
+  .bar{background: transparent;}
+  .play-height{height: 80px;}
+</style>
+<ion-view view-title="{{song}}">
+  <ion-content overflow-scroll="true" style="overflow: hidden;background: url(image/playerback.jpg) center center;background-size: cover;">
+    <div class="play-back">
+      <img src="{{xzimg}}" class="play-img" ng-class="{true:'playing-ani',false:''}[isPlay===1]"/>
+      <p>{{allTime}}</p>
+    </div>
+    <div class="row music-share" style="padding: 0;">
+      <a href=""class="col">
+        <i class="icon ion-ios-skipbackward-outline fff"></i>
+        <span class="block fff">赞</span>
+      </a>
+      <a href=""class="col">
+        <i class="icon ion-ios-skipbackward-outline fff"></i>
+        <span class="block fff">分享</span>
+      </a>
+      <a href=""class="col">
+        <i class="icon ion-ios-skipbackward-outline fff"></i>
+        <span class="block fff">分享</span>
+      </a>
+    </div>
+    <div class="bar play-height has-tabs-play">
+      <progress-bar player="player" audio="audio"></progress-bar>
+      <div class="title play-font">
+        <p ng-if="status==='repeat'" class="time fl fff" ng-click="repeatPlay()"><a title="单曲循环"  class="icon ion-ios-infinite-outline"></a></p>
+        <p ng-if="status!=='repeat'"class="time fl fff" ng-click="listPlay()"><a title="列表循环"  class="icon ion-ios-drag"></a></p>
+        <div id="play-btn">
+          <a class="button button-icon icon ion-ios-skipbackward play-mr fff" ng-click="player.prev()"></a>
+          <a class="button button-icon ion-ios-play icon  play-mr fff" ng-class="{true:'displaynone',false:''}[isPlay===1]" ng-click="player.play()"></a>
+          <a class="button button-icon ion-ios-pause icon  play-mr fff"  ng-class="{true:'',false:'displaynone'}[isPlay===1]" ng-click="player.stop()"></a>
+          <a class="button button-icon icon ion-ios-skipforward  play-mr fff" ng-click="player.next()"></a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

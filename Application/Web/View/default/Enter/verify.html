@@ -1,0 +1,76 @@
+<extend name="Base/boot"/>
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>寺院认证体系</h2>
+            <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+        </div>
+    </header>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="thumbnail">
+                <img src="{$master.idCard|get_picture_url}" alt="身份证">
+                <div class="caption">
+                    <h3>身份证</h3>
+                    <p>身份证号码{$master.idNum}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="thumbnail">
+                <img src="{$master.templeCard|get_picture_url}" alt="戒牒证">
+                <div class="caption">
+                    <h3>戒牒证</h3>
+                    <p>戒牒证编号{$master.templeNum}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <if condition="$master['auth'] eq 2">
+        <a class="btn btn-info btn-block" disabled="disabled">个人认证正在审核中...</a>
+    <elseif condition="$master['auth'] eq 1"/>
+        <a class="btn btn-info btn-block">审核通过</a>
+    <else />
+        <a class="btn btn-info btn-block" href="{:U('manger/masterAuth')}">个人认证</a>
+    </if>
+
+    <div class="row">
+        <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="thumbnail">
+                <img src="{$temple.huodongCard|get_picture_url}" alt="宗教活动场所登记证">
+                <div class="caption">
+                    <h3>宗教活动场所登记证</h3>
+                    <p>宗教活动场所登记证编号{$temple.huodongNum}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="thumbnail">
+                <img src="{$temple.zuzhiCard|get_picture_url}" alt="组织机构代码证">
+                <div class="caption">
+                    <h3>组织机构代码证</h3>
+                    <p>组织机构代码证编号{$temple.zuzhiNum}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4">
+            <div class="thumbnail">
+                <img src="{$temple.kaihuCard|get_picture_url}" alt="开户许可证/寺院授权书">
+                <div class="caption">
+                    <h3>开户许可证</h3>
+                    <p>开户许可证编号{$temple.kaihuNum}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <if condition="$temple['auth'] eq 2">
+        <a class="btn btn-info btn-block" disabled="disabled">寺院认证正在审核中...</a>
+        <elseif condition="$temple['auth'] eq 1"/>
+        <a class="btn btn-info btn-block">审核通过</a>
+        <else />
+        <a class="btn btn-info btn-block" href="{:U('manger/templeAuth')}">寺院认证</a>
+    </if>
+</block>

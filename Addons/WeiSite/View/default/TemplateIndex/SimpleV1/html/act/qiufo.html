@@ -1,0 +1,45 @@
+<ion-view view-title="{{qfinfo.name}}" hide-tabs="false" hide-nav-bar="true" class='qiufoview'>
+   <!--  <button class="button button-clear musicbtn" ng-click="playMusic()">
+      <i class="icon {{volume}}"></i>
+    </button> -->
+    <div class="qiufox"><img src="{{qfinfo.face}}"></div>
+    <div class="halo"></div>
+    <div class="la">
+      <img src="Public/Home/App/image/la.gif" alt="">
+    </div>
+    <div class="xianglu"><img src="Public/Home/App/image/xl.png" alt=""></div>
+    <div class="rotate">
+      <div id="xiang"><div id="spinner" class="spinner"></div></div>
+      <div id="xiang1"><div id="spinner1" class="spinner"></div></div>
+      <div id="xiang2"><div id="spinner2" class="spinner"></div></div>
+    </div>
+    <center><button ng-disabled='isDisabled' class="button" style="background: transparent;border:0;" id="sxbtn" ng-click="setxiang()"></button></center>
+    <center><button class="button" style="background: transparent;border:0;" id="fxbtn" ng-click="fodesc()"></button></center>
+    <div class="bar bar-footer bar-clear qiufotype">
+      <div class="button-bar" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <a class="button button-clear" ng-href="#/allyuan/{{qfinfo.tid}}" ><img src="Public/Home/App/image/qiufo/qiyuan.png" alt=""></a>
+        
+        <a class="button button-clear" ng-click="goPay()"><img src="Public/Home/App/image/qiufo/gongde.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/fochanxiu"><img src="Public/Home/App/image/qiufo/chanxiu.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/fomuyu"><img src="Public/Home/App/image/qiufo/nianfo.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/tab/action"><img src="Public/Home/App/image/qiufo/fanhui.png" alt=""></a>
+      </div>
+    </div>
+   <!--  <audio id="myaudio" ng-src="{{qfinfo.music |to_url}}" autobuffer autoloop loop></audio> -->
+
+    <script id="templates/modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-energized">
+          <h1 class="title">{{qfinfo.name}}</h1>
+         <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+        </ion-header-bar>
+        <ion-content class="padding modal-qiufo">
+            <div class="item item-avatar item-content item-text-wrap" ng-repeat="vo in newfolist" ng-click="setfo({{vo.id}})">
+              <img src="{{vo.face}}">
+              <h2 class="title" style="padding-top: 10px;"> {{vo.name}}</h2>
+              <p class="desc">{{vo.desc}}</p>
+            </div>
+        </ion-content>
+      </ion-modal-view>
+    </script>
+</ion-view>

@@ -1,0 +1,36 @@
+<ion-view view-title="祈愿">
+  <ion-content>
+    <form  name="QYinfo" ng-controller="SetyuanCtrl" ng-submit="QYinfoForm()">
+      <div class="padding">
+        <div class="list list-inset">
+          <label class="item item-input item-stacked-label">
+            <i class="icon ion-headphone"></i>
+            <span class="input-label energized">许下你的愿望:</span>
+            <textarea rows='8'  required ng-model='QYinfo.qiyuan' min-length="4" max-length='20' placeholder="最少4个字,最多20字"></textarea>
+          </label>
+          <ion-toggle ng-model="ishow" toggle-class="toggle-energized"><span class="ishow">{{zhishow}}愿望</span></ion-toggle>
+          <div class="item item-divider item-icon-right desc" ng-click="modal.show()">
+            寺院开光祈福牌介绍
+            <i class="icon ion-ios-arrow-right"></i>
+          </div>
+          <ion-toggle ng-model="isPay" toggle-class="toggle-energized"><span class="ishow">{{shiyong}}实物祈福牌</span></ion-toggle>
+          <button type="submit" class="button button-block button-energized" ng-disabled="QYinfo.$invalid">交给佛祖</button>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+
+</ion-view>
+      <script id="templates/modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-energized">
+          <h1 class="title">祈福牌介绍</h1>
+         <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+        </ion-header-bar>
+        <ion-content class="padding modal-qiufo">
+          <div ng-bind-html="desc">
+            
+          </div>
+        </ion-content>
+      </ion-modal-view>
+    </script>

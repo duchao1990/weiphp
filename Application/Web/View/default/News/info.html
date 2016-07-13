@@ -1,0 +1,35 @@
+<extend name="Base/webcom"/>
+
+<block name="header">
+
+</block>
+<block name="body">
+
+
+
+        <div class="card-panel">
+            <h4 class="header center-on-small-only center">{$info.title}</h4>
+            <div class='row center'>
+                <h5 class ="header col s12 light center">{$info.author}发表于 {$info.cTime|date='Y-m-d H:i',###}</h5>
+            </div>
+            <div class="row center">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+            {$info.content}
+            </div>
+            <div class="card-action">
+                <if condition="$minInfo">
+                    <a href="{:U('info',array('id'=>$minInfo['id']))}">上一篇:{$minInfo.title}</a>
+                </if>
+                <if condition="$maxInfo">
+                    <a href="{:U('info',array('id'=>$maxInfo['id']))}">下一篇:{$maxInfo.title}</a>
+                </if>
+            </div>
+          </div>
+
+
+
+</block>

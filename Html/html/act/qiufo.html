@@ -1,0 +1,58 @@
+<ion-view view-title="{{qfinfo.name}}" hide-nav-bar="true" class='qiufoview'>
+<!--     <a class="button button-clear gongbtn" href="#/gongde" >
+      <i class="icon ion-ribbon-b"></i>
+    </a> -->
+    <!-- <button class="button button-clear musicbtn" ng-click="playMusic()">
+      <i class="icon {{volume}}"></i>
+    </button> -->
+    <div class="qiufox"><img src="Html/{{qfinfo.face}}"></div>
+    <div class="halo" ng-if="foguang"></div>
+    <div id="light" ng-if="foguang"></div>
+    <div class="la">
+      <img src="Html/image/la.gif" alt="">
+    </div>
+    <div class="xianglu"><img src="Html/image/xl.png" alt=""></div>
+    <div class="rotate" ng-if="showxiang">
+      <div id="xiang"><div class="spinner" style="background: {{xiang}};"></div></div>
+      <div id="xiang1"><div class="spinner" style="background: {{xiang}};"></div></div>
+      <div id="xiang2"><div class="spinner" style="background: {{xiang}};"></div></div>
+    </div>
+      <div class="button-bar huabar">
+        <button class="button button-clear"   ng-click="gong(1)"><img src="Html/{{hua}}" alt=""></button>
+        <button class="button button-clear"   ng-click="gong(2)"></button>
+        <button class="button button-clear"   ng-click="gong(1)"><img src="Html/{{hua}}" alt=""></button>
+      </div>
+      <div class="button-bar guobar">
+        <button class="button button-clear"   ng-click="gong(3)"><img src="Html/{{guo}}" alt=""></button>
+        <button class="button button-clear"   ng-click="gong(4)"></button>
+        <button class="button button-clear"   ng-click="gong(3)"><img src="Html/{{guo}}" alt=""></button>
+      </div>
+    <div class="bar bar-footer bar-clear qiufotype">
+      <div class="button-bar">
+        <a class="button button-clear" ng-href="#/tab/allyuan/{{qfinfo.tid}}" ><img src="Html/image/qiufo/qiyuan.png" alt=""></a>
+        <a class="button button-clear" ng-click="goPay()"><img src="Html/image/qiufo/gongde.png" alt=""></a>
+        <a class="button button-clear" ng-click="gong(1)"><img src="Html/image/qiufo/gonghua.png" alt=""></a>
+        <a class="button button-clear" ng-click="gong(2)"><img src="Html/image/qiufo/qingfo.png" alt=""></a>
+        <a class="button button-clear" ng-click="gong(3)"><img src="Html/image/qiufo/gongguo.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/tab/fomuyu"><img src="Html/image/qiufo/nianfo.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/tab/action"><img src="Html/image/qiufo/fanhui.png" alt=""></a>
+      </div>
+    </div>
+    <!-- <audio id="myaudio" ng-src="{{qfinfo.music |to_url}}" autobuffer autoloop loop></audio>
+ -->
+    <script id="templates/modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-energized">
+          <h1 class="title">{{qfinfo.name}}</h1>
+         <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+        </ion-header-bar>
+        <ion-content class="padding modal-qiufo">
+            <div class="item item-thumbnail-left item-content item-text-wrap" ng-repeat="vo in newfolist" ng-click="setfo({{vo.id}})">
+              <img src="Html/{{vo.face}}">
+              <h2 class="title" style="padding-top: 10px;"> {{vo.name}} <span class="jifen assertive" ng-if="vo.jifen">{{vo.jifen}}功德</span></h2>
+              <p class="desc">{{vo.desc}}</p>
+            </div>
+        </ion-content>
+      </ion-modal-view>
+    </script>
+</ion-view>

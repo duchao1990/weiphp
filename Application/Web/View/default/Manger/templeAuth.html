@@ -1,0 +1,175 @@
+<extend name="Base/boot"/>
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>寺院资格认证</h2>
+            <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+        </div>
+    </header>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <form enctype="multipart/form-data" id="templeAuth" method='post' action="{:U('')}">
+                <div class="form-group">
+                    <label>上传宗教活动场所登记证</label>
+                    <input id="huodongCard" name="file-fr[]" type="file" data-overwrite-initial="false">
+                </div>
+                <div class="form-group">
+                    <label>开户许可证图片ID</label>
+                    <input id="huodongImg" name="huodongCard" type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label>宗教活动场所登记证编码</label>
+                    <input  name="huodongNum" type="text" class="form-control">
+                </div>
+
+
+                <div class="form-group">
+                    <label>组织机构代码证</label>
+                    <input id="zuzhiCard" name="file-fr[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>组织机构代码证图片ID</label>
+                    <input id="zuzhiImg" name="zuzhiCard" type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label>组织机构代码</label>
+                    <input  name="zuzhiNum" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>寺院开户许可证</label>
+                    <input id="kaihuCard" name="file-fr[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>开户许可证图片ID</label>
+                    <input id="kaihuImg" name="kaihuCard" type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label>开户许可证号码</label>
+                    <input  name="kaihuNum" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-info">提交</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#huodongCard').fileinput({
+            language: 'zh',
+            uploadUrl: "{:U('File/uploadPicture')}",
+            allowedFileExtensions : ['jpg', 'png']
+        }).on("filebatchselected", function(event, files) {
+            $(this).fileinput("upload");
+        }).on("fileuploaded", function(event, data) {
+            if(data.response)
+            {
+                $('#huodongImg').val(data.response);
+            }
+        });
+        $('#zuzhiCard').fileinput({
+            language: 'zh',
+            uploadUrl: "{:U('File/uploadPicture')}",
+            allowedFileExtensions : ['jpg', 'png']
+        }).on("filebatchselected", function(event, files) {
+            $(this).fileinput("upload");
+        }).on("fileuploaded", function(event, data) {
+            if(data.response)
+            {
+                $('#zuzhiImg').val(data.response);
+            }
+        });
+        $('#kaihuCard').fileinput({
+            language: 'zh',
+            uploadUrl: "{:U('File/uploadPicture')}",
+            allowedFileExtensions : ['jpg', 'png']
+        }).on("filebatchselected", function(event, files) {
+            $(this).fileinput("upload");
+        }).on("fileuploaded", function(event, data) {
+            if(data.response)
+            {
+                $('#kaihuImg').val(data.response);
+            }
+        });
+
+        $(document).ready(function() {
+            $('#templeAuth').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    kaihuCard: {
+                        validators: {
+                            notEmpty: {
+                                message: '开户许可证必须上传! '
+                            }
+                        }
+                    },
+                    kaihuNum: {
+                        validators: {
+                            notEmpty: {
+                                message: '开户许可证编码必须填写! '
+                            }
+                        }
+                    },
+                    zuzhiCard: {
+                        validators: {
+                            notEmpty: {
+                                message: '组织代码证必须上传! '
+                            }
+                        }
+                    },
+                    zuzhiNum: {
+                        validators: {
+                            notEmpty: {
+                                message: '组织代码证不能为空!! '
+                            }
+                        }
+                    },
+                    huodongCard: {
+                        validators: {
+                            notEmpty: {
+                                message: '上传宗教活动场所登记证必须上传! '
+                            }
+                        }
+                    },
+                    huodongNum: {
+                        validators: {
+                            notEmpty: {
+                                message: '宗教活动场所登记编码必须填写! '
+                            }
+                        }
+                    }
+                }
+            })
+                    .on('success.form.bv', function(e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function(data) {
+                            // var url=""+data.url +"";
+
+                            UpToaster(data);
+                            //toastr.success("祝贺你成功了");
+                            //UpdateAlert(data.info,data.status,url);
+                        }, 'json');
+                    });
+        });
+    </script>
+</block>

@@ -1,0 +1,16 @@
+<ion-view view-title="{{ctitle}}">
+      <ion-content>
+        <ion-refresher pulling-text="刷新页面..." on-refresh="doRefresh()" ></ion-refresher>
+        <div class="list" style="overflow: auto;">
+          <div class="mycard fl" ng-repeat="item in chatslist">
+            <div class="item item-body">
+              <a class="carda" href="#/tab/chatInfo/{{item.id}}">
+                <img class="full-image" src="{{item.cover}}" style="height: 92px;">
+                {{item.title|limitTo:10}}...
+              </a>
+            </div>
+            </div>
+        </div>
+        <ion-infinite-scroll ng-if="more" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+      </ion-content>
+</ion-view>

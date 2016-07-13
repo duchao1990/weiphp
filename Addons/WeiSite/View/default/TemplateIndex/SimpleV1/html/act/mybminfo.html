@@ -1,0 +1,17 @@
+<ion-view view-title="属{{bmfinfo.xiang}}:{{bmfinfo.name}}">
+  <ion-nav-buttons side="right">
+    <a class="button button-icon ion-ios-cart" ng-href="#/mybmlist/{{bmfid}}">
+    </a>
+  </ion-nav-buttons>
+  <ion-content >
+        <div class="list card" >
+
+        <div class="item item-body" ng-bind-html="bminfo.yunshi">
+        </div>
+      </div>
+
+  </ion-content>
+          <a  href="#/mybmlist/{{bmfid}}" class="button button-energized" style="position: fixed;bottom: 120px;right: 20px;height: 50px;border-radius: 25px;">
+            恭请
+          </a>
+</ion-view>

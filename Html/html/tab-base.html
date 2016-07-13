@@ -1,0 +1,71 @@
+<ion-view view-title="云端道场" hide-tabs="false" hide-nav-bar="true">
+  <div class="bar bar-subheader bar-energized" style="top: 0px;"><h2 class="title">{{intro.title}}</h2></div>
+  <ion-content class="has-subheader" style="top: 44px;">
+
+
+    <div class="list base">
+      <div class="button-bar">
+        <a class="button button-energized button-outline icon iconfont icon-xinwen"  href="#/tab/siyuanlist/{{cate1}}">
+          寺院动态
+        </a>
+        <a class="button button-energized button-outline  icon ion-person" href="#/tab/siyuanlist/{{cate3}}">
+          义工招募
+        </a>
+        <a class="button button-energized button-outline  icon ion-ios-people" href="#/tab/siyuanlist/{{cate4}}">
+          寺院活动
+        </a>
+      </div>
+      <div class="button-bar">
+        <a class="button button-energized button-outline icon iconfont  icon-fo" href="#/tab/siyuanlist/{{cate2}}">
+          大师感悟
+        </a>
+        <a class="button button-energized button-outline icon iconfont icon-aixinjuanzeng" ng-click="goPay()">
+          捐赠捐赠
+        </a>
+        <a class="button button-energized button-outline icon iconfont  ion-ios-keypad" href="#/tab/tuHao">
+          功德排行
+        </a>
+      </div>
+      <div class="button-bar">
+        <a href="#/tab/newslist/" class="button button-energized button-outline icon iconfont  icon-fo3200">
+         佛教新闻
+        </a>
+        <a href="#/tab/booklist/" class="button button-energized button-outline iconfont icon icon-foshu">
+          佛学知识
+        </a>
+        <a href="#/tab/chatlist/" class="button button-energized button-outline icon iconfont  icon-necklace1156232easyiconnet">
+          佛教七宝
+        </a>
+      </div>
+      <!-- 寺院介绍 -->
+    <div class="h3-title">
+      <i class="iconfont center icon-zszhishi title-pr"></i>寺院介绍
+    </div>
+    <div class="card item-text-wrap">
+      <div class="item item-complex">
+        <div class="item-content">
+         <a href="#/tab/siyuanInfo/{{intro.id}}">
+            <img src="{{intro.coverpath}}">
+         </a>  
+          <span>{{intro.intro}}</span>
+        </div>
+      </div>
+    </div> 
+    <!-- 寺院大师 -->
+    <div class="h3-title title-top">
+      <i class="iconfont center icon-xinwen1 title-pr"></i>寺院大师
+    </div>
+
+    <div class="list" style="overflow: auto;">
+          <div class="mycarda fl" ng-repeat="item in items">
+              <div class="item item-body">
+                 <a class="carda" href="#/tab/ganwulist/{{item.uid}}">
+                  <img class="full-image" src="{{item.headimgurl}}" style="height: 100px;">
+                  <h5 style="text-align: center;">{{item.nickname}}</h5>
+                </a>
+              </div>
+          </div>
+    </div>
+      </div>
+  </ion-content>
+</ion-view>

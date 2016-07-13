@@ -1,0 +1,142 @@
+<ion-view view-title="订单中心" hide-nav-bar="true">
+  <ion-content>
+    <tab-slide-box tab="0">
+      <div class="tsb-icons">
+        <div class="tsb-ic-wrp">
+          <ion-scroll direction="x" class="tsb-hscroll">
+              <a  href="javascript:;">待支付</a>
+              <a  href="javascript:;">待发货</a>
+              <a  href="javascript:;">已发货</a>
+              <a  href="javascript:;">已收货</a>
+          </ion-scroll>
+        </div>
+      </div>
+      <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+        <ion-slide>
+          <ion-nav-view>
+           <ion-view>
+              <ion-content>
+                <div class="card ordercard" ng-repeat="order in buyList.nopayList" >
+                  <div class="item item-divider cardtitle">
+                    <button class="button button-clear button-small fl">订单编号：{{order.order_number}}</button>
+                     <a class="button button-energized button-small fr" href="#/tab/confirmOrder/{{order.id}}">支付 (<b>{{order.total_price}}元</b>)</a>
+                  </div>
+                  <div class="item item-avatar-left item-complex" ng-repeat="goods in order.goods_datas">
+                    <a class="item-content">
+                      <img src="{{goods.cover}}">
+                      <div style="padding-left:75px;" class="orderdiv">
+                        <h2 class="title" >{{goods.title}}</h2>
+                        <div class="row">
+                          <div class="col col-50">
+                            <button class="button button-clear button-small assertive" >{{goods.price}} x {{goods.num}}</button>
+                          </div>
+                          <div class="col col-50" >
+                             
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view>
+           <ion-view>
+              <ion-content>
+                <div class="card ordercard" ng-repeat="order in buyList.willList" >
+                  <div class="item item-divider cardtitle">
+                    <button class="button button-clear button-small fl">订单编号：{{order.order_number}}</button>
+                    <button class="button button-clear button-small fr">{{order.total_price}}元</button>
+                  </div>
+                  <div class="item item-avatar-left item-complex" ng-repeat="goods in order.goods_datas">
+                    <a class="item-content">
+                      <img src="{{goods.cover}}">
+                      <div style="padding-left:75px;" class="orderdiv">
+                        <h2 class="title" >{{goods.title}}</h2>
+                        <div class="row">
+                          <div class="col col-50">
+                            <button class="button button-clear button-small assertive">{{goods.price}} x {{goods.num}}</button>
+                          </div>
+                          <div class="col col-50" >
+                             
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view>
+           <ion-view>
+              <ion-content>
+                <div class="card ordercard" ng-repeat="order in buyList.senedList" >
+                  <div class="item item-divider cardtitle">
+                    <button class="button button-clear button-small fl">订单编号：{{order.order_number}}</button>
+                     <a class="button button-energized button-small fr" href="#/tab/post/{{order.id}}">查看物流</a>
+                  </div>
+                  <div class="item item-avatar-left item-complex" ng-repeat="goods in order.goods_datas">
+                    <a class="item-content">
+                      <img src="{{goods.cover}}">
+                      <div style="padding-left:75px;" class="orderdiv">
+                        <h2 class="title" >{{goods.title}}</h2>
+                        <div class="row">
+                          <div class="col col-50">
+                            <button class="button button-clear button-small assertive">{{goods.price}} x {{goods.num}}</button>
+                          </div>
+                          <div class="col col-50" style="padding-right:10px;">
+                             <button  class="button button-energized button-small fr" ng-click="queryOrder(order.id,$index)">确认收货</button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view>
+           <ion-view>
+              <ion-content>
+                <div class="card ordercard" ng-repeat="order in buyList.redList" >
+                  <div class="item item-divider cardtitle">
+                    <button class="button button-clear button-small fl">订单编号：{{order.order_number}}</button>
+                     <button class="button button-clear button-small fr">{{order.total_price}}元</button>
+                  </div>
+                  <div class="item item-avatar-left item-complex" ng-repeat="goods in order.goods_datas">
+                    <a class="item-content">
+                      <img src="{{goods.cover}}">
+                      <div style="padding-left:75px;" class="orderdiv">
+                        <h2 class="title" >{{goods.title}}</h2>
+                        <div class="row">
+                          <div class="col col-50">
+                            <button class="button button-clear button-small assertive">{{goods.price}} x {{goods.num}}</button>
+                          </div>
+                          <div class="col col-50" >
+                             
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+     </ion-slide-box>
+    </tab-slide-box>
+  </ion-content>
+</ion-view>
+
+
+

@@ -1,0 +1,32 @@
+<ion-view view-title="属{{bmfinfo.xiang}}:{{bmfinfo.name}}">
+<!--   <ion-nav-buttons side="right">
+    <a class="button">
+    <i class="icon ion-bag"></i>购物车
+    </a>
+  </ion-nav-buttons> -->
+
+  <ion-content >
+        <div class="list card" ng-repeat="val in bmlist">
+
+        <div class="item item-body">
+          <img src="{{val.imgpath}}" style="width:100%;">
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#" >
+            <i class="icon ion-ribbon-b"></i>
+            {{val.money_need}} 积分
+          </a>
+<!--           <a class="tab-item" href="#">
+            <i class="icon ion-android-cart"></i>
+            加入购物车
+          </a> -->
+          <a class="tab-item" ng-click="showcard({{val.id}})">
+            <i class="icon ion-bag"></i>
+            立即恭请
+          </a>
+        </div>
+
+      </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,93 @@
+<div class="form-group">
+	<label class="col-md-2 control-label">省级</label>
+	<div class="col-md-4">
+		<select name="province" id="J_province" class='form-control'></select>
+	</div>
+</div>
+<div class="form-group">
+	<label class="col-md-2 control-label">市区</label>
+	<div class="col-md-4">
+		<select name="city" id="J_city"  class='form-control'></select>
+	</div>
+</div>
+<div class="form-group">
+	<label class="col-md-2 control-label">县级</label>
+	<div class="col-md-4">
+		<select name="district" id="J_district" class='form-control'></select>
+	</div>
+</div>
+<div class="form-group">
+	<label class="col-md-2 control-label">已入住本平台的寺院</label>
+	<div class="col-md-4">
+		<select name="selectTe" id="selectTe" class='form-control'></select>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var pid=1;
+		getProvince(pid);
+
+
+
+		$('#J_province').change(function(){
+			var pid_g=$(this).children('option:selected').val();
+			getCity(pid_g);
+			gettemple(pid_g,'province');
+		});
+
+		$('#J_city').change(function(){
+			var cid_g=$(this).children('option:selected').val();
+			getDistrict(cid_g);
+			gettemple(cid_g,'city');
+		});
+
+		$('#J_district').change(function(){
+			var did_g=$(this).children('option:selected').val();
+			gettemple(did_g,'district');
+		});
+
+		function getProvince(pid) {
+			$.post("{:addons_url('ChinaCity://ChinaCity/getProvince')}", {pid: pid}, function(data, textStatus, xhr) {
+				var proop='<option value="0">--请选择--</option>';
+				$.each(data, function(index, val) {
+					proop +='<option value="'+val.id+'">'+val.name+'</option>';
+				});
+				$('#J_province').html(proop);
+
+			});
+		}
+		function getCity(pid) {
+			$.post("{:addons_url('ChinaCity://ChinaCity/getCity')}", {pid: pid}, function(data, textStatus, xhr) {
+				var proop='<option value="0">--请选择--</option>';
+				$.each(data, function(index, val) {
+					proop +='<option value="'+val.id+'">'+val.name+'</option>';
+				});
+				$('#J_city').show().html(proop);
+
+			});
+		}
+		function getDistrict(cid) {
+			$.post("{:addons_url('ChinaCity://ChinaCity/getDistrict')}", {cid: cid}, function(data, textStatus, xhr) {
+				var proop='<option value="0">--请选择--</option>';
+				$.each(data, function(index, val) {
+					proop +='<option value="'+val.id+'">'+val.name+'</option>';
+				});
+				$('#J_district').show().html(proop);
+
+			});
+		}
+		function gettemple(id,t) {
+			$.post("{:addons_url('ChinaCity://ChinaCity/getTemple')}", {id:id,t:t}, function(data, textStatus, xhr) {
+				if (data) {
+					var ple='';
+					$.each(data, function(index, val) {
+						ple +='<option value='+val.id+'>'+val.temple+'</option>';
+					});
+				} else {
+					var ple='<option value="">--该地区没有入驻寺院--</option>';
+				}
+				$('#selectTe').html(ple);
+			});
+		}
+	});
+</script>

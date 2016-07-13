@@ -1,0 +1,46 @@
+<ion-view view-title="恭请单" hide-nav-bar="true">
+    <ion-content>
+        <a  class="item item-icon-left item-icon-right" ng-click="modal.show()">
+          <i class="icon ion-home positive"></i>
+	        <h3>收货人:{{orderAddress.truename}}     <span class="fr">{{orderAddress.mobile}}</span></h3>
+	        <h4>收货地址:{{orderAddress.city}}{{orderAddress.address}}</h4>
+	       <i class="icon ion-chevron-right"></i>
+        </a>
+        <div class="item item-avatar order-item" ng-repeat="order in payGoods">
+            <a class="item-content">
+                <img class="item-img" src="{{order.cover}}">
+                <h2>{{order.title}}</h2>
+                <br>
+                <p><span class="product-price">{{order.price}}</span> <span class="fr">x {{order.num}}</span>  </p>
+            </a>
+        </div>
+
+
+
+    </ion-content>
+    <ion-footer-bar  class="bar-energized"  style='margin: 0px;'>
+        <button  class="button button-clear button-small button-block " style="margin:0px;" ng-click="goPay()">合计({{total_price}}元) 支付恭请</button>
+    </ion-footer-bar>
+    <script id="templates/modal.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-energized">
+                <h1 class="title">选择地址</h1>
+                <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+            </ion-header-bar>
+            <ion-content class="padding modal-qiufo">
+                <a  class="item item-icon-left item-icon-right" ng-repeat="address in addressList" ng-click="setAddress(address)">
+                    <i class="icon ion-home positive"></i>
+                    <h3>收货人:{{address.truename}}     <span class="fr">{{address.mobile}}</span></h3>
+                    <h4>收货地址:{{address.city}}{{address.address}}</h4>
+                    <i class="icon ion-chevron-right"></i>
+                </a>
+
+                <div class='empty-cart-div' ng-if='!addressList'>
+                    <a class='empty-cart-header' href="#/tab/addAddress">{{msg}}</a>
+                    <p><i class='icon ion-ios-home empty-cart-icon'></i></p>
+                </div>
+
+            </ion-content>
+        </ion-modal-view>
+    </script>
+</ion-view>

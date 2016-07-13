@@ -1,0 +1,63 @@
+<ion-view view-title="静坐参禅" hide-tabs="true">
+  <ion-nav-buttons side="right">
+    <a class="button button-icon ion-ios-paper-outline" ng-click="modal.show()">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header chanxiuc">
+  <div class="bcounth">{{humanizeDurationTimer(xiumins,'s')}}</div>
+    <div class="progress-wrapper" ng-if="xiutime===1">
+      <div class="progress">
+        {{humanizeDurationTimer(timer,'s')}}
+      </div>
+      <div round-progress max="timeForTimer" current="timer" clockwise="false" color="#ef473a" rounded="true" class="text-center"></div>
+    </div>
+  </ion-content>
+
+  <div class="bar bar-footer bar-clear">
+    <button class="button button-clear button-icon ion-ios-stopwatch-outline" ng-click="showPrompt()"></button>
+    <div class="title" ng-if="!started && !paused && !done && xiutime===1">
+          <button class="button button-icon ion-ios-play" ng-click='startTimer()'>
+          </button>
+    </div>
+
+    <div class="title" ng-if="started && !done">
+      <div class=" row">
+        <div class="col">
+          <button class="button button-icon ion-ios-pause " ng-click='pauseTimer()'>
+          </button>
+        </div>
+        <div class="col">
+          <button class="button button-icon ion-ios-loop-strong" ng-click='stopTimer()'>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="title" ng-if="!started && paused && !done">
+      <button class="button button-icon ion-ios-play" ng-click='startTimer()'>
+      </button>
+    </div>
+    <div ng-if="done" class="text-center title">
+        <button class="button button-icon ion-ios-loop-strong" ng-click="stopTimer(true);">
+        </button>
+    </div>
+
+    <button class="button button-clear button-icon ion-ios-paper-outline ion-ios-pricetags-outline" ng-click="baotimer()"></button>
+  </div>
+</ion-view>
+  <script id="templates/modal.html" type="text/ng-template">
+    <ion-modal-view>
+      <ion-header-bar class="bar bar-header bar-energized">
+        <h1 class="title">总:{{xiucount}}分钟</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+      </ion-header-bar>
+      <ion-content class="padding">
+      <div class="card item-text-wrap" ng-repeat="vo in xiulist">
+        <div class="item">
+            <h2 class="title"> {{vo.addtime*1000|date:"yyyy/MM/dd"}} <span>修行了: {{vo.baoxiu}}分钟</span></h2> 
+        </div>
+      </div>
+      </ion-content>
+    </ion-modal-view>
+  </script>

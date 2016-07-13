@@ -1,0 +1,30 @@
+<style>
+  .item{background: transparent;border-color: #FFF;padding:1px 0 1px 16px;border: none;border-bottom:1px solid #FFF;margin-bottom: 25px;}
+  .item input{color: #FFF;}
+  .tab-nav{display: none;}
+</style>
+<ion-view view-title="验证手机" hide-tabs="true" class="new-login">
+  <ion-content>
+    <div class="user-img">
+      <img src="Public/Home/App/image/m-user.png"/>
+    </div>
+    <div class="list list-inset no-back" style="margin-bottom: 0;">
+      <form name="goVerify" ng-controller="UserCtrl">
+        <div id="mcbg" class="list">
+          <label class="item item-input">
+            <i class="icon ion-ios-telephone-outline placeholder-icon fff login-font"></i>
+            <input type="text" placeholder="手机号" required ng-model='goVerify.mobile'  ng-pattern='/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/'>
+          </label>
+          <label class="item item-input">
+            <i class="icon ion-ios-locked placeholder-icon fff login-font"></i>
+            <input type="password" placeholder="验证码" required ng-minlength='6' ng-maxlength='6' ng-model='goVerify.vcode' class="fff">
+          </label>
+          <button type="submit" class="button submit sub-top fff" ng-click="sendSms(goVerify.mobile)" ng-disabled="isDisabled">{{cuntdown}}</button>
+          <div style="margin:10px 0;">
+            <button type="submit" class="button submit submit-dif fff" ng-disabled="goVerify.$invalid" ng-click="ToVcode(goVerify.vcode)">验证</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

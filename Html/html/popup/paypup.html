@@ -1,0 +1,30 @@
+<div ng-controller="PaypupCrtl">
+    <div class="bodytop" style="height:50px;padding-top:25px;background-image: url('Html/image/bodytop.png');background-repeat: no-repeat;background-size: 100% 100%;background-color: #fcfcfc;color: #5d4037;">捐助的钱将会兑换功德</div>
+  <div class="row">
+    <div class="col col-25" ng-repeat='item in payList'>
+            <ion-radio          
+                    ng-value="item.value"
+                    ng-model="num"
+                    ng-change="numChange(item.value)">
+                 <center style="color: #330000;font-style: 0.8em;"> {{item.text}}</center> 
+          </ion-radio>
+  </div>
+  </div>
+  <div class="item item-divider item-icon-right" style="color: #330000;font-style: 0.6em;">
+    捐助金额(自由输入)
+  </div>
+  <ion-input class="item item-input">
+    <i class="icon iconfont icon-foshou"></i>
+    <input type="number" ng-model='num' ng-change="numChange(num)" placeholder="自由捐助金额">
+  </ion-input>
+<!--   <img src="Html/image/paytype.png" style="margin-top: 10px;"> -->
+    <div class="row">
+      <div class="col">
+      <button class="button button-clear paybtn" ng-click="goPay({{num}})">微信支付</button>
+      </div>
+<!--       <div class="col col-50" >
+      <button class="button button-clear paybtn" ng-click="ttfPay('alipay_wap')">支付宝</button>
+      </div> -->
+    </div>
+  </div>
+

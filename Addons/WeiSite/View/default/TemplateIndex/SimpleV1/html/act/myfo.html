@@ -1,0 +1,46 @@
+<ion-view view-title="属{{bmfinfo.xiang}}:{{bmfinfo.name}}" hide-tabs="true" hide-nav-bar="true" class='qiufoview' >
+
+   <!--  <button class="button button-clear musicbtn" ng-click="playMusic()">
+      <i class="icon ion-volume-medium"></i>
+    </button> -->
+    <div class="qiufox"><img src="{{bmfinfo.face}}"></div>
+    <div class="halo"></div>
+    <div class="la">
+      <img src="Public/Home/App/image/la.gif" alt="">
+    </div>
+    <div class="xianglu"><img src="Public/Home/App/image/xl.png" alt=""></div>
+    <div class="rotate">
+      <div id="xiang"><div id="spinner" class="spinner"></div></div>
+      <div id="xiang1"><div id="spinner1" class="spinner"></div></div>
+      <div id="xiang2"><div id="spinner2" class="spinner"></div></div>
+    </div>
+    <center><button class="button" style="background: transparent;border:0;" id="sxbtn" ng-click="setxiang()"></button></center>
+    <div class="bar bar-footer bar-clear qiufotype">
+      <div class="button-bar" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <a class="button button-clear" ng-href="#/allyuan/{{bmfinfo.id}}" ><img src="Public/Home/App/image/bmf/qiyuan.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/fomuyu"><img src="Public/Home/App/image/bmf/nianfo.png" alt=""></a>
+        <a class="button button-clear" ng-click="goPay()"><img src="Public/Home/App/image/bmf/gongde.png" alt=""></a>
+        <a class="button button-clear" ng-click="modal.show()"><img src="Public/Home/App/image/bmf/qingfo.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/mybmlist/{{bmfinfo.id}}"><img src="Public/Home/App/image/bmf/benmingfo.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/mybminfo/{{bmfinfo.id}}"><img src="Public/Home/App/image/bmf/yunshi.png" alt=""></a>
+        <a class="button button-clear" ng-href="#/tab/action"><img src="Public/Home/App/image/bmf/fanhui.png" alt=""></a>
+      </div>
+    </div>
+  <!-- <audio id="myaudio" ng-src="{{bmfinfo.music |to_url}}" autobuffer autoloop loop></audio> -->
+    <script id="templates/modal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-energized">
+          <h1 class="title">选择本命佛</h1>
+          <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+        </ion-header-bar>
+        <ion-content class="padding" id='myfo'>
+              <div ng-repeat="vo in allbmlist" class="item item-thumbnail-left item-content item-text-wrap" ng-click="setbmf({{vo.id}})">
+                <img src="{{vo.face}}" style="width: 100px; height: 100px;">
+                <h2 class="title" style="padding-top: 10px;">属{{vo.xiang}}: {{vo.name}}</h2>
+                <p class="desc">{{vo.desc}}</p>
+              </div>
+        </ion-content>
+      </ion-modal-view>
+    </script>
+
+</ion-view>

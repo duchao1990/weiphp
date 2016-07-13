@@ -1,0 +1,257 @@
+<extend name="Base/common"/>
+<block name="body">
+    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 100px; right: 24px;">
+        <a class="btn-floating btn-large accent">
+            <i class="large iconfont icon-apps"></i>
+        </a>
+        <ul>
+            <li><a  class="btn-floating red dropdown-button" data-activates='ios'><i class="iconfont icon-ios"></i></a>
+                <img src="__IMG__/iosqcode.png" id='ios' alt='天天佛ios手机app下载' class='dropdown-content'>
+            </li>
+            <li><a class="btn-floating black dropdown-button" data-activates='android'><i class="iconfont icon-android"></i></a>
+                <img src="__IMG__/anqcode.png" id='android'  alt='天天佛安卓手机app下载' class='dropdown-content'>
+
+            </li>
+            <li><a class="btn-floating green dropdown-button"  alt='天天佛微信公众号' data-activates="wechat"><i class="iconfont icon-wechat1193418easyiconnet
+apps"></i></a>
+                <img src="__IMG__/wxqcode.jpg" id='wechat' class='dropdown-content'>
+            </li>
+            <li><a class="btn-floating blue" id="returnTop"><i class="iconfont icon-playforwork"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section no-pad-bot" id="index-banner" style="height:350px;">
+        <div class="container">
+            <div class="center hide-on-large-only" style="padding-top:210px;">
+                <a  id="download-button" class="btn-large waves-effect waves-light" style="margin-bottom:0px;background-color: #330000;" onclick="getApp()">天天佛学佛App下载</a>
+            </div>
+            <div class="center hide-on-small-only hide-on-med-only" style="margin-left:150px;height: 150px;margin-bottom:0px; padding-top:186px;">
+                <img src="__IMG__/erweima.png">
+            </div>
+
+        </div>
+    </div>
+    <div class="container" style="margin:10px auto;">
+        <div class="divider"></div>
+        <div class="slider">
+            <ul class="slides">
+                <li style="background-image:url('__IMG__/a01.jpg');">
+                    <img src="__IMG__/a01.jpg">
+                    <!-- 			      <div class="caption center-align">
+                                        <h3>天天佛</h3>
+                                        <h5 class="">上香拜佛祈愿抽签,佛教日历,佛教入门,佛学资讯,佛教音乐,佛经大全,开启网络学佛天天佛新时代</h5>
+                                      </div> -->
+                </li>
+                <li style="background-image:url('__IMG__/a02.jpg');"><!-- random image -->
+                    <img src="__IMG__/a02.jpg">
+                    <!-- 			      <div class="caption left-align">
+                                        <h3>佛学新闻</h3>
+                                        <h5 class="">每日为您提供最新的佛学类资讯信息，法会信息等等，结缘善友，福慧增长！</h5>
+                                      </div> -->
+                </li>
+                <li style="background-image:url('__IMG__/a03.jpg');">
+                    <img src="__IMG__/a03.jpg">
+                    <!-- 			      <div class="caption right-align">
+                                        <h3>拜佛祈福</h3>
+                                        <h5 class="">每日礼敬佛陀，上香祈愿，诵经祈福，善根福德日增，祝愿每位师兄修行圆满！</h5>
+                                      </div> -->
+                </li>
+                <li style="background-image:url('__IMG__/a04.jpg');">
+                    <img src="__IMG__/a04.jpg">
+                    <!-- 			      <div class="caption left-align">
+                                        <h3>抽签祈福</h3>
+                                        <h5 class="">增加手机摇一摇求签功能，包含婚姻，财富，事业等等，可向佛菩萨虔诚祈福！</h5>
+                                      </div> -->
+                </li>
+                <li style="background-image:url('__IMG__/a05.jpg');">
+                    <img src="__IMG__/a05.jpg">
+                    <!-- 			      <div class="caption left-align">
+                                        <h3>抽签祈福</h3>
+                                        <h5 class="">增加手机摇一摇求签功能，包含婚姻，财富，事业等等，可向佛菩萨虔诚祈福！</h5>
+                                      </div> -->
+                </li>
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>礼佛上香拜佛抽签一步完成</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：上香拜佛</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>每日拜佛祈愿还愿在线祈福</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：祈福还愿</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a3.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>佛教入门基础常识一应俱全</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：佛学知识</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a4.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>最齐全的佛教节日尽在佛历</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：佛教日历</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a5.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>每日一占-在线抽签占卜</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：在线抽签</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a7.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>佛珠手串佛家七宝品鉴收藏</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：佛家七宝 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a8.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>增加佛友每日祈愿，还愿，点赞功能</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：每日祈愿</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="__IMG__/a9.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>在线听经课诵，佛经，高僧开示</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">佛学app应用：听经课诵</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>  $('.slider').slider({full_width: true});</script>
+    <script type="text/javascript">
+        var browser = {
+            versions: function() {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        function isWeiXin(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+                console.log('src');
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        function getApp () {
+            if (isWeiXin()) {
+                $(".Wx").fadeIn(400);
+            }else{
+                if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+                    window.location="https://itunes.apple.com/cn/app/tian-tian-fu/id1057451131?mt=8";
+                }else if(browser.versions.android){
+                    window.location="http://zhushou.360.cn/detail/index/soft_id/3137352?recrefer=SE_D_%E5%A4%A9%E5%A4%A9%E4%BD%9B";
+                }else{
+                    window.location="http://zhushou.360.cn/detail/index/soft_id/3137352?recrefer=SE_D_%E5%A4%A9%E5%A4%A9%E4%BD%9B";
+                }
+            }
+
+
+        }
+
+        $("#returnTop").click(function () {
+            var speed=200;//滑动的速度
+            $('body,html').animate({ scrollTop: 0 }, speed);
+            return false;
+        });
+        $(function(){
+            $(".Wx").click(function(){
+                $(this).fadeOut(400);
+            })
+        })
+
+
+    </script>
+    <script type='text/javascript'>
+        (function(m, ei, q, i, a, j, s) {
+            m[a] = m[a] || function() {
+                        (m[a].a = m[a].a || []).push(arguments)
+                    };
+            j = ei.createElement(q),
+                    s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = i + '?v=' + new Date().getUTCDate();
+            s.parentNode.insertBefore(j, s);
+        })(window, document, 'script', '//static.meiqia.com/dist/meiqia.js', '_MEIQIA');
+        _MEIQIA('entId', 22322);
+    </script>
+</block>

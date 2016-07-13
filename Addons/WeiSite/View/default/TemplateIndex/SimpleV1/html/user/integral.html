@@ -1,0 +1,40 @@
+<ion-view view-title="积分中心"  hide-tabs="true">
+  <ion-content has-subheader="false" class="has-header">
+
+      <div class="userdiv">
+              <!--<div class="userlogo" style="background-image: url('{{imgurl}}');" ng-click="goset()"></div>-->
+              <div class="userhave">{{inteinfo.have}}</div>
+              <div class="username">兑换比例: 1元={{inteinfo.UNIT}}分</div>
+      </div>
+      <div class="list">
+<!--         <a href="#/tab/integral" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-card myicon"></i>
+          兑换物品
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a> -->
+        <div class="item item-divider item-icon-right">
+          充值
+        </div>
+        <div class="card">
+        <ion-radio ng-repeat='item in payList'         
+                  ng-value="item.value"
+                  ng-model="num"
+                  ng-change="numChange(item.value)">
+                 {{item.text}}
+        </ion-radio>
+          <ion-input class="item item-input">
+            <i class="icon iconfont icon-foshou"></i>
+            <input type="number" ng-model='num' ng-change="numChange(num)" placeholder="自由充值金额">
+          </ion-input>
+          <button class="button btn button-block button-positive" ng-click="goPay('alipay')">支付宝 {{num}}元</button>
+          <div ng-if="isWxpay">
+             <button ng-if="iswechat==='yes'" class="button btn button-block button-balanced" ng-click="goPay('wx')">微信支付</button>
+          </div>
+         
+        </div>
+
+      </div>
+
+  </ion-content>
+
+</ion-view>

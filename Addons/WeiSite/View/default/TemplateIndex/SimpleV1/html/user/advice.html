@@ -1,0 +1,22 @@
+<ion-view view-title="反馈建议">
+  <ion-content class="has-header padding">
+    <form name="setAdvice" ng-controller="AdviceCtrl"  ng-submit="AdviceForm()">
+
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-compose"></i>
+          <span class="input-label">用户反馈</span>
+          <textarea placeholder="请您输入反馈的内容" required  ng-model='setAdvice.desc' maxlength="150" rows="8"></textarea>
+        </label>
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-paperclip"></i>
+          <span class="input-label">联系方式</span>
+          <textarea placeholder="手机号/QQ号/微信号" required ng-model='setAdvice.title' maxlength="15"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="button icon-right ion-chevron-right button-energized button-block" ng-disabled="setAdvice.$invalid">提交</button>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,118 @@
+<extend name="Base/boot"/>
+
+<block name="body">
+    <div class="row ">
+        <div class="col-lg-10 col-lg-offset-1">
+            <form enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>上传宗教活动场所登记证</label>
+                    <input id="huodongCard" name="file-fr[]" type="file" data-overwrite-initial="false">
+                </div>
+                <div class="form-group">
+                    <label>组织机构代码证</label>
+                    <input id="zuzhiCard" name="file-fr[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>寺院住持戒谍证</label>
+                    <input id="templeCard" name="file-fr[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>寺院住持身份证</label>
+                    <input id="idCard" name="file-fr[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>寺院开户许可证</label>
+                    <input id="kaihuCard" name="file-fr[]" type="file">
+                </div>
+            </form>
+
+            <form id="role1" class="form-horizontal" role="form" method='post' action="{:U('')}">
+                <div class="form-group">
+                    <input id="huodongId" name="huodongCard" type="hidden" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input id="zuzhiId" name="zuzhiCard" type="hidden" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input id="templeId" name="templeCard" type="hidden" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input id="idId" name="idCard" type="hidden" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input id="kaihuId" name="kaihuCard" type="hidden" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-info">提交</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    $('#huodongCard').fileinput({
+    	language: 'zh',
+        overwriteInitial: false,
+        uploadUrl: "{:U('File/uploadPicture')}",
+        allowedFileExtensions : ['jpg', 'png']
+    }).on("filebatchselected", function(event, files) {
+        $(this).fileinput("upload");
+    }).on("fileuploaded", function(event, data) {
+        if(data.response)
+        {
+            $('#huodongId').val(data.response);
+        }
+    });
+    $('#zuzhiCard').fileinput({
+        language: 'zh',
+        uploadUrl: "{:U('File/uploadPicture')}",
+        allowedFileExtensions : ['jpg', 'png']
+    }).on("filebatchselected", function(event, files) {
+        $(this).fileinput("upload");
+    }).on("fileuploaded", function(event, data) {
+        if(data.response)
+        {
+            $('#zuzhiId').val(data.response);
+        }
+    });
+    $('#templeCard').fileinput({
+        language: 'zh',
+        uploadUrl: "{:U('File/uploadPicture')}",
+        allowedFileExtensions : ['jpg', 'png']
+    }).on("filebatchselected", function(event, files) {
+        $(this).fileinput("upload");
+    }).on("fileuploaded", function(event, data) {
+        if(data.response)
+        {
+            $('#templeId').val(data.response);
+        }
+    });
+    $('#idCard').fileinput({
+        language: 'zh',
+        uploadUrl: "{:U('File/uploadPicture')}",
+        allowedFileExtensions : ['jpg', 'png']
+    }).on("filebatchselected", function(event, files) {
+        $(this).fileinput("upload");
+    }).on("fileuploaded", function(event, data) {
+        if(data.response)
+        {
+            $('#idId').val(data.response);
+        }
+    });
+    $('#kaihuCard').fileinput({
+        language: 'zh',
+        uploadUrl: "{:U('File/uploadPicture')}",
+        allowedFileExtensions : ['jpg', 'png']
+    }).on("filebatchselected", function(event, files) {
+        $(this).fileinput("upload");
+    }).on("fileuploaded", function(event, data) {
+        if(data.response)
+        {
+            $('#kaihuId').val(data.response);
+        }
+    });
+
+    </script>
+</block>

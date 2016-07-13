@@ -1,0 +1,155 @@
+<extend name="Base/boot"/>
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>寺院免费入住登记</h2>
+            <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+        </div>
+    </header>
+</block>
+<block name="body">
+    <div class="row ">
+        <div class="col-lg-10 col-lg-offset-1">
+            <form id="role1" class="form-horizontal" role="form" method='post' action="{:U('')}">
+                <legend>寺院登记</legend>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">寺院名称</label>
+                    <div class="col-md-4">
+                        <input type='text' name='temple' placeholder="如:白马寺" class='form-control' />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">寺院地址</label>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+                {:hook('J_China_City', array('province'=>1, 'city'=>2, 'district'=>3))}
+                <div class="form-group">
+                    <label class="col-md-2 control-label">主持</label>
+                    <div class="col-md-4">
+                        <input type='text' name='master' id='master' placeholder="如:法慧" class='form-control' />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">联系方式</label>
+                    <div class="col-md-4">
+                        <input type='tel' name='mobile' id='phone' placeholder="如:联系电话" class='form-control' />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" id="captchaOperation"></label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label"></label>
+                    <div class="col-md-4">
+                        <button class="btn btn-block btn-primary" type="submit">修行按钮</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        };
+        $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
+
+        $(document).ready(function() {
+            $('#role1').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    temple: {
+                        message: 'The canme is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: '标题不能为空! '
+                            },
+                            stringLength: {
+                                min: 3,
+                                max: 20,
+                                message: '标题长度3个字符到20个字符! '
+                            },
+                            regexp: {
+                                regexp: /^([\u4E00-\uFA29]|[\uE7C7-\uE7F3])*$/,
+                                message: '标题不合法,请不要输入特殊符号! '
+                            },
+                        }
+                    },
+
+                    master: {
+                        validators: {
+                            notEmpty: {
+                                message: '寺院名称不能为空! '
+                            },
+                            regexp: {
+                                regexp: /^([\u4E00-\uFA29]|[\uE7C7-\uE7F3])*$/,
+                                message: '请不要输入特殊符号! '
+                            },
+                        }
+                    },
+
+
+                    mobile: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入电话号码! '
+                            },
+                            regexp: {
+                                regexp: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/,
+                                message: '请输入正确电话号码! '
+                            },
+                            remote: {
+                                url: "{:U('User/verifyMobile')}",
+                                message: '该手机号已经注册绑定'
+                            }
+
+                        }
+                    },
+                    captcha: {
+                        validators: {
+                            callback: {
+                                message: '答案错误',
+                                callback: function(value, validator) {
+                                    var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                    return value == sum;
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+            .on('success.form.bv', function(e) {
+                // Prevent form submission
+                e.preventDefault();
+
+                // Get the form instance
+                var $form = $(e.target);
+
+                // Get the BootstrapValidator instance
+                var bv = $form.data('bootstrapValidator');
+
+                // Use Ajax to submit form data
+                $.post($form.attr('action'), $form.serialize(), function(data) {
+                    // var url=""+data.url +"";
+
+                    UpToaster(data);
+                    //toastr.success("祝贺你成功了");
+                    //UpdateAlert(data.info,data.status,url);
+                }, 'json');
+            });
+        });
+    </script>
+</block>

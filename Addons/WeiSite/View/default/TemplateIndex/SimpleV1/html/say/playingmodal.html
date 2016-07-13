@@ -1,0 +1,46 @@
+<ion-modal-view  ng-controller="PlayModalCtrl">
+  <ion-header-bar class='bar-energized'>
+    <h1 class="title">{{song}}</h1>
+    <button class="button button-clear buttonicon ion-ios-arrow-down" ng-click="hideModal()"></button>
+  </ion-header-bar>
+  <ion-content overflow-scroll="true" style="overflow: hidden;background: url(image/playerback.jpg) center center;background-size: cover;">
+    <div class="play-back">
+      <img src="{{xzimg}}" class="play-img" ng-class="{true:'playing-ani',false:''}[isPlay]"/>
+      <p>{{allTime}}</p>
+    </div>
+  </ion-content>
+  <footer class="muiscfooter">
+            <div class="button-bar">
+              <a class="button button-icon ion-heart fff" ng-click="setHot({{musicid}})" ng-disabled="infodis">
+                <span class="desc">{{hot}}</span>
+              </a>
+              <a href="" class="button button-icon iconfont icon-weixin fff" ng-click="WXshare({{musicid}})">
+                <span class="desc"></span>
+              </a>
+              <a href="" class="button button-icon iconfont  icon-friends fff" ng-click="WFshare({{musicid}})">
+                <span class="desc"></span>
+              </a>
+<!--               <a href="" class="button button-icon ion-android-star fff" ng-click="set">
+                <span class="desc"></span>
+              </a> -->
+            </div>
+            <br/>
+            <progress-bar player="player" audio="audio"></progress-bar>
+            <div class="title play-font">
+              <div class="button-bar">
+                <button class="button button-icon" ng-click="status=!status">
+                    <i class="icon ion-ios-infinite fff" title="单曲循环" ng-if="!status"></i>
+                    <i class="icon ion-navicon fff" title="循环播放" ng-if="status"></i>
+                </button>
+                <button class="button button-icon icon ion-ios-skipbackward  fff" ng-click="prev()"></button>
+                <button class="button button-icon" ng-click="isPlay=!isPlay">
+                    <i class="icon ion-ios-play fff" title="单曲循环" ng-if="!isPlay"></i>
+                    <i class="icon ion-ios-pause fff" title="循环播放" ng-if="isPlay"></i>
+                </button>
+                <button class="button button-icon icon ion-ios-skipforward fff" ng-click="next()"></button>
+              </div>
+            </div>
+
+  </footer>
+
+</ion-modal-view>

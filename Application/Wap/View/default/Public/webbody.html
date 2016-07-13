@@ -1,0 +1,12 @@
+<block name="header"></block>
+    <div class="container have-fixed" id="main-container ">
+        <block name="body"></block>
+    </div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).resize(function(){
+            $("#main-container").css("min-height", $(window).height());
+        }).resize();
+    })
+</script>

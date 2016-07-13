@@ -1,0 +1,45 @@
+<extend name="Base/common"/>
+
+<block name="header">
+        <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+          <h4 class="header center-on-small-only">走坑,爬坑</h4>
+          <div class='row center'>
+            <h5 class ="header col s12 light center">一步一步来,不放弃</h5>
+          </div>
+          <div class="row center">
+            <a class="btn red waves-light" href="{:U('Article/lists',array('category'=>php))}"><i class="material-icons iconfont icon-php"></i></a>
+              <a class="btn darken waves-light" href="{:U('Article/lists',array('category'=>mysql))}"><i class="material-icons iconfont icon-mysqllogo"></i></a>
+              <a class="btn green waves-light" href="{:U('Article/lists',array('category'=>css))}"><i class="material-icons iconfont icon-iconfontcss"></i></a>
+              <a class="btn blue waves-light" href="{:U('Article/lists',array('category'=>html))}"><i class="material-icons iconfont icon-html5"></i></a>
+              <a class="btn red waves-light" href="{:U('Article/lists',array('category'=>ionic))}"><i class="material-icons iconfont icon-ionic"></i></a>
+          </div>
+        </div>
+      </div>
+</block>
+
+<block name="body">
+        <div class="col s12">
+        <!-- Contents
+        ================================================== -->
+
+			<volist name="list" id="data">
+                <div class="col s12 m6 l4">
+                  <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <a class="card-title" href="{:U('Article/detail?id='.$list['id'])}">{$data.title}</a>
+                      <p>{$data.description}</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="{:U('Article/detail?id='.$list['id'])}">查看全文</a>
+                      <a >{$data.create_time|date='Y-m-d H:i',###}</a>
+                    </div>
+                  </div>
+                </div>
+	        </volist>
+
+            <div class="onethink pagination pagination-right pagination-large">
+                <article:page cate="$category['id']" listrow="$category['list_row']" />
+            </div>
+      </div>
+</block>

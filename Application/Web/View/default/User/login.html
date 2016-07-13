@@ -1,0 +1,119 @@
+<extend name="Base/boot" />
+<block name="header">
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h2>用户登录</h2>
+    <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+  </div>
+</header>
+</block>
+
+<block name="body">
+<section>
+	<div class="col-lg-6 col-lg-offset-3 col-md-12">
+        <form id="login-form" class="login-form" action="__SELF__" method="post">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="inputEmail">手机号</label>
+            <div class="col-md-12">
+              <input type="text" id="inputEmail" class="form-control" placeholder="请输入手机号"  value="" name="mobile">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="inputPassword">密码</label>
+            <div class="col-md-12">
+              <input type="password" id="inputPassword"  class="form-control" placeholder="请输入密码"    name="password">
+            </div>
+          </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" id="captchaOperation"></label>
+            <div class="col-md-12">
+                <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-12">
+                <button class="btn btn-block btn-primary" type="submit">登陆</button>
+            </div>
+        </div>
+        </form>
+	</div>
+</section>
+    <script type="text/javascript">
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        };
+        $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
+
+        $(document).ready(function() {
+            $('#login-form').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    mobile: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入电话号码! '
+                            },
+                            regexp: {
+                                regexp: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/,
+                                message: '请输入正确电话号码! '
+                            },
+                            remote: {
+                                url: "{:U('User/userMobile')}",
+                                message: '该用户不存在'
+                            }
+
+                        }
+                    },
+
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: '密码不能为空! '
+                            }
+                        }
+                    },
+                    captcha: {
+                        validators: {
+                            callback: {
+                                message: '答案错误',
+                                callback: function(value, validator) {
+                                    var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                    return value == sum;
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+                    .on('success.form.bv', function(e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function(data) {
+                            // var url=""+data.url +"";
+
+                            UpToaster(data);
+                            //toastr.success("祝贺你成功了");
+                            //UpdateAlert(data.info,data.status,url);
+                        }, 'json');
+                    });
+        });
+    </script>
+</block>
+
+<block name="side"> </block>
+

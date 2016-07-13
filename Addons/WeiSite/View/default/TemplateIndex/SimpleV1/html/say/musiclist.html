@@ -1,0 +1,36 @@
+<ion-view view-title="音乐列表" hide-tabs="true">
+  <ion-content>
+    <div class="issue" style="background: url(image/issue-back.jpg) no-repeat top center;">
+      <div class="fl issue-cont">
+        <img src="{{zjinfo.img}}" class="issue-img"/>
+      </div>
+      <div class="fr issue-info">
+        <p>{{zjinfo.title|limitTo:8}}</p>
+        <div class="issue-info-d">
+          {{zjinfo.content|limitTo:52}}...
+        </div>
+      </div>
+    </div>
+    <div class="button-bar issue-num">
+      <a class="button button-icon ion-ios-play fff"  >
+        <span class="desc">{{zjinfo.count}}集</span>
+      </a>
+      <a href="" class="button button-icon iconfont icon-weixin fff" ng-click="WXshare()">
+        <span class="desc"></span>
+      </a>
+      <a href="" class="button button-icon iconfont  icon-friends fff" ng-click="WFshare()">
+        <span class="desc"></span>
+      </a>
+    </div>
+    <div class="list my-say music-say">
+      <a  class="item  item-button-right fosay" ng-repeat="saylist in musicitems" ng-click="isSelected($index)">
+        <h2 class="desc">{{saylist.name}}</h2>
+        <button class="button button-clear">
+          <i class="icon ion-ios-play-outline" ng-class="{displaynone:$index == selectedRow}"></i>
+          <i class="icon ion-ios-pause-outline" ng-show="$index == selectedRow"></i>
+        </button>
+      </a>
+    </div>
+  </ion-content>
+  <a class="bar-footer bar say wall-radius playing-ani back" ng-click='openModal()'  ng-if="isPlay" style="background:url({{xzimg}}) no-repeat center center;width: 55px;height: 55px;margin: auto;"></a>
+</ion-view>

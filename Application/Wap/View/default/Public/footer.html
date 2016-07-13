@@ -1,0 +1,14 @@
+
+    <!-- 底部
+    ================================================== -->
+
+
+
+    <include file="Public/var"/>
+    <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+    {:hook('pageFooter', 'widget')}
+    <div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
+        <block name="hidden">
+            <script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500145710" ></script>
+        </block>
+    </div>

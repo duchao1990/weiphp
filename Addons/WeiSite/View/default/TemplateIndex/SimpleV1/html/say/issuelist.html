@@ -1,0 +1,15 @@
+<ion-view view-title="专辑列表" hide-tabs="true">
+  <ion-content>
+  <ion-refresher pulling-text="刷新中..." on-refresh="doRefresh()"> </ion-refresher>
+    <div class="list my-say music-say">
+      <a href="#/tab/musiclist/{{saylist.id}}" class="item item-avatar-left item-icon-right item-content item-text-wrap" ng-repeat="saylist in issueitems">
+        <img src="{{saylist.coverpath}}"/>
+          <h2 calss='title'>{{saylist.title |limitTo:10}}</h2>
+          <p class="desc">{{saylist.content|limitTo:12}}...</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </a>
+    </div>
+        <ion-infinite-scroll ng-if="more"  on-infinite="loadMore()"  distance="1%"></ion-infinite-scroll>
+  </ion-content>
+  <a class="bar-footer bar say wall-radius playing-ani back" ng-click='openModal()'  ng-if="isPlay!==0" style="background:url({{xzimg}}) no-repeat center center;width: 55px;height: 55px;margin: auto;"></a>
+</ion-view>

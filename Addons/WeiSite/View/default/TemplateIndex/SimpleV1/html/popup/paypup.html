@@ -1,0 +1,31 @@
+<div class="padding" ng-controller="PaypupCtrl">
+  <div class="row">
+    <div class="col col-25" ng-repeat='item in payList'>
+            <ion-radio          
+                    ng-value="item.value"
+                    ng-model="num"
+                    ng-change="numChange(item.value)">
+                 <center style="color: #330000;font-style: 0.8em;"> {{item.text}}</center> 
+          </ion-radio>
+  </div>
+  </div>
+  <div class="item item-divider item-icon-right" style="color: #330000;font-style: 0.8em;">
+    随喜捐助
+  </div>
+  <ion-input class="item item-input">
+    <i class="icon iconfont icon-foshou"></i>
+    <input type="number" ng-model='num' ng-change="numChange(num)" placeholder="自由充值金额">
+  </ion-input>
+  <div class="item item-divider item-icon-right" style="color: #330000;font-style: 0.8em;">
+    支付方式
+  </div>
+    <div class="row">
+      <div class="col col-50">
+      <button class="button button-positive" ng-click="ttfPay('wx')">微信支付</button>
+      </div>
+      <div class="col col-50" >
+      <button class="button button-calm" ng-click="ttfPay('alipay')">支付宝</button>
+      </div>
+    </div>
+  </div>
+

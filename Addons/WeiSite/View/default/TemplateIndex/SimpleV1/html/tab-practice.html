@@ -1,0 +1,51 @@
+<ion-view view-title="修行中心" hide-tabs="false" hide-nav-bar="true">
+  <ion-content class="pra">
+
+<!--       <div  class="xiuxingdiv">
+      </div> -->
+      <div class="list xiuxinglist">
+        <a href="#/tab/ri" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-ios-calendar-outline myicon"></i>
+          佛教日历
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+
+        <div class="item item-divider item-icon-right">
+          可排行统计
+        </div>
+        <a href="#/tab/muyu" class="item item-icon-left item-icon-right myitem">
+          <i class="icon iconfont icon-muyu  myicon"></i>
+          木鱼之声
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a href="#/tab/chanxiu" class="item item-icon-left item-icon-right myitem">
+          <i class="icon iconfont icon-dashi myicon"></i>
+          静心禅修
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a href="#/tab/paihang" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-ios-pulse myicon"></i>
+          修行排行
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <div class="item item-divider item-icon-right">
+        今日功课
+        <button class="icon button button-light button-small button-icon ion-ios-plus-empty myicon" ng-click="openModal()"><span style="font-size: 0.5em;">自定义</span></button>
+        </div>
+        <a href="#/tab/pralog" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-ios-pulse myicon"></i>
+          修行记录
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a  class="item item-icon-left item-icon-right myitem" ng-repeat="val in toplist" ng-click="myke({{val.id}})">
+          <i class="icon {{val.icon}} myicon"></i>
+          {{val.title}}
+<!--           <span class="spanname">{{val.name}}</span>
+          <span class="spannum">{{val.num}}{{val.danwei}}</span> -->
+          <button class="icon button button-light button-small button-icon ion-ios-plus-empty myicon" ></button>
+        </a>
+      </div>
+
+  </ion-content>
+
+</ion-view>

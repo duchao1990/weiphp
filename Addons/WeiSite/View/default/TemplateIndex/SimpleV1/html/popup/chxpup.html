@@ -1,0 +1,17 @@
+<div class="padding">
+        <ion-radio ng-repeat='item in timeList'         
+                  ng-value="item.value"
+                  ng-model="num"
+                  ng-change="numChange(item.value)">
+                 {{item.text}}
+        </ion-radio>
+        <div class="item item-divider item-icon-right" style="color: #330000;font-style: 0.8em;">
+          自由时间(分钟)
+        </div>
+          <ion-input class="item item-input">
+            <i class="icon iconfont icon-foshou"></i>
+            <input type="number" ng-model='num' ng-change="numChange(num)" placeholder="自由时间添加">
+          </ion-input>
+<!--           <button class="button btn button-block button-small button-balanced" ng-click="goPay('wx')">微信支付</button> -->
+  </div>
+</div>

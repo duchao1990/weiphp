@@ -1,0 +1,55 @@
+<!-- 导航条
+================================================== -->
+<ul id="dropdown1" class="dropdown-content">
+    <if condition="is_login()">
+        <li>
+            <a href="#">{:get_username()}</a>
+        </li>
+        <li class="divider"></li>
+        <li><a href="{:U('User/profile')}">修改密码</a></li>
+        <li><a href="{:U('User/logout')}">退出</a></li>
+
+</ul>
+<else/>
+
+<li>
+    <a href="{:U('User/login')}">登录</a>
+</li>
+<li>
+    <a href="{:U('User/register')}">注册</a>
+</li>
+</if>
+
+</ul>
+<nav class="navbar-fixed">
+    <div class="nav-wrapper">
+        <a  href="{:U('index/index')}" class="brand-logo"><img src="__IMG__/logo.png" alt="" style="width: 64%;margin-top: 10px;margin-left: 10px;"></a>
+        <ul class=" right hide-on-med-and-down">
+            <li>
+                <a href="{:U('Temple/index')}" target="_self">天下寺庙</a>
+            </li>
+            <li>
+                <a href="{:U('News/index')}" target="_self">寺院动态</a>
+            </li>
+            <li>
+                <a href="{:U('Ganwu/index')}" target="_self">大师感悟</a>
+            </li>
+            <li>
+                <a href="{:U('Yigong/index')}" target="_self">义工活动</a>
+            </li>
+            <li>
+                <a href="{:U('Gongde/index')}" target="_self">无量功德</a>
+            </li>
+            <li>
+                <a href="{:U('Book/index')}" target="_self">真藏经阁</a>
+            </li>
+            <li>
+                <a href="{:U('Foline/index')}" target="_self">大雄宝殿</a>
+            </li>
+            <li>
+                <a href="{:U('Qibao/index')}" target="_self">开光七宝</a>
+            </li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons iconfont icon-person"></i><i class="material-icons right"></i></a></li>
+        </ul>
+    </div>
+</nav>

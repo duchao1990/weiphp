@@ -1,0 +1,16 @@
+<ion-modal-view ng-controller="PramodalCtrl">
+  <ion-header-bar>
+  <button class="button button-light" ng-click="hideModal()">关闭</button>
+    <h1 class="title">自定义个人功课</h1>
+    <button class="button button-light" ng-click="setModal()">保存</button>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="padding" ng-repeat="tree in catetree" style='overflow: auto;'>
+      <div ng-if="tree.pid==='0'" class="item item-divider item-icon-right" style='overflow: auto;width: 100%;'>
+      {{tree.title}}
+      </div>
+      <ion-checkbox ng-repeat="cate in tree.child" class='floatcheck' ng-model="cate.selvalue">{{cate.title}}</ion-checkbox>
+      </div>
+  </ion-content>
+</ion-modal-view>

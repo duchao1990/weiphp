@@ -1,0 +1,21 @@
+<ion-view view-title="义工招募">
+  <ion-content class="has-header padding">
+    <form name="setWork" ng-controller="WorkersCtrl"  ng-submit="WorkForm()">
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-compose"></i>
+          <span class="input-label">个人信息</span>
+          <textarea placeholder="请输入您的个人信息资料" required  ng-model='setWork.desc' maxlength="150" rows="8"></textarea>
+        </label>
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+          <i class="icon ion-paperclip"></i>
+          <span class="input-label">联系方式</span>
+          <textarea placeholder="手机号/QQ号/微信号" required ng-model='setWork.title' maxlength="15"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="button icon-right ion-chevron-right button-energized button-block" ng-disabled="setWork.$invalid">发布</button>
+    </form>
+  </ion-content>
+</ion-view>

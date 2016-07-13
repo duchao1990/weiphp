@@ -1,0 +1,42 @@
+/* //页面居中 */
+.rotate{
+ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+-moz-transform: rotate(270deg);
+ -o-transform: rotate(270deg);
+-webkit-transform: rotate(270deg);
+transform: rotate(270deg);
+ }
+ 
+#xiang{ width: 25%;  position: absolute;left: -50%;z-index:-22; }
+#xiang1{ width: 25%;  position: absolute;left: -50%;margin-top: 8px;z-index:-22; }
+#xiang2{ width: 25%;  position: absolute;left: -50%;margin-top: -8px;z-index:-22; }
+.rotate .spinner{width:0;display:block;border-radius:3px;height:3px;
+  animation:bar 7s ease  infinite;
+  -webkit-animation:bar 7s ease  infinite; 
+  -webkit-animation-iteration-count:1;      /*动画播放次数，infinite为无限制*/
+  -webkit-animation-timing-function:linear;   /*速度曲线，有快有慢*/
+  -webkit-animation-delay:;        /*延迟动画开始*/
+  -webkit-animation-iteration-count:1;      /*动画播放次数，infinite为无限制*/
+  -webkit-animation-direction:normal;     /*是否需要反向播放*/
+  -webkit-animation-fill-mode:backwards;      /*动画播放完之后的状态，backwards回调到动画最开始画面，forwords 则相反*/
+  -webkit-animation-play-state:paused;     /*规定动画暂停还是运动*/
+  background:#AA7700; box-shadow:8px 0px 0px #ff0000; 
+  
+}
+@keyframes bar{
+  0%{
+    width:100%;
+  }
+  100%{
+    width:0%;
+  }
+  
+}
+@-webkit-keyframes bar{
+  0%{
+    width:100%;
+  }
+  100%{
+    width:0%;
+  }
+}

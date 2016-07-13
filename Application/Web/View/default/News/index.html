@@ -1,0 +1,21 @@
+<extend name="Base/webcom"/>
+<block name="body">
+    <div class="row">
+        <volist name='dataList' id='vo' >
+            <div class="col l3 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{$vo.cover}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{$vo.title|msubstr=0,15}</span>
+                        <p><a href="{:U('info',array('id'=>$vo['id']))}">查看详情</a></p>
+                    </div>
+                </div>
+            </div>
+        </volist>
+        <div class="col l6 m12 offset-l6">{$page}</div>
+    </div>
+
+
+</block>

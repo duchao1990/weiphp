@@ -1,0 +1,23 @@
+<ion-view view-title="物流信息" hide-nav-bar="true">
+        <ion-content class="padding modal-qiufo">
+          <ul class="timeline" ng-if="postLine">
+            <li ng-repeat="vo in postLine">
+              <div class="timeline-thumb bg-color-bluegray timeline-icon">
+                <i class="ion-android-car"></i>
+              </div>
+              <div class="timeline-item">
+                <h5>{{vo.AcceptTime}}</h5>
+                <p class="desc">{{vo.AcceptStation}}</p>
+<!--                 <div class="timeline-stats">
+                  <i class="ion-heart"></i> 2,450
+                  <span class="pos-absolute-right"><i class="ion-ios-clock"></i> 2 mins ago</span>
+                </div> -->
+              </div>
+            </li>
+          </ul>
+          <div class='empty-cart-div' ng-if='!postLine'>
+            <a class='empty-cart-header'>{{msg}}</a>
+            <p><i class='icon ion-bag empty-cart-icon'></i></p>
+          </div>
+        </ion-content>
+</ion-view>

@@ -1,0 +1,6 @@
+[ 2016-07-04T15:32:22+08:00 ] 127.0.0.1 /index.php?s=/Admin
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-07-04T15:33:06+08:00 ] 127.0.0.1 /index.php?s=/Admin
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+

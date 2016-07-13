@@ -1,0 +1,28 @@
+<ion-view view-title="功德中心"  hide-nav-bar="true">
+  <ion-content>
+
+      <div class="userdiv">
+              <!--<div class="userlogo" style="background-image: url('{{imgurl}}');" ng-click="goset()"></div>-->
+              <div class="userhave">{{have}}</div>
+              <div class="username">兑换比例: 1元=10功德</div>
+      </div>
+        <div class="item item-divider item-icon-right">
+          充功德值
+        </div>
+      <div class="list padding" style="margin-bottom:0px;">
+        <button  class="button button-positive button-outline button-block buybtn" ng-click="goPay(5)"> 5元</button>
+        <button  class="button button-positive button-outline button-block buybtn" ng-click="goPay(10)"> 10元</button>
+        <button  class="button button-positive button-outline button-block buybtn" ng-click="goPay(20)"> 20元</button>
+        <button  class="button button-positive button-outline button-block buybtn" ng-click="goPay(50)">50元</button>
+        <button  class="button button-positive button-outline button-block buybtn" ng-click="goPay(100)">100元</button>
+      </div>
+      <marquee class='marquee'  direction='up' behavior="scroll" contenteditable="true" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" scrollamount="1"  onmouseover="this.stop();" onmouseout="this.start();"> 
+          <a class="item item-avatar-left energized" ng-repeat="item in payList">
+            <img src="{{item.uinfo.headimgurl}}" style="top:0px;">
+            {{item.uinfo.nickname}} 贡献了 {{item.total_price}}元
+          </a>
+      </marquee>
+
+  </ion-content>
+
+</ion-view>

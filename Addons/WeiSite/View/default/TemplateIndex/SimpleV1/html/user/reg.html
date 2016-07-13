@@ -1,0 +1,51 @@
+<ion-view title="注册">
+    <ion-content class="has-header padding">
+        <form name="Reg" ng-controller="userCtrl" ng-submit="RegForm()">
+          <div id="mcbg" class="list list-inset card">
+            <label class="item item-input ">
+              <input type="text" placeholder="手机号">
+            </label>
+            <label class="item item-input">
+              <input type="password" placeholder="密码">
+            </label>
+            <!--<label class="item item-input login ">-->
+            <!--<button type='submit' class="button button-block button-small button-clear">登陆</button>-->
+            <!--</label>-->
+            <div class="item tabs tabs-secondary tabs-icon-left">
+              <button class="tab-item" href="#">
+                <i id='wclogin' class="positive button-icon iconfont icon-weixin"></i>
+
+              </button>
+              <button class="tab-item">
+                <i id="mlogin" class="balanced button-icon  ion-person-add"></i>
+                登陆
+              </button>
+            </div>
+          </div>
+
+            <div class="list content">
+                <label class="item item-input">
+                    <span class="labelspan"><b>手机号码</b></span>
+                    <input type="text" placeholder="请输入手机号" class="text-center" required ng-model='Reg.mobile' ng-pattern='/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/'>
+                </label>
+            </div>
+            <div class="list content">
+                <label class="item item-input">
+                    <span class="labelspan"><b>密码</b></span>
+                    <input type="password" placeholder="新密码" class="text-center" ng-minlength='6' ng-maxlength='12' required ng-model='Reg.pwd'>
+                </label>
+            </div>
+            <div class="list content">
+                <label class="item item-input">
+                    <span class="labelspan"><b>邮箱</b></span>
+                    <input type="email" placeholder="email" class="text-center"  required ng-model='Reg.email'>
+                </label>
+            </div>
+
+            <div class="padding">
+                <button type="submit" class="button button-block button-assertive" ng-disabled="Reg.$invalid"> 下一步</button>
+            </div>
+            <a href="#/login" class="button button-primary button-clear">去登陆?</a>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view view-title="登陆" hide-tabs="true" class="new-login">
+  <ion-content>
+    <div class="user-img">
+      <img src="Public/Home/App/image/m-user.png"/>
+    </div>
+    <div class="list list-inset no-back" style="margin-bottom: 0;">
+      <div id="mcbg" class="list">
+      <form name="Login" ng-controller="UserCtrl" ng-submit="LoginForm()">
+
+          <label class="item item-input">
+            <i class="icon ion-person placeholder-icon fff login-font"></i>
+            <input type="text" placeholder="请输入手机号" required ng-model='Login.mobile'  ng-pattern='/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/' class="fff">
+          </label>
+          <label class="item item-input">
+            <i class="icon ion-ios-locked placeholder-icon fff login-font"></i>
+            <input type="password" placeholder="请输入密码" required ng-minlength='6'  ng-model='Login.pwd' class="fff">
+          </label>
+          <button type="submit" class="button button-energized  submit sub-top fff" ng-disabled="Login.$invalid">登陆</button>
+
+      </form>
+        <!--ng-if="iswechat==='yes'"-->
+      <div style="margin:10px 0;">
+        <button type="button" class="button button-wx submit submit-dif fff" ng-click="Wxlogin()">微信登陆</button>
+        <a class="fl fff" href="#/tab/mobile/fot">忘记密码?</a>
+        <a class="fr fff" href="#/tab/mobile/reg">我要注册</a>
+      </div>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
+

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-01-21 18:32:49
+ * @version $Id$
+ */
+ body{background-color:#d7ccc8; }
+#index-banner{background-image: url('../img/b1.jpg');background-repeat:no-repeat ;background-position:center;  background-color:#d7ccc8;}
+.slider .slides li{background-repeat:no-repeat ;/* background-size:100%;*/ background-position:center;}
+.promo .licon{ display:inline-block; height:184px; width:175px; margin-left:10px; /*-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out; */background-size:160px; background:url(http://www.zhongfox.com/Uploads/Editor/Picture/2015-12-23/567a6b4d00c5b.png) no-repeat;}
+/*.promo .licon:hover{transform:rotate(360deg);
+-ms-transform:rotate(360deg); 
+-moz-transform:rotate(360deg); 
+-webkit-transform:rotate(360deg);
+-o-transform:rotate(360deg);}*/
+.promo .i01{background-position: 0 -184px;}
+.promo .i02{background-position:-207px -184px;}
+.promo .i03{background-position:-414px -184px;}
+.promo .i04{background-position:-621px -184px;}
+.promo .i01:hover{background-position:0 0;}
+.promo .i02:hover{background-position:-207px 0;}
+.promo  .i03:hover{background-position:-414px 0;}
+.promo .i04:hover{background-position:-621px 0;}
+.slider .indicators{z-index: 2;bottom: 50px;}
+.slider{border-radius: 10px;border: none;}
+.slider .slides{border-radius: 10px;}
+.slider .slides li{border-radius: 10px;}
+.slider .slides li img{border-radius: 10px;}
+.slides h3{color: #330000;}
+.slides h5{color: #330000;}
+.brand-logo{background-image: url('../img/logo.png');background-repeat:no-repeat;background-size:100%; }
+.footer-copyright .container .grey-text.text-lighten-4 {color: #ccc;font-size: 0.8em;}
+.accent{background-color: #ffc107;}
+/*微信提示*/
+.Wx{position: fixed;width: 100%;height: 100%;background:rgba(0,0,0,0.5);top: 0;left: 0;z-index: 1000;display: none;}
+.Wx>img{width: 100%;position: absolute;top: 0;left: 0;z-index: 1001;}

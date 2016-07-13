@@ -1,0 +1,34 @@
+<extend name="Base/webcom"/>
+<block name="body">
+    <nav>
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="row">
+        <volist name='dataList' id='vo'>
+            <div class="col l3 m4">
+                <div class="card ">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{$vo.cover}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{$vo.title|msubstr=0,12}<i class="material-icons right">more_vert</i></span>
+                        <p><a href="{:U('Syuan/index',array('id'=>$vo['id']))}">查看寺庙</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{$vo.title}<i class="material-icons right">close</i></span>
+                        <p>{$vo.info}</p>
+                    </div>
+                </div>
+            </div>
+        </volist>
+        <div class="col l6 m12 offset-l6">{$page}</div>
+    </div>
+</block>

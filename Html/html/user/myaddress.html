@@ -1,0 +1,20 @@
+<ion-view view-title="地址管理" hide-nav-bar="true">
+  <ion-content>
+  
+    <div class="content ionic-pseudo my-m-bottom">
+      <div ng-class-odd="'list color-true'" ng-class-even="'list'" ng-repeat="item in items">
+       <!--  <button  class="button button-light button-icon ion-checkmark-circled fl" id="{{item.id}}" ng-click="choice({{item.id}})" style="margin-right: 20px;line-height: 20px;"></button> -->
+       <!-- <div style="display: {{mr}};">当前默认地址:</div> -->
+       <span class="button button-small button-energized color-hy" style="margin-left: 70%;" ng-click="setmoren({{item.id}})">设为默认地址</span>
+        <div class="my-padding" style="margin-left: 5%;">
+          <span>姓名:{{item.truename}}</span><br/>
+          <span>联系电话:{{item.mobile}}</span><br/>
+          <span>邮寄城市:{{item.city}}</span><br/>
+          <span>详细地址:{{item.address}}</span>
+          <button  class="button button-light button-icon ion-android-delete fr" ng-click="del({{item.id}})" style="margin-right: 20px;line-height: 20px;"><span style="font-size: 0.82em;">删除</span></button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <a class="bar-footer bar write wall-radius" href="#/tab/addaddress"><i class="icon ion-compose fff position-edit"><span class="font">添加</span></i></a>
+</ion-view>

@@ -1,0 +1,13 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-energized">
+    <h1 class="title">总:{{xiucount}}分钟</h1>
+    <button class="button button-clear button-primary" ng-click="modal.hide()">取消</button>
+  </ion-header-bar>
+  <ion-content class="padding">
+  <div class="card item-text-wrap" ng-repeat="vo in xiulist">
+    <div class="item">
+        <h2 class="title"> {{vo.addtime*1000|date:"yyyy/MM/dd"}} <span>修行了: {{vo.baoxiu}}分钟</span></h2> 
+    </div>
+  </div>
+  </ion-content>
+</ion-modal-view>

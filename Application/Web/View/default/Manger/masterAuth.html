@@ -1,0 +1,136 @@
+<extend name="Base/boot"/>
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>个人资格认证</h2>
+            <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+        </div>
+    </header>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <form enctype="multipart/form-data" id="masterAuth" method='post' action="{:U('')}">
+                <div class="form-group">
+                    <label>寺院住持戒谍证</label>
+                    <input id="templeCard" name="templeCard[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>戒谍证图片ID</label>
+                    <input id="templeCardImgID" name="templeCard" type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label>寺院住持戒谍证编号</label>
+                    <input id="templeId" name="templeNum" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>寺院住持身份证</label>
+                    <input id="idImg" name="idImg[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>身份证图片ID</label>
+                    <input id="idCardImgID" name="idCard" type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label>个人身份证号码</label>
+                    <input id="idCard" name="idNum" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-info">提交</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#templeCard').fileinput({
+            language: 'zh',
+            uploadUrl: "{:U('File/uploadPicture')}",
+            allowedFileExtensions : ['jpg', 'png']
+        }).on("filebatchselected", function(event, files) {
+            $(this).fileinput("upload");
+        }).on("fileuploaded", function(event, data) {
+            if(data.response)
+            {
+                $('#templeCardImgID').val(data.response);
+            }
+        });
+        $('#idImg').fileinput({
+            language: 'zh',
+            uploadUrl: "{:U('File/uploadPicture')}",
+            allowedFileExtensions : ['jpg', 'png']
+        }).on("filebatchselected", function(event, files) {
+            $(this).fileinput("upload");
+        }).on("fileuploaded", function(event, data) {
+            if(data.response)
+            {
+                $('#idCardImgID').val(data.response);
+            }
+        });
+        $(document).ready(function() {
+            $('#masterAuth').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    templeNum: {
+                        validators: {
+                            notEmpty: {
+                                message: '戒牒证必须上传! '
+                            }
+                        }
+                    },
+                    templeCard: {
+                        validators: {
+                            notEmpty: {
+                                message: '戒牒证编号不能为空! '
+                            }
+                        }
+                    },
+                    idCard: {
+                        validators: {
+                            notEmpty: {
+                                message: '身份证图片必须上传! '
+                            }
+                        }
+                    },
+                    idNum: {
+                        validators: {
+                            notEmpty: {
+                                message: '身份号码不能为空! '
+                            },
+                            regexp: {
+                                regexp: /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/,
+                                message: '请输入正确的二代身份号码! '
+                            }
+                        }
+                    }
+                }
+            })
+                    .on('success.form.bv', function(e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function(data) {
+                            // var url=""+data.url +"";
+
+                            UpToaster(data);
+                            //toastr.success("祝贺你成功了");
+                            //UpdateAlert(data.info,data.status,url);
+                        }, 'json');
+                    });
+        });
+    </script>
+</block>

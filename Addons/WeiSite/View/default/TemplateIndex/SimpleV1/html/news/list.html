@@ -1,0 +1,23 @@
+<ion-view view-title="{{ntitle}}">
+  <ion-content >
+    <ion-refresher pulling-text="新闻,刷新页面..." on-refresh="doRefresh()"> </ion-refresher>
+    <ion-list>
+      <div ng-repeat="info in newslist">
+        <div ng-if="info.cover!='0'" class="item item-thumbnail-left item-complex">
+          <a class="item-content item-text-wrap" href="#/tab/newsInfo/{{info.id}}">
+            <img src="{{info.coverpath}}" style="width: 80px; height: 80px;">
+            <h2 calss='title'>{{info.title |limitTo:15}}</h2>
+            <p class="desc">{{info.description|limitTo:49}}...</p>
+          </a>
+        </div>
+        <div ng-if="info.cover=='0'" class="item-text-wrap">
+          <a class="item" href="#/tab/newsInfo/{{info.id}}">
+            <h2 calss='title'>{{info.title|limitTo:18}}</h2>
+            <p class="desc">{{info.description|limitTo:49}}...</p>
+          </a>
+        </div>
+      </div>
+    </ion-list>
+    <ion-infinite-scroll ng-if="more"  on-infinite="loadMore()"  distance="1%"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

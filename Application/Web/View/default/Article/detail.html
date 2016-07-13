@@ -1,0 +1,29 @@
+<extend name="Base/common"/>
+
+<block name="header">
+        <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+          <h4 class="header center-on-small-only">{$info.title}</h4>
+          <div class='row center'>
+            <h5 class ="header col s12 light center">{$info.uid|get_username}发表于 {$info.create_time|date='Y-m-d H:i',###}</h5>
+          </div>
+          <div class="row center">
+			<article:prev name="prev" info="info">
+                <a href="{:U('?id='.$prev['id'])}">上一篇</a>
+            </article:prev>
+            <article:next name="next" info="info">
+                <a href="{:U('?id='.$next['id'])}">下一篇</a>
+            </article:next>
+        </div>
+      </div>
+      </div>
+</block>
+<block name="body">
+    <div class="col s8 offset-s2">
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">{$info.content}</section>
+        <hr/>
+        {:hook('documentDetailAfter',$info)}
+    </div>
+</block>

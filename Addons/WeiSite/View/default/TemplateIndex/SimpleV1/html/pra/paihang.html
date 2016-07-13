@@ -1,0 +1,107 @@
+<ion-view view-title="修行统计" hide-tabs="true">
+  <ion-content class='hanglog'>
+    <tab-slide-box tab="0">
+      <div class="tsb-icons">
+        <div class="tsb-ic-wrp">
+          <ion-scroll direction="x" class="tsb-hscroll">
+          <a  href="javascript:;">禅修记录</a>
+          <a  href="javascript:;">禅修排行</a>
+            <a  href="javascript:;">念佛记录</a>
+            <a  href="javascript:;">念佛排行</a>
+          </ion-scroll>
+        </div>
+      </div>
+      <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+        <ion-slide>
+           <ion-nav-view name="tab-something-list">
+            <ion-view view-title="something-list">
+              <ion-content  ng-controller="CxLogCtrl">
+                <div class="item item-divider item-icon-right">
+                      总:{{xiucount}}分钟
+                </div>
+
+                    <ion-list>
+                      <div class="card item-text-wrap" ng-repeat="vo in xiulist">
+                        <div class="item">
+                            <h2 class="title"> {{vo.addtime*1000|date:"yyyy/MM/dd"}} <span>修行了: {{vo.baoxiu}}分钟</span></h2> 
+                        </div>
+                      </div>
+                      </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view name="tab-something-list">
+            <ion-view view-title="something-list">
+              <ion-content  ng-controller="CxphCtrl">
+                <ion-list>
+                  <div class="item item-divider">
+                    <div class="dangqian">  <i class="icon ion-android-person "></i><span class="yonghuming02">您当前排名：</span><span class="shuzi">{{cxmc}}</span>名</div>
+                    <div class="fenxiang">    <button class="button button-clear button-small">  <i class="icon ion-android-share-alt "></i>&nbsp功德回向</button></div>
+                  </div>
+                  <div class="row pairow">
+                    <div class="col col-center col-20"><span class="biaoti">排&nbsp 名</span ></div>
+                    <div class="col col-center col-60"><span class="biaoti">用&nbsp 户</span> </div>
+                    <div class="col col-center col-20"><span class="biaoti">禅&nbsp 修(今日)</span ></div>
+                  </div>
+
+                  <div class="row pairow" ng-repeat="val in cxlist">
+                    <div class="col col-center col-20"> <span class="mingci">{{val.mc}}</span> </div>
+                    <div class="col col-center col-60">  <div class="touxiang"> <img src="{{val.userimg}}"><br/><span>{{val.username}}</span></div></div>
+                    <div class="col col-center col-20 mingci">{{val.baoxiu}}</div>
+                  </div>
+                </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view name="tab-something-list">
+            <ion-view view-title="something-list">
+              <ion-content  ng-controller="NfLogCtrl">
+                <div class="item item-divider item-icon-right">
+                      总:{{nfcount}}次
+                </div>
+                    <ion-list>
+                      <div class="card item-text-wrap" ng-repeat="vo in nflist">
+                        <div class="item">
+                            <h2 class="title"> {{vo.addtime*1000|date:"yyyy/MM/dd"}} <span class="bspan">念了: <span class='band'>{{vo.fohao}}</span> 次</span></h2> 
+                        </div>
+                      </div>
+                      </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view>
+            <ion-view>
+               <ion-content  ng-controller="NfphCtrl">
+                <ion-list>
+                  <div class="item item-divider">
+                    <div class="dangqian">  <i class="icon ion-android-person "></i><span class="yonghuming02">您当前排名：</span><span class="shuzi">{{fohaomc}}</span>名</div>
+                    <div class="fenxiang">    <button class="button button-clear button-small">  <i class="icon ion-android-share-alt "></i>&nbsp功德回向</button></div>
+                  </div>
+                  <div class="row pairow">
+                    <div class="col col-center col-20"><span class="biaoti">排&nbsp 名</span ></div>
+                    <div class="col col-center col-60"><span class="biaoti">用&nbsp 户</span> </div>
+                    <div class="col col-center col-20"><span class="biaoti">佛&nbsp 号(今日)</span ></div>
+                  </div>
+
+                  <div class="row pairow" ng-repeat="val in fohaolist">
+                    <div class="col col-center col-20"> <span class="mingci">{{val.mc}}</span> </div>
+                    <div class="col col-center col-60">  <div class="touxiang"> <img src="{{val.userimg}}"><br/><span>{{val.username}}</span></div></div>
+                    <div class="col col-center col-20 mingci">{{val.fohao}}</div>
+                  </div>
+                </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+      </ion-slide-box>
+    </tab-slide-box>
+
+  </ion-content>
+</ion-view>
+

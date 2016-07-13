@@ -1,0 +1,177 @@
+<include file="Public/mobile_head"/>	
+<link href="{:CUSTOM_TEMPLATE_PATH}Index/ColorV2/index.css?v={:SITE_VERSION}1" rel="stylesheet" type="text/css">
+<!--<style>
+body{
+	background:#eee url({$config.background}) no-repeat; background-size:100% 100%
+}
+</style>-->
+<body>
+<ion-view view-title="佛文" hide-tabs="false" hide-nav-bar="true">
+  <ion-content>
+    <tab-slide-box tab="0">
+      <div class="tsb-icons">
+        <div class="tsb-ic-wrp">
+          <ion-scroll direction="x" class="tsb-hscroll">
+          <a  href="javascript:;">分类</a>
+          <a  href="javascript:;">新闻</a>
+          <a  href="javascript:;">知识</a>
+          <a  href="javascript:;">佛珠</a>
+          </ion-scroll>
+        </div>
+      </div>
+      <div class="shadow"></div>
+      <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+        <ion-slide>
+<!-- <div class="container"> -->
+   <!--  <if condition="!empty($slideshow)">
+    <section class="banner" id="banner">
+    	<ul>
+        <volist name="slideshow" id="vo">
+        	<li>
+            	<a href="{$vo.url}" title="{$vo.title}"><img src="{$vo.img}"/></a>
+            	<span class="title">{$vo.title}</span>
+            </li>
+         </volist>
+        </ul>
+        <span class="identify">
+            <span class="pointer">
+            <volist name="slideshow" id="vo">
+                <em></em>
+             </volist> 
+             </span>       
+        </span>
+    </section>
+    </if>
+      <div class="mainbg" style="background:#7ABDE9;">
+    <volist name="config.background_arr" id="so">
+        <input type='hidden' id='bg_{$key}' value="{$so|get_cover_url}">
+    </volist>
+</div>
+    <if condition="!empty($category)">
+    <section>
+    	<div class="icon_lists">
+            <volist name="category" id="vo">
+                <a class="item" href="{$vo.url}">
+                    <span class="icon random_color">
+                    	<img src="{$vo.icon}"/><br/>
+                        {$vo.title|msubstr=0,5}
+                        </span>
+                </a>
+            </volist>
+        </div>
+    </section>
+    </if> -->
+    <ion-nav-view>
+       <ion-view>
+         <ion-content>
+   
+    <div class="list list-inset">
+     <div class="row">
+              <div class="col col-66">
+                <a class="col col-100 color-one base-height line-h col-btn" href="#/tab/booklist/">
+                  <span class="m-middle">寺院新闻</span>
+                  <i class="icon iconfont icon-font1 icon-fo"></i>
+                </a>
+                <a href="#/tab/newslist/61" class="col col-49 color-thr base-height center fl">
+                  <i class="iconfont icon-font2 center span-b icon-aixinjuanzeng"></i>
+                  <span class="fff">义工招募</span>
+                </a>
+                <a href="#/tab/booklist/1" class="col col-49 color-four base-height center fr">
+                  <i class="iconfont icon-font center span-b icon-foshu"></i>
+                  <span class="fff">捐赠</span>
+                </a>
+              </div>
+              <div class="col col-31 col-ml">
+                <a class="col col-100 color-two base-height center no-right col-btn" href="#/tab/newslist/">
+                  <i class="iconfont icon-font center span-b icon-muyu2"></i>
+                  <span class="fff">寺院大师</span>
+                </a>
+                <a href="#/tab/chatlist/" class="col col-100 color-five base-height center">
+                  <i class="iconfont icon-font center span-b icon-necklace1156232easyiconnet"></i>
+                  <span class="fff">活动</span>
+                </a>
+              </div>
+    </div>
+      <!-- 寺院介绍 -->
+    <div class="h3-title">
+      <i class="iconfont center icon-zszhishi title-pr"></i>寺院介绍
+    </div>
+    <div class="card item-text-wrap">
+      <div class="item item-complex">
+        <div class="item-content">
+        <a href="{:U('new/detail?id='.$siyuan['id'])}">
+          <img src="{$siyuan.cover|get_cover_url}">
+        </a>  
+          <span>{$siyuan.intro}</span>
+          
+        </div>
+      </div>
+    </div> 
+    <!-- 寺院大师 -->
+    <div class="h3-title title-top">
+      <i class="iconfont center icon-xinwen1 title-pr"></i>寺院大师
+    </div>
+    <div class="list" style="overflow: auto;">
+      <ul>
+        <volist name="dashi" id="vv">
+           <li class="mycard fl">
+            <a class="carda" href="{:U('new/detail?id='.$vv['id'])}">
+                <img src="{$vv.cover|get_cover_url=450,450}"/><br/>
+                <h5 style="text-align: center;">{$vv.title|msubstr=0,5}</h5>    
+            </a>
+           </li>
+        </volist>
+      </ul>
+    </div>
+    <div class="base-mb"></div>
+    </div>
+          </ion-content>
+        </ion-view>
+     </ion-nav-view>
+    </ion-slide>
+<!-- </div> -->
+     </ion-slide-box>
+    </tab-slide-box>
+  </ion-content>
+</ion-view>
+
+<!-- 底部导航 -->
+{$footer_html}
+<!-- 统计代码 -->
+<notempty name="config.code">
+<p class="hide bdtongji">
+{$config.code}
+</p>
+<else />
+<p class="hide bdtongji">
+{$tongji_code}
+</p>
+</notempty>
+</body>
+<script type="text/javascript">
+$(function(){
+	$.WeiPHP.initBanner('#banner',true,5000);
+	$.WeiPHP.setRandomColor('.random_color');
+	var h=$(window).height();
+	$('#weisite').css('min-height',h);
+})
+
+</script>
+<script type="text/javascript">
+$(function(){
+	var count = $('.mainbg input').length;
+	var i=0;
+	 var imgurl='';
+	 setInterval(function(){
+		imgurl=$('#bg_'+i).val();
+// 		 $('.mainbg img').attr('src', imgurl).fadeTo('3000',1);
+		$('#weisite').css('background-image',"url("+imgurl+")");
+		 i++;
+		 if(i==count){
+			 i=0;
+		 }
+	 },3500);
+});
+
+</script>
+</html>

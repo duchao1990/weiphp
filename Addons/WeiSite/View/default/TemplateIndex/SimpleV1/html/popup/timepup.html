@@ -1,0 +1,16 @@
+<div class="padding">
+  <div class="list">
+    <div class="item item-input item-select">
+      <div class="input-label">
+        {{pname.title}}
+      </div>
+      <select  ng-model="data.parSelect" >
+        <option ng-repeat="vo in tlist" value="{{vo.id}}">{{vo.title}}</option>
+      </select>
+
+    </div>
+    <ion-input class="item item-input">
+      <input type="number" ng-model="data.num"><span class="popup-span">{{pname.danwei}}</span>
+    </ion-input>
+  </div>
+</div>

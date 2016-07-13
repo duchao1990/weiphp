@@ -1,0 +1,110 @@
+<ion-view view-title="修行统计" hide-tabs="true">
+  <ion-content class='log'>
+    <tab-slide-box tab="0">
+      <div class="tsb-icons">
+        <div class="tsb-ic-wrp">
+          <ion-scroll direction="x" class="tsb-hscroll">
+          <a  href="javascript:;">日修</a>
+          <a  href="javascript:;">月修</a>
+<!--             <a  href="javascript:;">佛号</a>
+            <a  href="javascript:;">禅修</a> -->
+          </ion-scroll>
+        </div>
+      </div>
+      <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+        <ion-slide>
+           <ion-nav-view name="tab-something-list">
+            <ion-view view-title="something-list">
+              <ion-content  ng-controller="PralogCtrl">
+                    <ion-list>
+                        <div href="#" class="item item-icon-left" ng-repeat="val in daylist">
+                            <i class="icon {{val.icon}} myicon"></i>
+                            <h3 class="logh3">{{val.title}}</h3>
+                            <span class="badge badge-energized">{{val.num|number:0}}{{val.danwei}}</span>
+                            <div class='child'>
+                              <div class=" item item-icon-left" ng-repeat="v in val.child">
+                                  <h4 class="logh4">{{v.title}}</h4>
+                                  <span class="badge badge-energized">{{v.num|number:0}}</span>
+                              </div>
+                            </div>
+                        </div>
+                      </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view name="tab-something-list">
+            <ion-view view-title="something-list">
+              <ion-content  ng-controller="MonthlogCtrl">
+                  <ion-scroll>
+                      <canvas   class="chart chart-line" chart-data="data"
+                          chart-labels="labels" chart-legend="true" chart-series="series" >
+                        </canvas>
+                  </ion-scroll>
+                    <h3 class="logh3" ng-if="msg">{{msg}}</h3>
+                    <div class="typebtn">
+                          <div class="button-bar">
+                              <a class="button button-small" ng-repeat="val in toplist" ng-click="changechart({{val.id}})">{{val.title}}</a>
+                          </div>
+                    </div>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+ <!--        <ion-slide>
+          <ion-nav-view name="tab-something-list">
+            <ion-view view-title="something-list">
+              <ion-content  ng-controller="PaihangdCtrl">
+
+                  <div class="item item-divider">
+                    <div class="dangqian">  <i class="icon ion-android-person "></i><span class="yonghuming02">您当前排名：</span><span class="shuzi">{{mymc}}</span>名</div>
+                    <div class="fenxiang">    <button class="button button-clear button-small">  <i class="icon ion-android-share-alt "></i>&nbsp功德回向</button></div>
+                  </div>
+                  <div class="row pairow">
+                    <div class="col col-center col-20"><span class="biaoti">排&nbsp 名</span ></div>
+                    <div class="col col-center col-60"><span class="biaoti">用&nbsp 户</span> </div>
+                    <div class="col col-center col-20"><span class="biaoti">佛&nbsp 号(今日)</span ></div>
+                  </div>
+
+                  <div class="row pairow" ng-repeat="val in pailist">
+                    <div class="col col-center col-20"> <span class="mingci">{{val.mc}}</span> </div>
+                    <div class="col col-center col-60">  <div class="touxiang"> <img src="{{val.userimg}}"><br/><span>{{val.username}}</span></div></div>
+                    <div class="col col-center col-20 mingci">{{val.fohao}}</div>
+                  </div>
+                </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+        <ion-slide>
+          <ion-nav-view>
+            <ion-view>
+              <ion-content  ng-controller="PaihangmCtrl" class='paihangview'>
+                <ion-list>
+                  <div class="item item-divider">
+                    <div class="dangqian">  <i class="icon ion-android-person "></i>&nbsp&nbsp<span class="yonghuming02">您当前排名：</span><span class="shuzi">{{mymc}}</span>名</div>
+                    <div class="fenxiang">    <button class="button button-clear button-small">  <i class="icon ion-android-share-alt "></i>&nbsp功德回向</button></div>
+                  </div>
+                  <div class="row pairow">
+                    <div class="col col-center col-20"><span class="biaoti">排&nbsp 名</span ></div>
+                    <div class="col col-center col-40"><span class="biaoti">用&nbsp 户</span> </div>
+                    <div class="col col-center col-20"><span class="biaoti">平&nbsp 均</span> </div>
+                    <div class="col col-center col-20"><span class="biaoti">佛 号(总数)</span ></div>
+                  </div>
+                  <div class="row pairow" ng-repeat="val in pailist">
+                    <div class="col col-center col-20"> <span class="mingci">{{val.mc}}</span> </div>
+                    <div class="col col-center col-40">  <div class="touxiang"> <img src="{{val.userimg}}"><br/><span>{{val.username}}</span></div></div>
+                    <div class="col col-center col-20 mingci">{{val.fohao}}</div>
+                    <div class="col col-center col-20 mingci">{{val.sum}}</div>
+                  </div>
+                </ion-list>
+              </ion-content>
+            </ion-view>
+          </ion-nav-view>
+        </ion-slide>
+      </ion-slide-box> -->
+    </tab-slide-box>
+
+  </ion-content>
+</ion-view>

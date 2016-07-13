@@ -1,0 +1,21 @@
+<ion-modal-view ng-controller="PaymodalCtrl">
+  <ion-header-bar>
+  <button class="button button-light" ng-click="hideModal()">关闭</button>
+    <h1 class="title">功德无量</h1>
+    <button class="button button-light" ng-click="setModal()">保存</button>
+  </ion-header-bar>
+  <ion-content>
+  <div class="padding">
+          功德无量
+        <div class="list">
+          <ion-input class="item item-input">
+            <i class="icon iconfont icon-foshou placeholder-icon"></i>
+            <input type="number" ng-model='data.paynum' value="1" >
+          </ion-input>
+          <ion-radio ng-model="data.choice" ng-value="alipay">支付宝随喜</ion-radio>
+          <ion-radio ng-model="data.choice" ng-value="wx">微信随喜</ion-radio>
+        </div>
+
+    </div>
+  </ion-content>
+</ion-modal-view>

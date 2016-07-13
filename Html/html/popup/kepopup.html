@@ -1,0 +1,18 @@
+<div>
+    <div class="bodytop">今日修行登记<br>请先选择登记内容类型</div>
+  <div class="list">
+    <div class="item item-input item-select">
+      <div class="input-label">
+        {{pname.title}}:
+      </div>
+
+      <select  ng-model="data.parSelect" >
+         <option  ng-repeat="vo in tlist" ng-model="vo.selected" value="{{vo.id}}">{{vo.title}}</option> 
+      </select>
+
+    </div>
+    <ion-input class="item item-input">
+      <input type="number" ng-model="data.num"><span class="popup-span">{{pname.danwei}}</span>
+    </ion-input>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<!-- 导航条
+================================================== -->
+<ul id="dropdown1" class="dropdown-content">
+      <if condition="is_login()">
+            <li>
+            <a href="#">{:get_username()}</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="{:U('User/profile')}">修改密码</a></li>
+            <li><a href="{:U('User/logout')}">退出</a></li>
+
+        </ul>
+    <else/>
+       
+            <li>
+                <a href="{:U('User/login')}">登录</a>
+            </li>
+            <li>
+                <a href="{:U('User/register')}">注册</a>
+            </li>
+    </if>
+
+</ul>
+  <nav class="navbar-fixed">
+    <div class="nav-wrapper">
+      <a  href="{:U('index/index')}" class="brand-logo"><img src="__IMG__/logo.png" alt="" style="width: 64%;margin-top: 10px;margin-left: 10px;"></a>
+        <ul class="right hide-on-med-and-down">
+            <think:nav name="nav">
+                <eq name="nav.pid" value="0">
+                <li>
+                    <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                </li>
+                </eq>
+            </think:nav>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons iconfont icon-person"></i><i class="material-icons right"></i></a></li>
+        </ul>
+    </div>
+  </nav>
+

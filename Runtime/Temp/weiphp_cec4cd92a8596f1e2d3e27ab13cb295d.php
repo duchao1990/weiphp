@@ -1,0 +1,3 @@
+<?php
+//000000000000a:20:{s:2:"id";s:3:"154";s:3:"uid";s:1:"1";s:11:"public_name";s:6:"订单";s:9:"public_id";s:8:"65654554";s:6:"wechat";s:4:"5656";s:13:"interface_url";N;s:12:"headface_url";N;s:4:"area";N;s:12:"addon_config";s:51:"{"WeiSite":{"show_background":"1","background":""}}";s:12:"addon_status";N;s:5:"token";s:8:"65654554";s:6:"is_use";s:1:"0";s:4:"type";s:1:"3";s:5:"appid";s:4:"dddd";s:6:"secret";s:6:"565656";s:8:"group_id";s:1:"0";s:14:"encodingaeskey";s:8:"56656565";s:8:"tips_url";N;s:6:"domain";N;s:7:"is_bind";s:1:"0";}
+?>

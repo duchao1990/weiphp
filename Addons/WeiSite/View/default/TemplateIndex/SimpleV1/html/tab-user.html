@@ -1,0 +1,43 @@
+<ion-view view-title="个人中心" hide-tabs="false" hide-nav-bar="true">
+  <ion-content>
+
+      <div ng-if="isLogin" class="userdiv">
+              <!--<div class="userlogo" style="background-image: url('{{imgurl}}');" ng-click="goset()"></div>-->
+              <div class="userlogo" ng-click="goset()"><img src="{{imgurl}}"/></div>
+              <div class="username">{{nickname}}</div>
+      </div>
+      <div ng-if="!isLogin" class="nouser">
+            <center><button class="button button-energized  mybtn" ng-click="goLogin()">点击登陆</button></center>
+      </div>
+      <div class="list">
+        <a href="#/tab/integral" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-card myicon"></i>
+          积分中心
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+
+        <a href="#/tab/myuan" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-ios-heart-outline myicon"></i>
+          我的愿望
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+
+        <a href="#/tab/workers" class="item item-icon-left  item-icon-right myitem">
+          <i class="icon ion-ios-list-outline myicon"></i>
+          义工助手
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a href="#/tab/advice" class="item item-icon-left item-icon-right myitem" >
+          <i class="icon ion-ios-compose-outline myicon"></i>
+          意见反馈
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a ng-if="isLogin" class="item item-icon-left myitem" ng-click="LoginOut()">
+        <i class="icon ion-ios-paperplane-outline myicon"></i>
+          退出登录
+        </a>
+      </div>
+
+  </ion-content>
+
+</ion-view>
