@@ -18,15 +18,6 @@ class IndexController extends Controller {
 
 	//系统首页
     public function index(){
-
-//        $category = D('Category')->getTree();
-//        $lists    = D('Document')->lists(null);
-//
-//        $this->assign('category',$category);//栏目
-//        $this->assign('lists',$lists);//列表
-//        $this->assign('page',D('Document')->page);//分页
-
-                 
         $this->display();
     }
     //寺院管理
@@ -61,7 +52,7 @@ class IndexController extends Controller {
                     $res=$templeModel->where($map)->save(array('masterid'=>$masterid));
                     if ($res){
 
-                        $this->success('登记成功,请上传认证资料',U('auth'));
+                        $this->success('登记成功,请上传认证资料',U('Enter/verify'));
                     }else{
                         $this->error('寺院更新失败,请联系客服');
                     }

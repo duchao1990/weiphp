@@ -19,6 +19,6 @@ class EnterController extends HomeController
         $this->assign('temple', $temple);
         $this->display();
     }
-    
+
 
 }

@@ -3,7 +3,15 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="727136b6-4a41-432d-8464-5ad2fa1b2930" name="os" url="http://www.tiantianfo.com">
-        <fileTransfer host="123.56.154.101" port="22" rootFolder="/var/www/templeos/" accessType="SFTP" password="dffddfc5dfd9dfc2dfc3dfcedfc3dfd3dfc3dfeadf9bdfdbdfcbdfd0" username="root">
+        <fileTransfer host="123.56.154.101" port="22" rootFolder="/var/www/templeos/" accessType="SFTP" password="dfe6dfdfdfc5dfd3dfcbdfc4dfcddfeadfdddfd9dfd2" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2072703e-4493-485b-ac3b-0b9bd8e3ff4c" name="templeos" url="http://123.56.154.101">
+        <fileTransfer host="123.56.154.101" port="22" rootFolder="/var/www/templeos/" accessType="SFTP" password="dfe6dfdfdfc5dfd3dfcbdfc4dfcddfeadfdddfd9dfd2" username="root">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

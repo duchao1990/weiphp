@@ -1,0 +1,154 @@
+<extend name="Base/boot" />
+<block name="header">
+    <header class="jumbotron subhead" id="overview">
+        <div class="container">
+            <h2>新闻发布</h2>
+            <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+        </div>
+    </header>
+</block>
+
+<block name="body">
+    <section>
+        <div class="col-lg-12 col-md-12">
+            <form id="login-form" class="login-form" action="{:U('')}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>封面图片</label>
+                    <input id="templeCard" name="newsImg[]" type="file">
+                </div>
+                <div class="form-group">
+                    <label>封面图片</label>
+                    <input id="templeCardImgID" name="newsCover" class="form-control" type="text" readonly>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputTitle">标题</label>
+                    <input type="text" id="inputTitle" class="form-control" placeholder="标题"  value="" name="title">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputKeyword">关键字</label>
+                    <input type="text" id="inputKeyword" class="form-control" placeholder="关键字" name="keyword">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputDesc">简介</label>
+                    <textarea id="inputDesc" rows="5" class="form-control"  name="intro"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputDesc">简介</label>
+                    <textarea id="inputContent" rows="5" class="form-control summernote"  name="content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" id="captchaOperation"></label>
+                    <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label"></label>
+                    <button class="btn btn-block btn-primary" type="submit">登陆</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript">
+            $('.summernote').summernote({
+                height: 200,
+                tabsize: 2,
+                lang: 'zh-CN'
+            });
+
+        $('#templeCard').fileinput({
+            language: 'zh',
+            uploadUrl: "{:U('File/uploadPicture')}",
+            allowedFileExtensions : ['jpg', 'png']
+        }).on("filebatchselected", function(event, files) {
+            $(this).fileinput("upload");
+        }).on("fileuploaded", function(event, data) {
+            if(data.response)
+            {
+                $('#templeCardImgID').val(data.response);
+            }
+        });
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        };
+        $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
+
+        $(document).ready(function() {
+            $('#login-form').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    newsCover: {
+                        validators: {
+                            notEmpty: {
+                                message: '请上传封面! '
+                            }
+                        }
+                    },
+
+                    title: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入标题! '
+                            }
+                        }
+                    },
+                    keyword: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入关键字! '
+                            }
+                        }
+                    },
+                    intro: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入简介! '
+                            }
+                        }
+                    },
+                    content: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入内容! '
+                            }
+                        }
+                    },
+                    captcha: {
+                        validators: {
+                            callback: {
+                                message: '答案错误',
+                                callback: function(value, validator) {
+                                    var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                    return value == sum;
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+                    .on('success.form.bv', function(e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function(data) {
+                            // var url=""+data.url +"";
+
+                            UpToaster(data);
+                            //toastr.success("祝贺你成功了");
+                            //UpdateAlert(data.info,data.status,url);
+                        }, 'json');
+                    });
+        });
+    </script>
+</block>

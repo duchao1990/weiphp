@@ -406,3 +406,23 @@ function get_action_type($type, $all = false) {
 	}
 	return $list [$type];
 }
+
+function masterStatus($auth){
+	switch ($auth) {
+		case '0':
+			return "待认证";
+			break;
+		case '1':
+			return "已通过";
+			break;
+		case '2':
+			return "待审核";
+			break;
+		case '3':
+			return "未通过";
+			break;
+		default:
+			return "状态异常";
+			break;
+	}
+}

@@ -1,0 +1,91 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>审核管理</h2>
+    </div>
+    <div class="data-table table-striped">
+        <table>
+            <thead>
+            <tr>
+                <th>法师称呼</th>
+                <th>联系方式</th>
+                <th>所在寺院</th>
+                <th>身份证</th>
+                <th>身份证图</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{$masterInfo.master}</td>
+                    <td>{$masterInfo.mobile}</td>
+                    <td><a href="{:U('templeInfo',array('templeid'=>$vo['templeid']))}">{$masterInfo.temple}</a></td>
+                    <td>{$masterInfo.idNum}</td>
+                    <td>
+                        <a class="example-image-link" href="{$masterInfo.idCard|get_picture_url}" data-lightbox="example-set" data-title="身份证{$masterInfo.idNum}">
+                            <img class="example-image" src="{$masterInfo.idCard|get_picture_url}" alt="{$masterInfo.idNum}" style="width:100px;height: auto;"/>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+            <thead>
+            <tr>
+                <th>支付宝账号</th>
+                <th>微信账号</th>
+                <th>银行卡号</th>
+                <th>开户银行</th>
+                <th>戒牒证</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{$masterInfo.alipay}</td>
+                <td>{$masterInfo.wxpay}</td>
+                <td>{$masterInfo.bankpay}</td>
+                <td>{$masterInfo.bankaddress}</td>
+                <td>
+                    <a class="example-image-link" href="{$masterInfo.templeCard|get_picture_url}" data-lightbox="example-set" data-title="戒牒证:{$masterInfo.templeNum}">
+                        <img class="example-image" src="{$masterInfo.templeCard|get_picture_url}" alt="{$masterInfo.templeNum}" style="width:100px;height: auto;"/>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+            <thead>
+            <tr>
+                <th>审核结果</th>
+                <th>审核意见</th>
+                <th>寺院当前状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <form action="{:U('masterVerify')}" method="post" class="form-horizontal">
+            <tbody>
+            <tr>
+                <td>
+                    <select name="verifyIdea">
+                        <option value="1">通过</option>
+                        <option value="3">不通过</option>
+                    </select>
+                </td>
+                <td>
+                    <label class="textarea input-large">
+                        <textarea rows="5" style="width: 100%;" name="verifyContent">
+
+                        </textarea>
+                    </label>
+                </td>
+                <td><a href="{:U('templeInfo',array('templeid'=>$vo['templeid']))}">{$masterInfo.templeAuth|masterStatus}</a></td>
+                <td>
+                    <input type="hidden" value="{$masterInfo.id}" name="masterId">
+                    <button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
+                </td>
+            </tr>
+            </tbody>
+            </form>
+        </table>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="__JS__/lightbox-plus-jquery.min.js"></script>
+</block>

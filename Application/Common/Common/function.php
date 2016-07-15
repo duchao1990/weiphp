@@ -1025,7 +1025,32 @@ function get_table_field($value = null, $condition = 'id', $field = null, $table
 	}
 	return $info;
 }
+/**
+ * 获取文档封面图片
+ *
+ * @param int $id
+ * @return 城市的名字
+ * @author anxin <384652412@qq.com>
+ */
+function get_city($id) {
+	if (empty ( $id ))
+		return false;
 
+	$key = 'City_' . $id;
+	$city = S ( $key );
+
+	if (! $city) {
+
+		$name = M ( 'district' )->Field('name')->getById ( $id );
+		$city=$name['name'];
+		S ( $key, $city, 86400 );
+	}
+
+	if (empty ( $city ))
+		return '';
+
+	return $city;
+}
 /**
  * 获取文档封面图片
  *

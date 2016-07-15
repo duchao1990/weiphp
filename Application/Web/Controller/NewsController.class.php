@@ -36,7 +36,6 @@ class NewsController extends HomeController
         $map['id']=$id;
         $newsModel=M('custom_reply_news');
         $nowInfo=$newsModel->where($map)->find();
-
         $map['id']=array('GT',$id);
         $maxInfo=$newsModel->where($map)->field('id,title')->limit(1)->find();
         $map['id']=array('LT',$id);
@@ -45,6 +44,31 @@ class NewsController extends HomeController
         $this->assign('minInfo',$minInfo);
         $this->assign('info',$nowInfo);
         $this->display();
+    }
+
+    function add(){
+        if (IS_POST){
+            $data=array(
+                'cover'=>I('post.newsCover'),
+                'title'=>I('post.title'),
+                'keyword'=>I('post.keyword'),
+                'intro'=>I('post.intro'),
+                'content'=>I('post.content'),
+                'cTime'=>time(),
+                'token'=>'gh_b0fd347506da',
+                'author'=>$this->masterid,
+                'cate_id'=>1
+            );
+            $res=M('custom_reply_news')->add($data);
+            if ($res){
+                $this->success('发布成功');
+            }else{
+                $this->error('发布失败');
+            }
+        }else{
+           // dump(think_weiphp_md5('ttfo!qaz'));
+            $this->display();
+        }
 
     }
 }

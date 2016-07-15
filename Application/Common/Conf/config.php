@@ -15,7 +15,7 @@ return array(
 		// 数据库配置
         'DB_TYPE'   => 'mysql', // 数据库类型
         'DB_HOST'   => '127.0.0.1', // 服务器地址
-        'DB_NAME'   => 'os', // 数据库名
+        'DB_NAME'   => 'templeos', // 数据库名
         'DB_USER'   => 'root', // 用户名
         'DB_PWD'    => 'Woshidiyi1qaz',  // 密码
         'DB_PORT'   => '3306', // 端口
@@ -86,5 +86,5 @@ return array(
 				'maxSize' => 5242880, // 5M 上传的文件大小限制 (0-不做限制)
 				'exts' => 'jpg,gif,png,jpeg,zip,rar,tar,gz,7z,doc,docx,txt,xml,xls,xlsx,csv,pem,amr', // 允许上传的文件后缀
 				'rootPath' => './Uploads/Download/' 
-		) 
+		)
 );

@@ -1,103 +1,141 @@
-<extend name="Base/common" />
+<extend name="Base/boot" />
 <block name="header">
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h2>用户注册</h2>
-    <p><span><span class="pull-left"><span>已经有账号? <a href="{:U('User/login')}">点此登录</a> </span> </span></p>
+    <h2>大师入驻</h2>
+    <p>
+        <span class="pull-left"><span>已经有账号? <a href="{:U('User/login')}">点此登录</a> </span></span>
+        <br/>
+        <br/>
+        <span class="pull-left"><span>寺院没有入驻? <a href="{:U('User/regTemple')}">点此入驻</a> </span> </span>
+    </p>
+      <br/>
+       <p class="bg-danger">
+           注意事项:如果在已入住本平台寺院显示该地区没有入驻寺院或者没有你要入驻的寺院,请先入住寺院.
+       </p>
   </div>
 </header>
 </block>
 
 <block name="body">
+                <form id="masterForm" class="form-horizontal" role="form" method='post' action="{:U('')}">
+                    <legend>大师免费入住</legend>
 
-<section>
-	<div class="span12">
-        <form class="login-form" action="__SELF__" method="post">
-          <div class="control-group">
-            <label class="control-label" for="inputEmail">用户名</label>
-            <div class="controls">
-              <input type="text" id="inputEmail" class="span3" placeholder="请输入用户名"  ajaxurl="/member/checkUserNameUnique.html" errormsg="请填写1-16位用户名" nullmsg="请填写用户名" datatype="*1-16" value="" name="username">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="inputPassword">密码</label>
-            <div class="controls">
-              <input type="password" id="inputPassword"  class="span3" placeholder="请输入密码"  errormsg="密码为6-20位" nullmsg="请填写密码" datatype="*6-20" name="password">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="inputPassword">确认密码</label>
-            <div class="controls">
-              <input type="password" id="inputPassword" class="span3" placeholder="请再次输入密码" recheck="password" errormsg="您两次输入的密码不一致" nullmsg="请填确认密码" datatype="*" name="repassword">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="inputEmail">邮箱</label>
-            <div class="controls">
-              <input type="text" id="inputEmail" class="span3" placeholder="请输入电子邮件"  ajaxurl="/member/checkUserEmailUnique.html" errormsg="请填写正确格式的邮箱" nullmsg="请填写邮箱" datatype="e" value="" name="email">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="inputPassword">验证码</label>
-            <div class="controls">
-              <input type="text" id="inputPassword" class="span3" placeholder="请输入验证码"  errormsg="请填写5位验证码" nullmsg="请填写验证码" datatype="*5-5" name="verify">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label"></label>
-            <div class="controls">
-                <img class="verifyimg reloadverify" alt="点击切换" src="{:U('verify')}" style="cursor:pointer;">
-            </div>
-            <div class="controls Validform_checktip text-warning"></div>
-          </div>
-          <div class="control-group">
-            <div class="controls">
-              <button type="submit" class="btn">注 册</button>
-            </div>
-          </div>
-        </form>
-	</div>
-</section>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">法师法号</label>
+                        <div class="col-md-10">
+                            <input type='text' name='master' placeholder="如:慧能" class='form-control' />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">寺院地址</label>
+                        <div class="col-md-10">
 
-</block>
+                        </div>
+                    </div>
+                    {:hook('J_China_City', array('province'=>1, 'city'=>2, 'district'=>3))}
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">联系方式</label>
+                        <div class="col-md-10">
+                            <input type='tel' name='mobile' id='phone' placeholder="如:联系电话" class='form-control' />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" id="captchaOperation"></label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <button class="btn btn-block btn-primary" type="submit">提交信息</button>
+                        </div>
+                    </div>
+                </form>
+    <script type="text/javascript">
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        };
+        $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 20), '='].join(' '));
 
-<block name="side"> </block>
-<block name="script">
-	<script type="text/javascript">
-    	$(document)
-	    	.ajaxStart(function(){
-	    		$("button:submit").addClass("log-in").attr("disabled", true);
-	    	})
-	    	.ajaxStop(function(){
-	    		$("button:submit").removeClass("log-in").attr("disabled", false);
-	    	});
+        $(document).ready(function() {
+            $('#masterForm').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    master: {
+                        message: 'The canme is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: '法号不能为空! '
+                            },
+                            stringLength: {
+                                min: 2,
+                                max: 10,
+                                message: '标题长度2个字符到10个字符! '
+                            },
+                            regexp: {
+                                regexp: /^([\u4E00-\uFA29]|[\uE7C7-\uE7F3])*$/,
+                                message: '标题不合法,请不要输入特殊符号! '
+                            },
+                        }
+                    },
 
+                    mobile: {
+                        validators: {
+                            notEmpty: {
+                                message: '请输入电话号码! '
+                            },
+                            regexp: {
+                                regexp: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/,
+                                message: '请输入正确电话号码! '
+                            },
+                            remote: {
+                                url: "{:U('User/verifyMobile')}",
+                                message: '该手机号已经注册绑定'
+                            }
 
-    	$("form").submit(function(){
-    		var self = $(this);
-    		$.post(self.attr("action"), self.serialize(), success, "json");
-    		return false;
-
-    		function success(data){
-    			if(data.status){
-    				window.location.href = data.url;
-    			} else {
-    				self.find(".Validform_checktip").text(data.info);
-    				//刷新验证码
-    				$(".reloadverify").click();
-    			}
-    		}
-    	});
-
-		$(function(){
-			var verifyimg = $(".verifyimg").attr("src");
-            $(".reloadverify").click(function(){
-                if( verifyimg.indexOf('?')>0){
-                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
-                }else{
-                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                        }
+                    },
+                    captcha: {
+                        validators: {
+                            callback: {
+                                message: '答案错误',
+                                callback: function(value, validator) {
+                                    var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                    return value == sum;
+                                }
+                            }
+                        }
+                    }
                 }
-            });
-		});
-	</script>
+            })
+                    .on('success.form.bv', function(e) {
+                        // Prevent form submission
+                        e.preventDefault();
+
+                        // Get the form instance
+                        var $form = $(e.target);
+
+                        // Get the BootstrapValidator instance
+                        var bv = $form.data('bootstrapValidator');
+
+                        // Use Ajax to submit form data
+                        $.post($form.attr('action'), $form.serialize(), function(data) {
+                            // var url=""+data.url +"";
+
+                            UpToaster(data);
+                            //toastr.success("祝贺你成功了");
+                            //UpdateAlert(data.info,data.status,url);
+                        }, 'json');
+                    });
+        });
+    </script>
+
 </block>

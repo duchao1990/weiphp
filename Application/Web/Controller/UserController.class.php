@@ -22,36 +22,69 @@ class UserController extends Controller{
 	}
 
 	/* 注册页面 */
-	public function register($username = '', $password = '', $repassword = '', $email = '', $verify = ''){
-        if(!C('USER_ALLOW_REGISTER')){
-            $this->error('注册已关闭');
-        }
+	public function register(){
 		if(IS_POST){ //注册用户
-			/* 检测验证码 */
-			if(!check_verify($verify)){
-				$this->error('验证码输入错误！');
+			$salt=salt();
+			$userData=array(
+				'mobile'=>I('post.mobile'),
+				'master'=>I('post.master'),
+				'templeid'=>I('post.selectTe'),
+				'salt'=>$salt,
+				'pwd'=>createPwd(I('post.mobile'),$salt)
+			);
+			$masterid=M('master')->add($userData);
+
+			if ($masterid){
+				session('masterid',$masterid);
+				$this->success('提交成功,请提交认证资料',U('Enter/verify'));
+			}else{
+				$this->error('提交失败');
 			}
-
-			/* 检测密码 */
-			if($password != $repassword){
-				$this->error('密码和重复密码不一致！');
-			}			
-
-			/* 调用注册接口注册用户 */
-            $User = new UserApi;
-			$uid = $User->register($username, $password, $email);
-			if(0 < $uid){ //注册成功
-				//TODO: 发送验证邮件
-				$this->success('注册成功！',U('login'));
-			} else { //注册失败，显示错误信息
-				$this->error($this->showRegError($uid));
-			}
-
 		} else { //显示注册表单
 			$this->display();
 		}
 	}
+	function regTemple(){
+		if (IS_AJAX){
+			$templeData=array(
+				'temple'=>I('post.temple'),
+				'province'=>I('post.province'),
+				'city'=>I('post.city'),
+				'district'=>I('post.district'),
+				'authNum'=>date('YmdHis')
+			);
+			$salt=salt();
+			$templeModel=M('temple');
+			$templeId=$templeModel->add($templeData);
+			if ($templeId){
+				$userData=array(
+					'mobile'=>I('post.mobile'),
+					'master'=>I('post.master'),
+					'templeid'=>$templeId,
+					'salt'=>$salt,
+					'pwd'=>createPwd(I('post.mobile'),$salt)
+				);
+				$masterid=M('master')->add($userData);
+				if ($masterid){
+					$map['id']=intval($templeId);
+					$res=$templeModel->where($map)->save(array('masterid'=>$masterid));
+					if ($res){
+						session('masterid',$masterid);
+						$this->success('登记成功,请上传认证资料',U('Enter/verify'));
+					}else{
+						$this->error('寺院更新失败,请联系客服');
+					}
+				}else{
+					$this->error('用户登记失败,请联系客服');
+				}
+			}else{
+				$this->error('寺院登记失败,请联系客服');
+			}
+		}else{
+			$this->display();
+		}
 
+	}
 	/* 登录页面 */
 	public function login(){
 		if(IS_POST){ //登录验证
@@ -85,7 +118,7 @@ class UserController extends Controller{
 	}
 
 	public function verifyMobile(){
-		$mobile=I('get.mobile');
+		$mobile=I('get.mobile',0,'intval');
 		$uid=M('master')->where('mobile='.$mobile)->getField('id');
 		if ($uid){
 			$this->ajaxReturn(array('valid'=>false));
@@ -94,7 +127,7 @@ class UserController extends Controller{
 		}
 	}
 	public function userMobile(){
-		$mobile=I('get.mobile');
+		$mobile=I('get.mobile',0,'intval');
 		$uid=M('master')->where('mobile='.$mobile)->getField('id');
 		if ($uid){
 			$this->ajaxReturn(array('valid'=>true));

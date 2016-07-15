@@ -6,16 +6,15 @@ namespace Addons\WeiSite\Controller;
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 header('Access-Control-Allow-Methods: GET, POST, PUT');
-class SiyuanController{
+class SiyuanController extends BaseController{
 	
 	// 寺院介绍
 	function intro() {
             $m ['token'] = get_token ();
-            $m ['cate_id'] =0;
+            $m ['title'] ='寺院介绍';
 			$siyuan=M('custom_reply_news')->where($m)->find();
-			//$siyuan['coverpath']='http://os.9ume.com'.getThumbImageById($siyuan['cover']);
-			$siyuan['coverpath']=get_cover_url($siyuan['cover']);
-			$siyuan['name']=$config['name'];
+			$siyuan['cover']=get_cover_url($siyuan['cover']);
+
 			echo json_encode(array('intro'=>$siyuan));
 			
 	}
@@ -29,10 +28,14 @@ class SiyuanController{
 			$agcmap['group_id']=$gid;
 			$uids=M('auth_group_access')->where($agcmap)->getField('uid',true);
 			if($uids){
+				$infoM=M('custom_reply_news');
+				$infoMap['cate_id']=0;
 				$usermap['uid']=array('in',$uids);
 				$temUser=M('user')->where($usermap)->field('uid,headimgurl,nickname')->select();
 				foreach ($temUser as $key => $value) {
-					$temUser[$key]['nickname']=urldecode($value['nickname']);
+					$infoMap['sort']=$value['uid'];
+					$temUser[$key]['infoid']=$infoM->where($infoMap)->getField('id');
+					$temUser[$key]['nickname']=trim(urldecode($value['nickname']),'"');
 				}
 				$msg=array('code'=>1,'temUser'=>$temUser);
 			}else{
@@ -54,15 +57,17 @@ class SiyuanController{
 			$map2 ['title']='感悟';
 			$cate2=M('weisite_category')->where($map2)->getField('id');
 			$map3 ['token'] = get_token ();
-			$map3 ['title']='招募';
+			$map3 ['title']='义工';
 			$cate3=M('weisite_category')->where($map3)->getField('id');
 			$map4 ['token'] = get_token ();
 			$map4 ['title']='活动';
 			$cate4=M('weisite_category')->where($map4)->getField('id');
 			$map5 ['token'] = get_token ();
+			$map5 ['title']='功德';
+			$cate5=M('weisite_category')->where($map5)->getField('id');
 //			$map5 ['title']='活动';
 //			$cate5=M('weisite_category')->where($map5)->getField('id');
-			$result=array('cate1'=>$cate1,'cate2'=>$cate2,'cate3'=>$cate3,'cate4'=>$cate4);
+			$result=array('cate1'=>$cate1,'cate2'=>$cate2,'cate3'=>$cate3,'cate4'=>$cate4,'cate5'=>$cate5);
 			echo json_encode($result);
 	}
 	//分类

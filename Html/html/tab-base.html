@@ -22,8 +22,8 @@
         <a class="button button-energized button-outline icon iconfont icon-aixinjuanzeng" ng-click="goPay()">
           捐赠捐赠
         </a>
-        <a class="button button-energized button-outline icon iconfont  ion-ios-keypad" href="#/tab/tuHao">
-          功德排行
+        <a class="button button-energized button-outline icon iconfont  ion-ios-keypad" href="#/tab/siyuanlist/{{cate5}}">
+          公益功德
         </a>
       </div>
       <div class="button-bar">
@@ -45,7 +45,7 @@
       <div class="item item-complex">
         <div class="item-content">
          <a href="#/tab/siyuanInfo/{{intro.id}}">
-            <img src="{{intro.coverpath}}">
+            <img src="{{intro.cover}}">
          </a>  
           <span>{{intro.intro}}</span>
         </div>
@@ -59,7 +59,7 @@
     <div class="list" style="overflow: auto;">
           <div class="mycarda fl" ng-repeat="item in items">
               <div class="item item-body">
-                 <a class="carda" href="#/tab/ganwulist/{{item.uid}}">
+                 <a class="carda" href="#/tab/siyuanInfo/{{item.infoid}}">
                   <img class="full-image" src="{{item.headimgurl}}" style="height: 100px;">
                   <h5 style="text-align: center;">{{item.nickname}}</h5>
                 </a>

@@ -9,9 +9,10 @@
 namespace Web\Controller;
 
 
+use Think\Controller;
 use Think\MyPage;
 
-class TempleController extends HomeController
+class TempleController extends Controller
 {
     function index(){
         $keyword=I('keyword');
@@ -20,13 +21,12 @@ class TempleController extends HomeController
             $map['public']=array('like',"%$keyword%");
         }
         $map['is_die']=0;
-        $pubModel=M('public');
+        $pubModel=M('Temple');
         $total=$pubModel->where($map)->count();
 
         $Page=new MyPage($total,12);
         $show=$Page->show();
-        $dataList=  M('public')->where($map)->order('sort desc')->limit($Page->firstRow.','.$Page->listRows)->getField('id,addon_config',true);
-
+        $dataList=  $pubModel->where($map)->limit($Page->firstRow.','.$Page->listRows)->find();
             foreach ($dataList as $index => $item) {
                 $item=json_decode($item,true);
                 $item['WeiSite']['cover']=get_picture_url($item['WeiSite']['cover']);
@@ -39,6 +39,13 @@ class TempleController extends HomeController
         $this->assign('dataList',$dataList);
         $this->display();
     }
-
+    
+    function add(){
+        if (IS_POST){
+            
+        }else{
+            $this->display();
+        }
+    }
 
 }

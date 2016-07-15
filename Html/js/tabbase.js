@@ -17,7 +17,7 @@
 
      }, function(error) {
        ionicToast.show('服务器错误','middle', false, 2500);
-     })
+     });
       $scope.goPay = function() {
        $ionicPopup.alert({
             templateUrl: 'Html/html/popup/paypup.html',
