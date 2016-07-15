@@ -57,7 +57,7 @@ class NewsController extends HomeController
                 'cTime'=>time(),
                 'token'=>'gh_b0fd347506da',
                 'author'=>$this->masterid,
-                'cate_id'=>1
+                'cate_id'=>I('post.cate_id',1,'intval')
             );
             $res=M('custom_reply_news')->add($data);
             if ($res){
@@ -66,7 +66,29 @@ class NewsController extends HomeController
                 $this->error('发布失败');
             }
         }else{
-           // dump(think_weiphp_md5('ttfo!qaz'));
+            $type=I('get.type',1,'intval');
+            switch ($type) {
+                case '1':
+                    $title='新闻发布';
+                    break;
+                case '2':
+                     $title='感悟发布';
+                    break;
+                case '3':
+                     $title='义工发布';
+                    break;
+                case '4':
+                    $title='活动发布';
+                    break;
+                case '5':
+                     $title='功德发布';
+                    break;                    
+                default:
+                    $title='新闻发布';
+                    break;
+            }
+            $this->assign('title',$title);
+            $this->assign('cate_id',$type);
             $this->display();
         }
 

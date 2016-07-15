@@ -18,12 +18,12 @@
 						<switch name="form.type">
 							<case value="text">
 							<div class="controls">
-								<input type="text" name="config[{$o_key}]" class="text input-large" value="{$form.value}">
+								<input type="text" name="config[{$o_key}]" class="form-control" value="{$form.value}">
 							</div>
 							</case>
 							<case value="password">
 							<div class="controls">
-								<input type="password" name="config[{$o_key}]" class="text input-large" value="{$form.value}">
+								<input type="password" name="config[{$o_key}]" class="form-control" value="{$form.value}">
 							</div>
 							</case>
 							<case value="hidden">
@@ -62,7 +62,7 @@
 							<case value="textarea">
 							<div class="controls">
 								<label class="textarea input-large">
-									<textarea name="config[{$o_key}]">{$form.value}</textarea>
+									<textarea class="form-control" rows="10" name="config[{$o_key}]">{$form.value}</textarea>
 								</label>
 							</div>
 							</case>
@@ -152,10 +152,10 @@
 										<div class="controls">
 											<switch name="tab_form.type">
 												<case value="text">
-													<input type="text" name="config[{$o_tab_key}]" class="text input-large" value="{$tab_form.value}">
+													<input type="text" name="config[{$o_tab_key}]" class="form-control" value="{$tab_form.value}">
 												</case>
 												<case value="password">
-													<input type="password" name="config[{$o_tab_key}]" class="text input-large" value="{$tab_form.value}">
+													<input type="password" name="config[{$o_tab_key}]" class="form-control" value="{$tab_form.value}">
 												</case>
 												<case value="hidden">
 													<input type="hidden" name="config[{$o_tab_key}]" value="{$tab_form.value}">
@@ -184,7 +184,7 @@
 												</case>
 												<case value="textarea">
 													<label class="textarea input-large">
-														<textarea name="config[{$o_tab_key}]">{$tab_form.value}</textarea>
+														<textarea class="form-control" rows="10" name="config[{$o_tab_key}]">{$tab_form.value}</textarea>
 													</label>
 												</case>
 												<case value="picture_union">

@@ -20,24 +20,24 @@
 		<div class="tab-content">
 	<form action="{:U('test_mail')}" method="post" class="form-horizontal">
 	<volist name="list" id="config">
-		<div class="form-item">
+		<div class="form-group">
 			<label class="item-label">{$config.title}<if condition="!empty($config['remark'])"><span class="check-tips">（{$config.remark}）</span></if> </label>
 			<div class="controls">
 			<switch name="config.type">
 			<case value="0">
-			<input type="text" class="text input-small" name="config[{$config.name}]" value="{$config.value}">
+			<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
 			</case>
 			<case value="1">
-			<input type="text" class="text input-large" name="config[{$config.name}]" value="{$config.value}">
+			<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
 			</case>
 			<case value="2">
 			<label class="textarea input-large">
-				<textarea name="config[{$config.name}]">{$config.value}</textarea>
+				<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
 			</label>
 			</case>
 			<case value="3">
 			<label class="textarea input-large">
-				<textarea name="config[{$config.name}]">{$config.value}</textarea>
+				<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
 			</label>
 			</case>
 			<case value="4">
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 		</volist>
-		<div class="form-item">
+		<div class="form-group">
 			<label class="item-label"></label>
 			<div class="controls">
 				<empty name="list"><button type="submit" disabled class="btn submit-btn disabled" target-form="form-horizontal">确 定</button><else/><button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button></empty>

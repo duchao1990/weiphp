@@ -29,6 +29,10 @@
                 <th>联系方式</th>
                 <th>所在寺院</th>
                 <th>身份证</th>
+                <th>戒牒证</th>
+                <th>支付宝</th>
+                <th>微信</th>
+                <th>银行地址—卡号</th>
                 <th>状态</th>
                 <th>操作</th>
             </tr>
@@ -41,11 +45,18 @@
                         <td><a href="{:U('masterInfo',array('masterid'=>$vo['id']))}">{$vo.master}</a></td>
                         <td>{$vo.mobile}</td>
                         <td><a href="{:U('masterInfo',array('templeid'=>$vo['templeid']))}">{$vo.temple}</a></td>
-                        <td>{$vo.idNum}</td>
+                        <td>
+                            <a href="{$vo.idCard|get_picture_url}"  data-toggle="lightbox" data-group="image-group-1">{$vo.idNum}</a>
+                        </td>
+                        <td>
+                            <a href="{$vo.templeCard|get_picture_url}" data-toggle="lightbox" data-group="image-group-1">{$vo.templeNum}</a>
+                        </td>
+                        <td>{$vo.alipay}</td>
+                        <td>{$vo.wxpay}</td>
+                        <td>{$vo.bankaddress}：{$vo.bankpay}</td>
                         <td>{$vo.auth|masterStatus}</td>
                         <td>
-                            <a title="编辑" href="{:U('masterEdit',array('masterid'=>$vo['id']))}">编辑</a>
-                            <a href="{:U('masterInfo',array('masterid'=>$vo['id']))}">审核</a>
+                            <button class="btn btn-info" onclick="showmoal({$vo.id})">审核</button>
                         </td>
                     </tr>
                 </volist>
@@ -55,4 +66,44 @@
             </tbody>
         </table>
     </div>
+    <div class="modal fade" id="verifyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title">审核意见</h4>
+                </div>
+                <form action="{:U('masterVerify')}" method="post" class="form-horizontal">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">来源</label>
+                            <div class='col-md-10'>
+                                <select name='verifyIdea' id='verifyIdea' class='form-control'>
+                                    <option value="1">通过</option>
+                                    <option value="3">不通过</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">审核意见</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" rows="10" name='verifyContent' id='verifyContent' rows='2' class='form-control'></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" id="templeid" value="" name="masterId">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭审核</button>
+                        <button type="submit" class="btn btn-warning submit-btn ajax-post" target-form="form-horizontal">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function showmoal(id) {
+            $('#templeid').val(id);
+            $('#verifyModal').modal('show');
+        }
+    </script>
 </block>

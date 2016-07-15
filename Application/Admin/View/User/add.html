@@ -5,31 +5,31 @@
         <h2>新增用户</h2>
     </div>
     <form action="{:U()}" method="post" class="form-horizontal">
-        <div class="form-item">
+        <div class="form-group">
             <label class="item-label">用户名<span class="check-tips">（用户名会作为默认的昵称）</span></label>
             <div class="controls">
-                <input type="text" class="text input-large" name="username" value="">
+                <input type="text" class="form-control" name="username" value="">
             </div>
         </div>
-        <div class="form-item">
+        <div class="form-group">
             <label class="item-label">密码<span class="check-tips">（用户密码不能少于6位）</span></label>
             <div class="controls">
-                <input type="password" class="text input-large" name="password" value="">
+                <input type="password" class="form-control" name="password" value="">
             </div>
         </div>
-        <div class="form-item">
+        <div class="form-group">
             <label class="item-label">确认密码</label>
             <div class="controls">
-                <input type="password" class="text input-large" name="repassword" value="">
+                <input type="password" class="form-control" name="repassword" value="">
             </div>
         </div>
-        <div class="form-item">
+        <div class="form-group">
             <label class="item-label">邮箱<span class="check-tips">（用户邮箱，用于找回密码等安全操作）</span></label>
             <div class="controls">
-                <input type="text" class="text input-large" name="email" value="">
+                <input type="text" class="form-control" name="email" value="">
             </div>
         </div>
-        <div class="form-item">
+        <div class="form-group">
             <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
             <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
         </div>

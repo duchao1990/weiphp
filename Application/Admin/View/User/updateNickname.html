@@ -10,20 +10,20 @@
 		<div class="tab-content">
 	<!-- 修改密码表单 -->
     <form action="{:U('User/submitNickname')}" method="post" class="form-horizontal" autocomplete="off">
-		<div class="form-item">
+		<div class="form-group">
 			<label class="item-label">密码：<span class="check-tips">（请输入密码）</span></label>
 			<div class="controls">
-				<input type="password" name="password" class="text input-large"  autocomplete="off"/>
+				<input type="password" name="password" class="form-control"  autocomplete="off"/>
 			</div>
 		</div>
-		<div class="form-item">
+		<div class="form-group">
 			<label class="item-label">昵称：<span class="check-tips">（请输入新昵称）</span></label>
 			<div class="controls">
-				<input type="text" name="nickname" class="text input-large" autocomplete="off" value="{:get_username()}"/>
+				<input type="text" name="nickname" class="form-control" autocomplete="off" value="{:get_username()}"/>
 			</div>
 		</div>
-		<div class="form-item">
-            <input type="hidden" name="old_nickname" class="text input-large" value="{:get_username()}"/>
+		<div class="form-group">
+            <input type="hidden" name="old_nickname" class="form-control" value="{:get_username()}"/>
 			<button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 认</button>
 			<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
 		</div>

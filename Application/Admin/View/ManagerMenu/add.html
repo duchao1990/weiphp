@@ -15,7 +15,7 @@
 
             <volist name="fields" id="field">
                 <if condition="$field['is_show'] == 4">
-                <input type="hidden" class="text input-large" name="{$field.name}" value="{:I($field[name], $field[value])}">
+                <input type="hidden" class="form-control" name="{$field.name}" value="{:I($field[name], $field[value])}">
                 </if>
                 <if condition="$field['is_show'] == 1 || $field['is_show'] == 2 || ($field['is_show'] == 5 && I($field['name']))">
             <div class="form-item cf toggle-{$field.name}">
@@ -27,14 +27,14 @@
                     <div class="controls">
                       <switch name="field.type">
                   <case value="num">
-                    <input type="number" class="text input-large" name="{$field.name}" value="{:I($field[name], $field[value])}">
+                    <input type="number" class="form-control" name="{$field.name}" value="{:I($field[name], $field[value])}">
                   </case>
                         <case value="string">
-                          <input type="text" class="text input-large" name="{$field.name}" value="{:I($field[name], $field[value])}">
+                          <input type="text" class="form-control" name="{$field.name}" value="{:I($field[name], $field[value])}">
                         </case>
                         <case value="textarea">
                           <label class="textarea input-large">
-                            <textarea name="{$field.name}">{:I($field[name], $field[value])}</textarea>
+                            <textarea class="form-control" rows="10" name="{$field.name}">{:I($field[name], $field[value])}</textarea>
                           </label>
                         </case>
                         <case value="datetime">
@@ -106,7 +106,7 @@
                         </case>
                   <case value="editor">
                     <label class="textarea">
-                      <textarea name="{$field.name}" style="width:405px; height:200px;"></textarea>
+                      <textarea class="form-control" rows="10" name="{$field.name}" style="width:405px; height:200px;"></textarea>
                       {:hook('adminArticleEdit', array('name'=>$field['name'],'value'=>$field['value']))} </label>
                   </case>
                   <case value="picture">
@@ -147,7 +147,7 @@
                     </div>
                   </case>
                         <default/>
-                        <input type="text" class="text input-large" name="{$field.name}" value="{:I($field[name], $field[value])}">
+                        <input type="text" class="form-control" name="{$field.name}" value="{:I($field[name], $field[value])}">
                       </switch>
                     </div>
                 </div>

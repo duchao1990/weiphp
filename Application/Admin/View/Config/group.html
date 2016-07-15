@@ -10,34 +10,34 @@
         <h2>网站设置</h2>
 	</div>
 		<div class="tab-wrap">
-		<ul class="tab-nav nav">
+		<ul class="nav nav-tabs">
 		<volist name="Think.config.CONFIG_GROUP_LIST" id="group">
 
-			<li <eq name="id" value="$key">class="current"</eq>><a href="{:U('group?id='.$key)}">{$group}配置</a></li>
+			<li <eq name="id" value="$key">class="active"</eq>><a href="{:U('group?id='.$key)}">{$group}配置</a></li>
 
 		</volist>
 		</ul>
 		<div class="tab-content">
 	<form action="{:U('save')}" method="post" class="form-horizontal">
 	<volist name="list" id="config">
-		<div class="form-item">
+		<div class="form-group">
 			<label class="item-label">{$config.title}<if condition="!empty($config['remark'])"><span class="check-tips">（{$config.remark}）</span></if> </label>
 			<div class="controls">
 			<switch name="config.type">
 			<case value="0">
-			<input type="text" class="text input-small" name="config[{$config.name}]" value="{$config.value}">
+			<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
 			</case>
 			<case value="1">
-			<input type="text" class="text input-large" name="config[{$config.name}]" value="{$config.value}">
+			<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
 			</case>
 			<case value="2">
 			<label class="textarea input-large">
-				<textarea name="config[{$config.name}]">{$config.value}</textarea>
+				<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
 			</label>
 			</case>
 			<case value="3">
 			<label class="textarea input-large">
-				<textarea name="config[{$config.name}]">{$config.value}</textarea>
+				<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
 			</label>
 			</case>
 			<case value="4">
@@ -52,12 +52,12 @@
 			</div>
 		</div>
 		</volist>
-		<div class="form-item">
+		<div class="form-group">
 			<label class="item-label"></label>
 			<div class="controls">
-				<empty name="list"><button type="submit" disabled class="btn submit-btn disabled" target-form="form-horizontal">确 定</button><else/><button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button></empty>
+				<empty name="list"><button type="submit" disabled class="btn submit-btn disabled" target-form="form-horizontal">确 定</button><else/><button type="submit" class="btn btn-success submit-btn ajax-post" target-form="form-horizontal">确 定</button></empty>
 				
-				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+				<button class="btn btn-danger  btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
                 <notempty name="more_button">
                     <volist name="more_button" id="vo">
                         <a class="btn" href="{$vo.url}">{$vo.title}</a>

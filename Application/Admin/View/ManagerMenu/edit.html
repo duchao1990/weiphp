@@ -15,7 +15,7 @@
 
             <volist name="fields" id="field">
                 <if condition="$field['is_show'] == 4">
-                <input type="hidden" class="text input-large" name="{$field.name}" value="{$data[$field['name']]}">
+                <input type="hidden" class="form-control" name="{$field.name}" value="{$data[$field['name']]}">
                 </if>
                 <if condition="$field['is_show'] == 1 || $field['is_show'] == 3 || ($field['is_show'] == 5 && I($field['name']) )">
                   <div class="form-item cf toggle-{$field.name}">
@@ -28,14 +28,14 @@
                     <div class="controls">
                         <switch name="field.type">
                             <case value="num">
-                          <input type="number" class="text input-large" name="{$field.name}" value="{$data[$field['name']]}">
+                          <input type="number" class="form-control" name="{$field.name}" value="{$data[$field['name']]}">
                             </case>
                             <case value="string">
-                                <input type="text" class="text input-large" name="{$field.name}" value="{$data[$field['name']]}">
+                                <input type="text" class="form-control" name="{$field.name}" value="{$data[$field['name']]}">
                             </case>
                             <case value="textarea">
                                 <label class="textarea input-large">
-                                <textarea name="{$field.name}">{$data[$field['name']]}</textarea>
+                                <textarea class="form-control" rows="10" name="{$field.name}">{$data[$field['name']]}</textarea>
                                 </label>
                             </case>
                         <case value="datetime">
@@ -102,7 +102,7 @@
                         </case>
                         <case value="editor">
                           <label class="textarea">
-                            <textarea name="{$field.name}" style="width:405px; height:100px;">{$data[$field['name']]}</textarea>
+                            <textarea class="form-control" rows="10" name="{$field.name}" style="width:405px; height:100px;">{$data[$field['name']]}</textarea>
                             {:hook('adminArticleEdit', array('name'=>$field['name'],'value'=>$data[$field['name']]))} </label>
                         </case>
                         <case value="picture">
@@ -130,7 +130,7 @@
                           
                         </case>
                             <default/>
-                            <input type="text" class="text input-large" name="{$field.name}" value="{$data[$field['name']]}">
+                            <input type="text" class="form-control" name="{$field.name}" value="{$data[$field['name']]}">
                         </switch>
                     </div>
                 </div>

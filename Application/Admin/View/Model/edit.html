@@ -21,13 +21,13 @@
 					<div class="form-item cf">
 						<label class="item-label">模型标识<span class="check-tips">（请输入文档模型标识）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="name" value="{$info.name}">
+							<input type="text" class="form-control" name="name" value="{$info.name}">
 						</div>
 					</div>
 					<div class="form-item cf">
 						<label class="item-label">模型名称<span class="check-tips">（请输入模型的名称）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="title" value="{$info.title}">
+							<input type="text" class="form-control" name="title" value="{$info.title}">
 						</div>
 					</div>
 					<div class="form-item cf">
@@ -67,7 +67,7 @@
 						<label class="item-label">列表定义<span class="check-tips">（默认列表模板的展示规则）</span></label>
 						<div class="controls">
 							<label class="textarea input-large">
-								<textarea name="list_grid">{$info.list_grid}</textarea>
+								<textarea class="form-control" rows="10" name="list_grid">{$info.list_grid}</textarea>
 							</label>
 						</div>
 					</div>
@@ -75,13 +75,13 @@
 					<div class="form-item cf">
 						<label class="item-label">默认搜索字段<span class="check-tips">（默认列表模板的默认搜索项）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="search_key" value="{$info.search_key}">
+							<input type="text" class="form-control" name="search_key" value="{$info.search_key}">
 						</div>
 					</div>
 					<div class="form-item cf">
 						<label class="item-label">高级搜索字段<span class="check-tips">（默认列表模板的高级搜索项）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="search_list" value="{$info.search_list}">
+							<input type="text" class="form-control" name="search_list" value="{$info.search_list}">
 						</div>
 					</div>
 				</div>
@@ -91,25 +91,25 @@
 					<div class="form-item cf">
 						<label class="item-label">列表模板<span class="check-tips">（自定义的列表模板，放在Application\Admin\View\Think下，不写则使用默认模板）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="template_list" value="{$info.template_list}">
+							<input type="text" class="form-control" name="template_list" value="{$info.template_list}">
 						</div>
 					</div>
 					<div class="form-item cf">
 						<label class="item-label">新增模板<span class="check-tips">（自定义的新增模板，放在Application\Admin\View\Think下，不写则使用默认模板）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="template_add" value="{$info.template_add}">
+							<input type="text" class="form-control" name="template_add" value="{$info.template_add}">
 						</div>
 					</div>
 					<div class="form-item cf">
 						<label class="item-label">编辑模板<span class="check-tips">（自定义的编辑模板，放在Application\Admin\View\Think下，不写则使用默认模板）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-large" name="template_edit" value="{$info.template_edit}">
+							<input type="text" class="form-control" name="template_edit" value="{$info.template_edit}">
 						</div>
 					</div>
 					<div class="form-item cf">
 						<label class="item-label">列表数据大小<span class="check-tips">（默认列表模板的分页属性）</span></label>
 						<div class="controls">
-							<input type="text" class="text input-small" name="list_row" value="{$info.list_row}">
+							<input type="text" class="form-control" name="list_row" value="{$info.list_row}">
 						</div>
 					</div>
 				</div>

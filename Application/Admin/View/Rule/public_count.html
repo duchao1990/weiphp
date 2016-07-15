@@ -6,13 +6,13 @@
     </div>
     <form action="{:U()}" method="post" class="form-horizontal">
        <input type="hidden" name="uid" value="{$uid}" />
-        <div class="form-item">
+        <div class="form-group">
             <label class="item-label">可创建的公众号数<span class="check-tips">（用户最多可创建的公众号数）</span></label>
             <div class="controls">
-                <input type="text" class="text input-large" name="public_count" value="{$public_count}">
+                <input type="text" class="form-control" name="public_count" value="{$public_count}">
             </div>
         </div>
-        <div class="form-item">
+        <div class="form-group">
             <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
             <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
         </div>

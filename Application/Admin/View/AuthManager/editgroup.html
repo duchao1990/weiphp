@@ -7,13 +7,13 @@
   </div>
   <form action="{:U('AuthManager/writeGroup')}" enctype="application/x-www-form-urlencoded" method="POST"
             class="form-horizontal">
-    <div class="form-item">
+    <div class="form-group">
       <label for="auth-title" class="item-label">用户组</label>
       <div class="controls">
-        <input id="auth-title" type="text" name="title" class="text input-large" value="{$auth_group.title}"/>
+        <input id="auth-title" type="text" name="title" class="form-control" value="{$auth_group.title}"/>
       </div>
     </div>
-    <div class="form-item">
+    <div class="form-group">
       <label for="auth-type" class="item-label">组类型</label>
       <div class="controls">
         <select name="type">
@@ -27,7 +27,7 @@
       <p>等级用户组：可配置用户满足多少积分或者金币时才能升级的用户组，多个等级用户组之间有上下顺序之分</p>
       <p>认证用户组：可配置需要填写什么认证信息，用户申请认证后，管理员在后台审核通过即可有此认证组权限，用户名可加上认证图标</p></div>
     </div>
-    <div class="form-item">
+    <div class="form-group">
       <label for="auth-description" class="item-label">图标</label>    
           <div class="controls uploadrow2" data-max="1" title="点击上传图片" rel="icon">
             <input type="file" id="upload_picture_icon">
@@ -40,15 +40,15 @@
             </div>
           </div>  
    </div>                            
-    <div class="form-item">
+    <div class="form-group">
       <label for="auth-description" class="item-label">描述</label>
       <div class="controls">
         <label class="textarea input-large">
-          <textarea id="auth-description" type="text" name="description">{$auth_group.description}</textarea>
+          <textarea class="form-control" rows="10" id="auth-description" type="text" name="description">{$auth_group.description}</textarea>
         </label>
       </div>
     </div>
-    <div class="form-item">
+    <div class="form-group">
       <input type="hidden" name="id" value="{$auth_group.id}" />
       <button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
       <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>

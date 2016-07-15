@@ -12,7 +12,7 @@ namespace Web\Controller;
 use Think\Controller;
 use Think\MyPage;
 
-class TempleController extends Controller
+class TempleController extends WebController
 {
     function index(){
         $keyword=I('keyword');
@@ -40,12 +40,58 @@ class TempleController extends Controller
         $this->display();
     }
     
-    function add(){
+    function addTempleInfo(){
         if (IS_POST){
-            
+            $temInfoModel=M('templeinfo');
+            $where['templeid']=$this->templeid;
+            $is_have=$temInfoModel->where($where)->find();
+            $data=array(
+                'cover'=>I('post.newsCover'),
+                'content'=>I('post.content'),
+                'templeid'=>$this->templeid
+            );
+
+            if ($is_have){
+                $res=$temInfoModel->where($where)->save($data);
+            }else{
+                $res=M('templeinfo')->add($data);
+            }
+            if ($res){
+                $this->success('添加成功',U('Plat/index'));
+            }else{
+                $this->error('添加失败');
+            }
         }else{
-            $this->display();
+            $this->assign('title','寺院介绍');
+            $this->display('add');
         }
     }
 
+
+    function addMasterInfo(){
+        if (IS_POST){
+            $temInfoModel=M('templeinfo');
+            $where['masterid']=$this->masterid;
+            $is_have=$temInfoModel->where($where)->find();
+            $data=array(
+                'cover'=>I('post.newsCover'),
+                'content'=>I('post.content'),
+                'masterid'=>$this->masterid
+            );
+            if ($is_have){
+                $res=$temInfoModel->where($where)->save($data);
+            }else{
+                $res=M('templeinfo')->add($data);
+            }
+
+            if ($res){
+                $this->success('添加成功',U('Plat/index'));
+            }else{
+                $this->error('添加失败');
+            }
+        }else{
+            $this->assign('title','自我介绍');
+            $this->display('add');
+        }
+    }
 }

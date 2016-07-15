@@ -7,20 +7,20 @@
   </div>
   <form action="{:U('Rule/writeRule')}" enctype="application/x-www-form-urlencoded" method="POST"
             class="form-horizontal">
-    <div class="form-item">
+    <div class="form-group">
       <label for="auth-name" class="item-label">节点名称</label>
       <div class="controls">
-        <input id="auth-name" type="text" name="name" class="text input-large" value="{$auth_rule.name}"/>
+        <input id="auth-name" type="text" name="name" class="form-control" value="{$auth_rule.name}"/>
       </div>
     </div>   
-    <div class="form-item">
+    <div class="form-group">
       <label for="auth-title" class="item-label">接口名称</label>
       <div class="controls">
-        <input id="auth-title" type="text" name="title" class="text input-large" value="{$auth_rule.title}"/>
+        <input id="auth-title" type="text" name="title" class="form-control" value="{$auth_rule.title}"/>
       </div>
     </div>    
         
-    <div class="form-item">
+    <div class="form-group">
       <input type="hidden" name="id" value="{$auth_rule.id}" />
       <input type="hidden" name="group" value="wechat" />
       <button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>

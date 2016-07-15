@@ -5,7 +5,7 @@
         <h2>{:isset($info['id'])?'编辑':'新增'}图文样式</h2>
     </div>
     <form action="{$postUrl}" method="post" class="form-horizontal">
-        <div class="form-item">
+        <div class="form-group">
             <label class="item-label">样式分组<span class="check-tips"></span></label>
             <div class="controls">
             	<select name="group_id">
@@ -15,12 +15,12 @@
                 </select>
             </div>
         </div>
-        <div class="form-item" style="clear:both; overflow:hidden">
+        <div class="form-group" style="clear:both; overflow:hidden">
         	<div class="fl">
             <label class="item-label">样式内容<span class="check-tips"></span></label>
             <div class="controls" style="width:600px" >
              <label class="textarea">
-                <textarea style="height:200px" name="style" onKeyUp="$('.style_content').html($(this).val())" >{$info.style}</textarea>
+                <textarea class="form-control" rows="10" style="height:200px" name="style" onKeyUp="$('.style_content').html($(this).val())" >{$info.style}</textarea>
              </label>
             </div>
             </div>
@@ -32,7 +32,7 @@
             </div>
         </div>
         
-        <div class="form-item">
+        <div class="form-group">
             <input type="hidden" name="id" value="{$info.id|default=''}">
             <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
             <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
