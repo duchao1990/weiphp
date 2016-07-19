@@ -30,4 +30,6 @@ class PingppModel extends Model{
     }
 
 
+
+
 }

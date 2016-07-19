@@ -14,8 +14,6 @@ class MasterController extends WebController
     function lists(){
         $where['templeid']=$this->templeid;
         $list=M('master')->where($where)->select();
-        dump($list);
-        die;
         $this->assign('list',$list);
         $this->display();
     }

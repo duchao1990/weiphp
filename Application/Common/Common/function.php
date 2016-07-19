@@ -3065,6 +3065,8 @@ function check_verify($code, $id = 1) {
 	$verify = new \Think\Verify ();
 	return $verify->check ( $code, $id );
 }
+
+
 // 权限检查
 function checkRule($rule = '', $uid = '') {
 	static $Auth = null;

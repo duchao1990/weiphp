@@ -40,6 +40,7 @@ class PingppController extends BaseController{
                 // 获取模型的字段信息
                 $Model = $this->checkAttr ( $Model, $this->model ['id'] );
                 if ($Model->create () && $Model->add ()) {
+                    $this->getPingSet($token,true,array('pingsk'=>I('post.pingsk'),'pingid'=>I('post.pingid')));
                     $this->success ( '保存成功！',U('lists'));
 
                 } else {
@@ -48,6 +49,7 @@ class PingppController extends BaseController{
             } else {
                 $Model = $this->checkAttr ( $Model, $this->model ['id'] );
                 if ($Model->create () && $Model->save ()) {
+                    $this->getPingSet($token,true,array('pingsk'=>I('post.pingsk'),'pingid'=>I('post.pingid')));
                     $this->success ( '保存成功！',U('lists'));
                 } else {
                     $this->error ( $Model->getError () );
@@ -74,6 +76,7 @@ class PingppController extends BaseController{
     {
         $token=get_token();
         $payconfig=$this->config;
+        $paySet=$this->getPingSet($token);
         if($payconfig[$orderinfo['method']]==1){
 
             if($orderinfo['method']='wx_pub'){
@@ -82,7 +85,7 @@ class PingppController extends BaseController{
             }else{
                 $extra=array();
             }
-            Pingpp::setApiKey($payconfig['pingsk']);
+            Pingpp::setApiKey($paySet['pingsk']);
             $subject=$orderinfo['subject'];
             $body=date('Y-m-d H:i:s',time()).'购买'.$orderinfo['subject'];
             $ch= Charge::create(
@@ -91,7 +94,7 @@ class PingppController extends BaseController{
                     'amount'    => $orderinfo['amount']*100,
                     'currency'  => 'cny',
                     'channel'   => $orderinfo['method'],
-                    'app'       => array('id' => $payconfig['pingID']),
+                    'app'       => array('id' => $paySet['pingid']),
                     'client_ip' => $_SERVER['REMOTE_ADDR'],
                     'subject'   => $subject,
                     'body'      => $body,
@@ -110,6 +113,22 @@ class PingppController extends BaseController{
 
 
         return $msg;
+    }
+
+    public function getPingSet($id, $update = false, $data = array()){
+        $key = 'Ping_getInfo_' . $id;
+        $info = S ( $key );
+        if ($info === false || $update) {
+            if (empty ( $data )){
+                $info=$data;
+            }else{
+                $where['token']=$id;
+                $info=M('pingpp_set')->where($where)->field('pingsk,pingid')->find();
+            }
+            S ( $key, $info );
+        }
+
+        return $info;
     }
 
 

@@ -20,7 +20,10 @@ class SiyuanController extends BaseController{
 	}
 
 	function templeUser(){
-		$map['token']=get_token();
+		$token=get_token();
+		if ($token!='gh_b0fd347506da'){
+		$map['token']=$token;
+
 		$map['title']='大师';
 		$gid=M('auth_group')->where($map)->getField('id');
 
@@ -34,7 +37,7 @@ class SiyuanController extends BaseController{
 				$temUser=M('user')->where($usermap)->field('uid,headimgurl,nickname')->select();
 				foreach ($temUser as $key => $value) {
 					$infoMap['sort']=$value['uid'];
-					$temUser[$key]['infoid']=$infoM->where($infoMap)->getField('id');
+					$temUser[$key]['id']=$infoM->where($infoMap)->getField('id');
 					$temUser[$key]['nickname']=trim(urldecode($value['nickname']),'"');
 				}
 				$msg=array('code'=>1,'temUser'=>$temUser);
@@ -43,6 +46,28 @@ class SiyuanController extends BaseController{
 			}
 		}else{
 			$msg=array('code'=>0,'msg'=>'没有该分组');
+		}
+		}else{
+			$where['auth']=1;
+
+			$info=M('master')->where($where)->limit(6)->field('id,master')->select();
+			$coverModel=M('templeinfo');
+			foreach ($info as $index => $item) {
+				$where['masterid']=$item['id'];
+				$geren=$coverModel->where($where)->field('masterid,cover')->find();
+				$info[$index]['nickname']=$item['master'];
+				$info[$index]['headimgurl']=get_picture_url($geren['cover']);
+			}
+			$templeWhere['auth']=1;
+			$temple=M('temple')->where($templeWhere)->limit(6)->select();
+			foreach ($temple as $index => $item) {
+				$templeiWhere['templeid']=$item['id'];
+				$geren=$coverModel->where($templeiWhere)->field('templeid,cover')->find();
+				$temple[$index]['nickname']=$item['master'];
+				$temple[$index]['headimgurl']=get_picture_url($geren['cover']);
+			}
+
+			$msg=array('code'=>1,'temUser'=>$info,'temple'=>$temple);
 		}
 
 		echo json_encode($msg);

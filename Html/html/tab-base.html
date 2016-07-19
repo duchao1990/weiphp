@@ -41,25 +41,35 @@
     <div class="h3-title">
       <i class="iconfont center icon-zszhishi title-pr"></i>寺院介绍
     </div>
-    <div class="card item-text-wrap">
-      <div class="item item-complex">
-        <div class="item-content">
-         <a href="#/tab/siyuanInfo/{{intro.id}}">
-            <img src="{{intro.cover}}">
-         </a>  
-          <span>{{intro.intro}}</span>
+      <div class="item item-thumbnail-left item-complex">
+        <a class="item-content item-text-wrap" href="#/tab/siyuanInfo/{{intro.id}}">
+          <img src="{{intro.cover}}" style=" width: 80px; height: 80px;">
+          <p class="desc">{{intro.intro|limitTo:81}}...</p>
+        </a>
+      </div>
+      <!-- 寺院大师 -->
+      <div class="h3-title title-top" ng-if="temple">
+        <i class="iconfont center icon-xinwen1 title-pr"></i>入驻的寺院
+      </div>
+      <div class="list" style="overflow: auto;" ng-if="temple">
+        <div class="mycarda fl" ng-repeat="item in temple">
+          <div class="item item-body">
+            <a class="carda" href="#/tab/siyuanInfo/{{temple.id}}">
+              <img class="full-image" src="{{item.headimgurl}}" style="height: 100px;">
+              <h5 style="text-align: center;">{{item.nickname}}</h5>
+            </a>
+          </div>
         </div>
       </div>
-    </div> 
+
     <!-- 寺院大师 -->
     <div class="h3-title title-top">
       <i class="iconfont center icon-xinwen1 title-pr"></i>寺院大师
     </div>
-
     <div class="list" style="overflow: auto;">
           <div class="mycarda fl" ng-repeat="item in items">
               <div class="item item-body">
-                 <a class="carda" href="#/tab/siyuanInfo/{{item.infoid}}">
+                 <a class="carda" href="#/tab/siyuanInfo/{{item.id}}">
                   <img class="full-image" src="{{item.headimgurl}}" style="height: 100px;">
                   <h5 style="text-align: center;">{{item.nickname}}</h5>
                 </a>

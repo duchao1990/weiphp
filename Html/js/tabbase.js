@@ -5,12 +5,13 @@
           $scope.intro=succ.intro;
         }, function (error) {
           ionicToast.show('服务器错误','middle', false, 2500);
-        })
+        });
      
 
      SiyuanSer.templeUser().$promise.then(function (succ) {
       if (succ.code==1) {
                $scope.items=succ.temUser;
+                $scope.temple=succ.temple;
              }else{
               $scope.msg=succ.msg;
              }
