@@ -1,0 +1,46 @@
+<ion-view hide-nav-bar="true">
+    <ion-content>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          省份
+        </div>
+        <select ng-change="selectProvince(myprovince)" ng-model="myprovince" ng-options="province.id as province.name for province in provinces">
+        </select>
+      </label>
+    <label class="item item-input item-select">
+        <div class="input-label">
+          市区
+        </div>
+        <select ng-change="selectCity(mycity)" ng-model="mycity" ng-options="city.id as city.name for city in cityList">
+        </select>
+      </label>
+    <label class="item item-input item-select">
+        <div class="input-label">
+          县区
+        </div>
+        <select ng-change="selectDistrict(mydistrict)" ng-model="mydistrict" ng-options="district.id as district.name for district in districtList">
+        </select>
+    </label>
+
+    <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input id="searchKey" type="search"  placeholder="筛选" ng-model="searchKey">
+            <!--i class="icon ion-close-circled placeholder-icon" ng-click="clearSearch()"></i-->
+        </label>
+      </div>
+        <ion-list>
+          <div class="list" style="overflow: auto;" ng-if="masterList">
+            <div class="mycarda fl" ng-repeat="item in masterList |filter:searchKey">
+              <div class="item item-body">
+                <a class="carda" href="#/tab/siyuanIndex/{{temple.id}}">
+                  <img class="full-image" src="{{item.cover}}" style="height: 100px;">
+                  <h5 style="text-align: center;">{{item.temple}}:{{item.master}}</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </ion-list>
+        <ion-infinite-scroll ng-if="more"  on-infinite="loadMore()"  distance="1%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+<ion-view view-title="个人中心" hide-nav-bar="true">
+  <ion-content>
+      <div class="userdiv">
+              <img  class="userlogo" src="{{headimgurl}}" />
+              <div class="username" style="float:right;margin-top: 10px;">
+              {{nickname}}
+              </div>
+      </div>
+
+      <div class="list" >
+        <a href="#/tab/ri"  class="item item-icon-left item-icon-right myitem" >
+          <i class="icon ion-ios-calendar-outline myicon"></i>
+          佛教日历
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a   href="#/tab/integral" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-card myicon"></i>
+          功德中心
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a href="#/tab/buylist" class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-android-cart myicon"></i>
+          订单中心
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+         <a href="#/tab/myaddress"  class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-android-car myicon"></i>
+          地址管理
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a href="#/tab/myuan"  class="item item-icon-left item-icon-right myitem">
+          <i class="icon ion-ios-heart-outline myicon"></i>
+          我的愿望
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        
+        <a href="#/tab/advice"  class="item item-icon-left item-icon-right myitem" >
+          <i class="icon ion-ios-compose-outline myicon"></i>
+          意见反馈
+          <i class="icon ion-ios-arrow-right myicon"></i>
+        </a>
+        <a ng-if="isLogin"  class="item item-icon-left myitem" ng-click="LoginOut()">
+        <i class="icon ion-ios-paperplane-outline myicon"></i>
+          退出登录
+        </a>
+      </div>
+
+  </ion-content>
+</ion-view>

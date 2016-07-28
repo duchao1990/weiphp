@@ -1,0 +1,24 @@
+<ion-view hide-nav-bar="true" view-title='商品列表'>
+<ion-content has-subheader="false">
+  <div class='ion-gallery-content' ng-if="goodslist">
+    <div class='card gallery-card' ng-repeat='item in goodslist'>
+      <a class='item gallery-item'  ng-href="#/tab/goodsinfo/{{item.id}}">
+        <img ng-src='{{item.cover}}' class='gallery-product-image'>
+        <h3 class='gallery-product-title'> {{item.title|limitTo:10}}...</h3>
+          <p class="no-margin">
+            <button class="button button-clear button-small"><span style="color:#ff5500;font-weight:blod;font-size:1.2em;">{{item.price}}</span></button>
+           <button class="button button-clear button-small fr buybtn" >&nbsp 查看 &nbsp</button>
+          </p>
+        </a>
+    </div>
+  </div>
+  <ion-infinite-scroll ng-if="more"  on-infinite="loadMore()"  distance="1%"></ion-infinite-scroll>
+  <p ng-if="!more" class="ormore">没有更多数据了</p>
+  <div class='empty-cart-div' ng-if='!goodslist'>
+    <h3 class='empty-cart-header'>{{msg}}</h3>
+    <i class='icon ion-filing empty-cart-icon'></i>
+  </div>
+
+</ion-content>
+  <a href="#/tab/cart" class="button button-energized cart-btn"><i class="icon ion-android-cart"></i></a>
+</ion-view>

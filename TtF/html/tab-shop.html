@@ -1,0 +1,29 @@
+<ion-view hide-nav-bar="true" view-title='在线拜佛'>
+<ion-content has-subheader="false">
+<ion-slide-box ng-if="shopindex.slide">
+  <ion-slide ng-repeat="slide in shopindex.slide" style="height:240px;">
+    <a class="box blue" href="#{{slide.url}}"><img src="{{slide.img}}" style="height:240px;"></a>
+  </ion-slide>
+</ion-slide-box>
+<div class="row">
+  <a class="col" ng-repeat="value in shopindex.cate" style="padding:0 8px;" href="#/tab/goodslist/{{value.id}}">
+    <img src="{{value.img}}">
+    <p class="cate-name">{{value.title}}</p>
+  </a>
+</div>
+
+<div class='ion-gallery-content' ng-if="shopindex.list">
+  <div class='card gallery-card' ng-repeat='item in shopindex.list'>
+    <a class='item gallery-item' ng-href="#/tab/goodsinfo/{{item.id}}">
+      <img ng-src='{{item.cover}}' class='gallery-product-image'>
+      <h3 class='gallery-product-title'> {{item.title|limitTo:10}}...</h3>
+        <p class="no-margin">
+          <button class="button button-clear button-small"><span class="goodsprice">{{item.price}}</span></button>
+         <button class="button button-clear button-small fr buybtn" >&nbsp 查看 &nbsp</button>
+         </p>
+    </a>
+  </div>
+</div>
+</ion-content>
+  <a href="#/tab/cart" class="button button-energized cart-btn"><i class="icon ion-android-cart"></i></a>
+</ion-view>

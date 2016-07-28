@@ -1,0 +1,18 @@
+<ion-view view-title="寺院介绍" hide-nav-bar="true">
+	<ion-content has-subheader="false">
+		  <div class="list card" style="padding-bottom:20px;">
+            <div class="item">
+                <h2>{{info.title}}</h2>
+               <p><span  class="utime">{{info.cTime*1000|date:"yyyy/MM/dd H:mm"}}</span> <span class="source">来源: {{info.author}}</span></p>
+            </div>
+            <div class="item item-body" ng-bind-html="info.content">
+              
+            </div>
+            <a  class="button button-outline button-energized button-small btnforinfo button-block" ng-click="goPay()">
+                随喜赞赏
+            </a>
+            <p class="desc" style="text-align: center;color:#ccc;">如果你喜欢这个内容,就给大师随喜赞赏</p>
+        </div>
+	</ion-content>
+
+</ion-view>

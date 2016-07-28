@@ -1,0 +1,39 @@
+<ion-view view-title="恭请单" hide-nav-bar="true">
+  <ion-content>
+    <div ng-if='cartList'>
+
+      <div class='card product-card cart-card' ng-repeat='cart in cartList'>
+        <div class="row">
+                    <div class="col col-20">
+                      <ion-checkbox ng-model="selected" ng-checked="isSelected" ng-click="updateSelection($event,cart.goods_id)">
+                      </ion-checkbox>
+                    </div>
+
+                    <div class="col col-80">
+                      <div class='item item-thumbnail-left' >
+                        <img ng-src='{{cart.goods_data.cover}}' class='product-image'>
+                        <h3 class='product-title'>{{cart.goods_data.title}}</h3>
+                        <p class="padding">
+                          <i class='icon ion-minus-round icon-minus-round' mouse-down-up ng-disabled="cart.num===1" ng-click='removeProduct(cart.goods_id)'></i>
+                          <span class='product-quantity'>{{cart.num}}</span>
+                          <i class='icon ion-plus-round icon-plus-round' mouse-down-up ng-click='addProduct(cart.goods_id)'></i>
+                        </p>
+                        <p><span class='product-price'>￥{{cart.price}} * {{cart.num}} = </span> &nbsp {{cart.num*cart.price}}元</p>
+                      </div>
+                    </div>
+
+
+        </div>  
+      </div>
+    </div>
+
+    <div class='empty-cart-div' ng-if='!cartList'>
+      <a class='empty-cart-header' href="#/tab/shop">{{msg}}</a>
+      <p><i class='icon ion-bag empty-cart-icon'></i></p>
+    </div>
+
+  </ion-content>
+  <ion-footer-bar  class="bar-energized" ng-if='cartList' style='margin: 0px;'>
+      <button ng-disabled="!buyCount" class="button button-clear button-small button-block " style="margin:0px;" ng-click="checkOut()">下单结算({{buyCount}}元)</button>
+  </ion-footer-bar>
+</ion-view>

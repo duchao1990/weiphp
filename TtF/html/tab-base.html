@@ -1,0 +1,18 @@
+<ion-view view-title="云端道场" hide-tabs="true" hide-nav-bar="true">
+  <div class="bar bar-subheader bar-energized" style="top: 0px;">
+    <h2 class="title">云端道场:入驻大师</h2>
+    <a class="button button-clear button-icon ion-search" href="#/tab/search"></a>
+  </div>
+  <ion-content class="has-subheader" style="top: 44px;">
+      <div class="list" style="overflow: auto;" ng-if="items">
+        <div class="mycarda fl" ng-repeat="item in items">
+          <div class="item item-body">
+            <a class="carda" href="#/tab/siyuanIndex/{{item.id}}">
+              <img class="full-image" src="{{item.cover}}" style="height: 100px;">
+              <h5 style="text-align: center;">{{item.temple}}:{{item.master}}</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

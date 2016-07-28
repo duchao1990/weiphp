@@ -1,0 +1,24 @@
+<ion-view view-title="愿望列表" hide-nav-bar="true">
+  <ion-content>
+      <ion-refresher pulling-text="刷新页面..." on-refresh="doRefresh()" ></ion-refresher>
+      <div class="content ionic-pseudo my-m-bottom">
+        <div ng-class-odd="'list color-true'" ng-class-even="'list'" ng-repeat="item in myuanitems">
+          <div class="item item-avatar item-my-pl no-b-top" href="#">
+            <img ng-if="item.cover" src="{{item.cover}}">
+            <img ng-if="!item.cover" src="TtF/image/logo.jpg">
+            <h2 style="font-size: 0.8em;">{{item.nickname}}<span class="fr font-10">{{item.addtime*1000|date:"yyyy/MM/dd H:mm"}}</span></span></h2>
+            <p style="font-size: 0.8em;">礼佛【{{item.fo}}】祈愿:</p>
+          </div>
+          <div class="my-padding">
+            {{item.yuan}}
+          </div>
+          <div class="my-padding">
+            <button ng-disabled="item.status" class="button button-small button-energized color-hy" id="item{{item.id}}" ng-click="changeStatus({{item.id}})">{{item.zh_sta}}</button>
+            <button ng-disabled="item.status" class="button button-small button-energized color-hy" id="show{{item.id}}" ng-click="changeStatus({{item.id}})">{{item.zh_show}}</button>
+            <button ng-if="iswechat==='yes'" class="button button-small button-icon  ion-android-share-alt fr" ng-click="shareyuan({{item.id}})">分享</button>
+            <button  class="button button-light button-small button-icon ion-ios-heart-outline fr" style="margin-right: 20px;line-height: 20px;">{{item.view}}</button></div>
+        </div>
+      </div>
+      <ion-infinite-scroll ng-if="more"  on-infinite="loadMore()"  distance="1%"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

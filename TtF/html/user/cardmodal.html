@@ -1,0 +1,62 @@
+<ion-modal-view ng-controller="CardmodalCtrl">
+  <ion-header-bar class='bar-energized'>
+    <h1 class="title">功德无量</h1>
+    <button class="button button-clear" ng-click="hideModal()">关闭</button>
+  </ion-header-bar>
+  <form name="carData" ng-submit="CradForm()" ng-controller="CardmodalCtrl">
+  <ion-content class='padding'>
+  <div class="list">
+
+        <div class="item item-divider item-icon-right">
+          收货信息(请添写正确的收货信息)
+        </div>
+          <ion-input class="item item-input">
+            <i class="icon ion-ios-location"></i>
+            <input type="text" ng-model='carData.address' placeholder="收货地址,请详细添加" required>
+          </ion-input>
+          <ion-input class="item item-input">
+            <i class="icon ion-ios-person"></i>
+            <input type="text" ng-model='carData.name' placeholder="收货人名字" required>
+          </ion-input>
+          <ion-input class="item item-input">
+            <i class="icon ion-ios-location"></i>
+            <input type="text" ng-model='carData.zipcode' placeholder="邮编" required>
+          </ion-input>
+          <ion-input class="item item-input">
+            <i class="icon ion-iphone"></i>
+            <input type="text" ng-model='carData.phone' placeholder="联系手机" required ng-pattern='/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/'>
+          </ion-input>
+        <div class="item item-thumbnail-left item-complex">
+          <a class="item-content">
+            <img src="{{goods.imgpath}}" style="background:black; width: 80px; height: 80px;">
+            <h2 class="title">{{goods.goods_name}}</h2>
+            <p class="desc">每件 {{goods.money_need}}功德</p>
+            <div class="row" style="width:60%;margin: 10px;">
+              <button ng-disabled='isDisabled' ng-click="minus()" class="button button-outline  button-small button-icon ion-minus-round col col-25" style="padding: 0px;height: 34px;"></button>
+              <input type="text" ng-model='goodsnum'  class="col col-50" style="border:1px solid #ccc;">
+              <button ng-click="plus()" class="button button-outline  button-small button-icon ion-plus-round col col-25" style="padding: 0px;height: 34px;"></button>
+            </div>
+          </a>
+        </div>
+          <h5 style="text-align: center;color: #330000;">请选择支付方式</h5>
+          <div class="row">
+            <div class="col col-50" ng-repeat="item in paytList" >
+                <ion-radio        
+                      ng-value="item.value"
+                      ng-model="paytype"
+                      ng-change="payChange(item.value)"
+                          >
+                         {{item.text}}
+                </ion-radio>
+            </div>
+        </div>
+    </div>
+  </ion-content>
+      <div class="bar bar-footer bar-clear">
+      <div class="button-bar">
+        <a class="button button-positive">共{{goods['money_need']*goodsnum}}功德</a>
+        <button class="button button-energized" ng-disabled="carData.$invalid" type="submit">支付</button>
+      </div>
+    </div>
+  </form>
+</ion-modal-view>

@@ -1,0 +1,34 @@
+<ion-view hide-nav-bar="true" view-title='{{goods.title}}'>
+    <ion-content has-subheader="false">
+        <ion-slide-box ng-if="goods.imgs_url">
+            <ion-slide ng-repeat="slide in goods.imgs_url">
+                <div class="box blue"><img src="{{slide}}" style="height:240px;"></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="padding" ng-if="goods">
+            <h4 class='gallery-product-title'>{{goods.title}}</h4>
+            <p class="">
+                价格:
+                <span class="goodsprice">{{goods.price}}</span>
+            </p>
+            <p >
+                数目:
+                <i class='icon ion-minus-round icon-minus-round' mouse-down-up ng-click='removeProduct()' ng-disabled="buyCount===1"></i>
+                <span class='product-quantity'>{{buyCount}}</span>
+                <i class='icon ion-plus-round icon-plus-round' mouse-down-up ng-click='addProduct()' ></i>
+
+                <button class="button button-energized button-small button-outline fr buybtn" ng-click="addToCart()">&nbsp 恭 请 &nbsp</button>
+            </p>
+        </div>
+        <div ng-bind-html="goods.content" ng-if="goods.content">
+
+        </div>
+
+  <div class='empty-cart-div' ng-if='!goods'>
+    <h3 class='empty-cart-header'>{{msg}}</h3>
+    <i class='icon ion-heart-broken empty-cart-icon'></i>
+  </div>
+
+    </ion-content>
+      <a href="#/tab/cart" class="button button-energized cart-btn"><i class="icon ion-android-cart"></i></a>
+</ion-view>

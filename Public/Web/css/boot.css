@@ -2,5 +2,10 @@
     height:100px;
     padding:0;
     line-height: 100px;
-    margin:20px;
+    margin:10px 0px;
 }
+@media (min-width:320px) and (max-width:550px){
+.edui-default .edui-for-insertimage .edui-dialog-content{width: 320px;}
+}
+	
+
