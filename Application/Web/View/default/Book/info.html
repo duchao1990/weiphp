@@ -1,0 +1,26 @@
+<extend name="Base/webcom"/>
+
+<block name="body">
+<script src="//cdn.bootcss.com/require.js/2.2.0/require.js"></script>
+        <div class="col s12 m7" >
+          <div class="card brown lighten-5">
+                <div class="card-content row jingContent">
+                    <empty name="info.content">
+                      <iframe src="{$info.source_url}" style="width:100%;max-width:670px;height:810px;"></iframe>
+                <else />
+                    <div class="col l2 s2 m2">
+                      订阅蓝
+                    </div>
+                    <div class="col l8 s8 m8">
+                      {$info.content}
+                    </div>
+                    
+                </empty> 
+                </div>
+                <div class="card-action">
+
+                </div>
+          </div>
+        </div>
+
+</block>

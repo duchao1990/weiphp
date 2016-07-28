@@ -3782,3 +3782,59 @@ function is_install($addon_name) {
 	$list = D ( 'home/Addons' )->getList ();
 	return isset ( $list [$addon_name] );
 }
+
+function userUnicode($username){
+	return trim(urldecode($username),'"');
+}
+function qrcode($data,$filename,$picPath=false,$logo=false,$size='4',$level='L',$padding=2,$saveandprint=false){
+    vendor("phpqrcode.phpqrcode");//引入工具包
+    // 下面注释了把二维码图片保存到本地的代码,如果要保存图片,用$fileName替换第二个参数false
+    $path = $picPath?$picPath:__ROOT__."\\Uploads\\Picture\\QRcode"; //图片输出路径
+    mkdir($path);//dump($path);exit;
+    //在二维码上面添加LOGO
+    if(empty($logo) || $logo=== false) { //不包含LOGO
+        if ($filename==false) {
+            QRcode::png($data, false, $level, $size, $padding, $saveandprint); //直接输出到浏览器，不含LOGO
+        }else{
+            $filename=$path.'/'.$filename; //合成路径
+            QRcode::png($data, $filename, $level, $size, $padding, $saveandprint); //直接输出到浏览器，不含LOGO
+        }
+    }else { //包含LOGO
+        if ($filename==false){
+            //$filename=tempnam('','').'.png';//生成临时文件
+            die(L('_PARAMETER_ERROR_'));
+        }else {
+            //生成二维码,保存到文件
+            $filename = $path . '\\' . $filename; //合成路径
+        }
+        QRcode::png($data, $filename, $level, $size, $padding);
+        $QR = imagecreatefromstring(file_get_contents($filename));
+        $logo = imagecreatefromstring(file_get_contents($logo));
+        $QR_width = imagesx($QR);
+        $QR_height = imagesy($QR);
+        $logo_width = imagesx($logo);
+        $logo_height = imagesy($logo);
+        $logo_qr_width = $QR_width / 5;
+        $scale = $logo_width / $logo_qr_width;
+        $logo_qr_height = $logo_height / $scale;
+        $from_width = ($QR_width - $logo_qr_width) / 2;
+        imagecopyresampled($QR, $logo, $from_width, $from_width, 0, 0, $logo_qr_width, $logo_qr_height, $logo_width, $logo_height);
+        if ($filename === false) {
+            Header("Content-type: image/png");
+            imagepng($QR);
+        } else {
+            if ($saveandprint === true) {
+                imagepng($QR, $filename);
+                header("Content-type: image/png");//输出到浏览器
+                imagepng($QR);
+            } else {
+                imagepng($QR, $filename);
+            }
+        }
+    }
+    return $filename;
+}
+
+function getTrueAmout($number){
+	return $number/100;
+}

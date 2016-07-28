@@ -9,7 +9,6 @@
         </div>
         <h2>网站设置</h2>
 	</div>
-		<div class="tab-wrap">
 		<ul class="nav nav-tabs">
 		<volist name="Think.config.CONFIG_GROUP_LIST" id="group">
 
@@ -18,56 +17,51 @@
 		</volist>
 		</ul>
 		<div class="tab-content">
-	<form action="{:U('save')}" method="post" class="form-horizontal">
-	<volist name="list" id="config">
-		<div class="form-group">
-			<label class="item-label">{$config.title}<if condition="!empty($config['remark'])"><span class="check-tips">（{$config.remark}）</span></if> </label>
-			<div class="controls">
-			<switch name="config.type">
-			<case value="0">
-			<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
-			</case>
-			<case value="1">
-			<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
-			</case>
-			<case value="2">
-			<label class="textarea input-large">
-				<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
-			</label>
-			</case>
-			<case value="3">
-			<label class="textarea input-large">
-				<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
-			</label>
-			</case>
-			<case value="4">
-			<select name="config[{$config.name}]">
-				<volist name=":parse_config_attr($config['extra'])" id="vo">
-					<option value="{$key}" <eq name="config.value" value="$key">selected</eq>>{$vo}</option>
-				</volist>
-			</select>
-			</case>
-			</switch>
-				
-			</div>
+				<form action="{:U('save')}" method="post" class="form-horizontal">
+					<volist name="list" id="config">
+						<div class="form-group">
+							<label class="item-label">{$config.title}<if condition="!empty($config['remark'])"><span class="check-tips">（{$config.remark}）</span></if> </label>
+							<div class="controls">
+							<switch name="config.type">
+							<case value="0">
+							<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
+							</case>
+							<case value="1">
+							<input type="text" class="form-control" name="config[{$config.name}]" value="{$config.value}">
+							</case>
+							<case value="2">
+								<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
+							</case>
+							<case value="3">
+								<textarea class="form-control" rows="10" name="config[{$config.name}]">{$config.value}</textarea>
+							</case>
+							<case value="4">
+							<select name="config[{$config.name}]" class="form-control">
+								<volist name=":parse_config_attr($config['extra'])" id="vo">
+									<option value="{$key}" <eq name="config.value" value="$key">selected</eq>>{$vo}</option>
+								</volist>
+							</select>
+							</case>
+							</switch>
+								
+							</div>
+						</div>
+					</volist>
+					<div class="form-group">
+						<label class="item-label"></label>
+						<div class="controls">
+							<empty name="list"><button type="submit" disabled class="btn submit-btn disabled" target-form="form-horizontal">确 定</button><else/><button type="submit" class="btn btn-success submit-btn ajax-post" target-form="form-horizontal">确 定</button></empty>
+							
+							<button class="btn btn-danger  btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			                <notempty name="more_button">
+			                    <volist name="more_button" id="vo">
+			                        <a class="btn" href="{$vo.url}">{$vo.title}</a>
+			                    </volist>
+			                </notempty>
+						</div>
+					</div>
+				</form>
 		</div>
-		</volist>
-		<div class="form-group">
-			<label class="item-label"></label>
-			<div class="controls">
-				<empty name="list"><button type="submit" disabled class="btn submit-btn disabled" target-form="form-horizontal">确 定</button><else/><button type="submit" class="btn btn-success submit-btn ajax-post" target-form="form-horizontal">确 定</button></empty>
-				
-				<button class="btn btn-danger  btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
-                <notempty name="more_button">
-                    <volist name="more_button" id="vo">
-                        <a class="btn" href="{$vo.url}">{$vo.title}</a>
-                    </volist>
-                </notempty>
-			</div>
-		</div>
-	</form>
-			</div>
-	</div>
 </block>
 
 <block name="script">

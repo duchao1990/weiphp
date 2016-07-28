@@ -1,0 +1,23 @@
+<extend name="Base/webcom"/>
+<block name="body">
+    <div class="row">
+        <volist name='dataList' id='vo'>
+            <div class="col l4 m6 s12">
+                <a class="card carda" href="{:U('info',array('id'=>$vo['id']))}">
+                    <div class="card-content" style="overflow:auto;">
+                        <div class="left" style="width:30%;">
+                            <img src="{$vo.cover|get_picture_url}" class="newsimg">
+                        </div>
+                        <div class="right" style="width:65%;">
+                            <span class="card-title">{$vo.title|msubstr=0,9}</span>
+                            <p>
+                                {$vo.intro|msubstr=0,27}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </volist>
+        <div class="col l6 m12 offset-l6">{$page}</div>
+    </div>
+</block>

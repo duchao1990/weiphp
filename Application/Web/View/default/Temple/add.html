@@ -19,30 +19,30 @@
                 <div class="form-group">
                     <label>封面图片</label>
                     <input id="templeCardImgID" name="newsCover" class="form-control" type="text" readonly>
+                    <img src="{$data.cover|get_picture_url}" style="height: 200px;">
                 </div>
-                <div class="form-group">
+<!--                 <div class="form-group">
                     <label class="control-label" for="inputDesc">介绍</label>
-                    <textarea id="inputDesc" rows="5" class="form-control summernote"  name="content"></textarea>
-                </div>
+                    <textarea id="inputDesc" rows="5" class="form-control"  name="content"></textarea>
+                    {:hook('adminArticleEdit', array('name'=>'content','value'=>$data['content']))}
+                </div> -->
+                <label class="textarea">
+                    <label class="control-label" for="inputDesc">介绍</label>
+                    <textarea name="content">{$data['content']}</textarea>
+                    {:hook('adminArticleEdit', array('name'=>'content','value'=>$data['content']))}
+                </label>
                 <div class="form-group">
                     <label class="control-label" id="captchaOperation"></label>
                     <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
                 </div>
                 <div class="form-group">
                     <label class="control-label"></label>
-                    <input type="hidden" name="cate_id" value="{$cate_id}">
                     <button class="btn btn-block btn-primary" type="submit">登陆</button>
                 </div>
             </form>
         </div>
     </section>
     <script type="text/javascript">
-        $('.summernote').summernote({
-            height: 200,
-            tabsize: 2,
-            lang: 'zh-CN'
-        });
-
         $('#templeCard').fileinput({
             language: 'zh',
             uploadUrl: "{:U('File/uploadPicture')}",

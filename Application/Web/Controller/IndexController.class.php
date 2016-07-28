@@ -9,7 +9,7 @@
 
 namespace Web\Controller;
 use Think\Controller;
-
+use Think\MyPage;
 /**
  * 前台首页控制器
  * 主要获取首页聚合数据
@@ -26,45 +26,26 @@ class IndexController extends Controller {
     }
 
     //根据添加表单的信息进入不同的页面
-    function addForm(){
-        if (IS_AJAX){
-            $templeData=array(
-                'temple'=>I('post.temple'),
-                'province'=>I('post.province'),
-                'city'=>I('post.city'),
-                'district'=>I('post.district'),
-                'authNum'=>date('YmdHis')
-            );
-            $salt=salt();
-            $templeModel=M('temple');
-            $templeId=$templeModel->add($templeData);
-            if ($templeId){
-                $userData=array(
-                    'mobile'=>I('post.mobile'),
-                    'master'=>I('post.master'),
-                    'templeid'=>$templeId,
-                    'salt'=>$salt,
-                    'pwd'=>createPwd(I('post.mobile'),$salt)
-                );
-                $masterid=M('master')->add($userData);
-                if ($masterid){
-                    $map['id']=intval($templeId);
-                    $res=$templeModel->where($map)->save(array('masterid'=>$masterid));
-                    if ($res){
+    function allView(){
+        $keyword=I('keyword');
 
-                        $this->success('登记成功,请上传认证资料',U('Enter/verify'));
-                    }else{
-                        $this->error('寺院更新失败,请联系客服');
-                    }
-                }else{
-                    $this->error('用户登记失败,请联系客服');
-                }
-            }else{
-                $this->error('寺院登记失败,请联系客服');
-            }
-        }else{
-            $this->display();
+        if($keyword){
+            $map['temple']=array('like',"%$keyword%");
+        }
+        $map['auth']=1;
+        $TempleModel=M('Temple');
+        $timodel=M('templeinfo');
+        $total=$TempleModel->where($map)->count();
+        $Page=new MyPage($total,12);
+        $show=$Page->show();
+        $dataList= $TempleModel->where($map)->limit($Page->firstRow.','.$Page->listRows)->field('id,temple,auth')->select();
+        foreach ($dataList as $key => $value) {
+            $where['templeid']=$value['id'];
+            $dataList[$key]['cover']=$timodel->where($where)->getField('cover');
         }
 
+        $this->assign('page',$show);
+        $this->assign('dataList',$dataList);
+        $this->display();
     }
 }

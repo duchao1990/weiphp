@@ -62,6 +62,9 @@ class TempleController extends WebController
                 $this->error('添加失败');
             }
         }else{
+            $where['templeid']=$this->templeid;
+            $info=M('templeinfo')->where($where)->find();
+            $this->assign('data',$info);
             $this->assign('title','寺院介绍');
             $this->display('add');
         }
@@ -90,7 +93,10 @@ class TempleController extends WebController
                 $this->error('添加失败');
             }
         }else{
-            $this->assign('title','自我介绍');
+            $where['masterid']=$this->masterid;
+            $info=M('templeinfo')->where($where)->find();
+            $this->assign('data',$info);
+            $this->assign('title','法师介绍');
             $this->display('add');
         }
     }

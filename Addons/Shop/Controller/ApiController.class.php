@@ -362,6 +362,7 @@ class ApiController extends AddonsController
         $map['shop_id']=$this->shop_id;
         $map['title']='功德';
         $money=I('get.money',0,'float');
+        $masterid=I('get.masterid',0,'intval');
         $goods=M('shop_goods')->where($map)->find();
         $goods['cover']=get_picture_url($goods['cover']);
         $goods['num']=number_format($money/$goods['price'],2);
@@ -377,7 +378,8 @@ class ApiController extends AddonsController
             'total_price'=>$money,
             'goods_datas'=>json_encode(array($goods)),
             'shop_id'=>$this->shop_id,
-            'is_gongde'=>1
+            'is_gongde'=>1,
+            'masterid'=>$masterid
         );
         $id = D ( 'Addons://Shop/Order' )->add ( $orderdata );
         if($id){
@@ -414,7 +416,5 @@ class ApiController extends AddonsController
        }
         echo json_encode(array('code'=>1,'score'=>$score,'payList'=>$payList));
     }
-
-
 
 }

@@ -1,8 +1,9 @@
  angular.module('fo.controllers')
-  .controller('BaseCtrl', ['$scope','$rootScope','$stateParams','$state','SiyuanSer','ionicToast','$ionicModal','$ionicPopup','PaySer',
-    function($scope,$rootScope,$stateParams,$state,SiyuanSer,ionicToast,$ionicModal,$ionicPopup,PaySer){
+  .controller('BaseCtrl', ['$scope','$rootScope','$stateParams','$state','TempleSer','ionicToast','$ionicModal','$ionicPopup','PaySer',
+    function($scope,$rootScope,$stateParams,$state,TempleSer,ionicToast,$ionicModal,$ionicPopup,PaySer){
      SiyuanSer.intro().$promise.then(function(succ) {
           $scope.intro=succ.intro;
+         console.log($scope.intro);
         }, function (error) {
           ionicToast.show('服务器错误','middle', false, 2500);
         });

@@ -1,0 +1,19 @@
+<extend name="Base/webcom"/>
+
+
+<block name="body">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-panel teal white-text">
+                <h2 class="card-title" style="font-size:1.2em;font-weight:blod;">
+                    单号：{$data.order_no} 随喜：{$data.amount|getTrueAmout}元
+                </h2>
+                <span class="card-title">微信扫描一下二维码: </span>
+            </div>
+
+            <div class="card-content" style="overflow:auto;">
+               <center> <img src="{$qr}" style="width:320px;height: 320px;"></center>
+            </div>
+        </div>
+    </div>
+</block>

@@ -73,14 +73,48 @@ class FileController extends AdminController {
         ); //TODO:上传到远程服务器
 
         /* 记录图片信息 */
+        $ids='';
+        foreach ($info as $index => $item) {
+            $ids.=$item['id'].',';
+        }
+        $ids=substr($ids,0,-1);
         if($info){
             $return['status'] = 1;
-            $return = array_merge($info['download'], $return);
+            $return =$ids;
         } else {
             $return['status'] = 0;
             $return['info']   = $Picture->getError();
         }
+        /* 返回JSON数据 */
+        $this->ajaxReturn($return);
+    }
 
+        /* 文件上传 */
+    public function uploadPdf(){
+        $return  = array('status' => 1, 'info' => '上传成功', 'data' => '');
+        /* 调用文件上传组件上传文件 */
+        $File = D('File');
+        $file_driver = C('DOWNLOAD_UPLOAD_DRIVER');
+        $info = $File->upload(
+            $_FILES,
+            C('DOWNLOAD_UPLOAD'),
+            C('DOWNLOAD_UPLOAD_DRIVER'),
+            C("UPLOAD_{$file_driver}_CONFIG")
+        );
+
+        /* 记录附件信息 */
+        $ids='';
+        foreach ($info as $index => $item) {
+            $ids.=$item['id'].',';
+        }
+        $ids=substr($ids,0,-1);
+        if($info){
+            $return['status'] = 1;
+            $return =$ids;
+        } else {
+            $return['status'] = 0;
+            $return['info']   = $File->getError();
+        }
         /* 返回JSON数据 */
         $this->ajaxReturn($return);
     }

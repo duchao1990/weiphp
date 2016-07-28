@@ -59,38 +59,37 @@ class NewsController extends HomeController
                 'author'=>$this->masterid,
                 'cate_id'=>I('post.cate_id',1,'intval')
             );
-            $res=M('custom_reply_news')->add($data);
+            if (I('post.newsid',0,'intval')!==0){
+                $where['id']=I('post.newsid',0,'intval');
+                $res=M('custom_reply_news')->save($data);
+            }else{
+                $res=M('custom_reply_news')->add($data);
+            }
             if ($res){
-                $this->success('发布成功');
+                $this->success('发布成功',U('Plat/index'));
             }else{
                 $this->error('发布失败');
             }
         }else{
-            $type=I('get.type',1,'intval');
-            switch ($type) {
-                case '1':
-                    $title='新闻发布';
-                    break;
-                case '2':
-                     $title='感悟发布';
-                    break;
-                case '3':
-                     $title='义工发布';
-                    break;
-                case '4':
-                    $title='活动发布';
-                    break;
-                case '5':
-                     $title='功德发布';
-                    break;                    
-                default:
-                    $title='新闻发布';
-                    break;
-            }
-            $this->assign('title',$title);
-            $this->assign('cate_id',$type);
+            $where['id']=I('get.newsid');
+            $info=M('custom_reply_news')->where($where)->find();
+            $this->assign('data',$info);
             $this->display();
         }
+    }
 
+    function infoList(){
+        $this->display('list');
+    }
+    
+    function listAjax(){
+        $where['author']=$this->masterid;
+        $where['token']='gh_b0fd347506da';
+
+       $newsList=M('custom_reply_news')->where($where)->field('id,title,cTime,view_count,cate_id')->select();
+
+        if ($newsList){
+            exit(json_encode($newsList));
+        }
     }
 }

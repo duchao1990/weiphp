@@ -1,0 +1,30 @@
+<extend name="Base/webcom"/>
+<style>
+.card-content .chooseBtn{font-size:100px;height:100px;width:300px;line-height:100px;}
+</style>
+<block name="body">
+        <div class="col s12 m7">
+            <div class="card">
+              <div class="card-panel teal white-text">
+              <h2 class="card-title" style="font-size:1.2em;font-weight:blod;">
+              	单号：{$orderdata.order_number} 随喜：{$orderdata.money}元
+              </h2>
+              		<span class="card-title">请选择以下随喜方式: </span>
+		       </div>
+
+            <div class="card-content" style="overflow:auto;">
+	 			<a class="waves-effect waves-light btn-large material-icons iconfont icon-wepaylogo chooseBtn left" style="font-size:100px;height:100px;width:300px;line-height:100px;" onclick="goPay('wx_pub_qr')"></a>
+				<a class="waves-effect waves-light btn-large material-icons iconfont icon-comiiszhifubao chooseBtn right" style="font-size:100px;height:100px;width:300px;line-height:100px;" onclick="goPay('alipay_pc_direct')"></a>
+            </div>
+          </div>
+        </div>
+<!--         <script type="text/javascript">
+        	pingpp.createPayment({$data}, function(result, err) { });
+        </script> -->
+        <script type="text/javascript">
+        	var order_num={$orderdata.order_number};
+        	function goPay(method) {
+        		window.location.href="__URL__/goPay/method/"+method+"/order_number/"+order_num;
+        	}
+        </script>
+</block>

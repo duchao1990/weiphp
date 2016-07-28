@@ -1,0 +1,40 @@
+<extend name="Base/webcom"/>
+
+<block name="body">
+        <div class="col s12 m7">
+          <div class="card">
+              <div class="card-panel teal white-text">
+              		<span class="card-title">{$temple.temple}</span>
+		       </div>
+
+            <div class="card-content">
+             	{$temple.content}
+            </div>
+            <div class="card-action">
+                <div class="row">
+			    <form class="col s12" method="post" action="{:U('Pay/createOrder')}">
+			      <div class="row">
+			        <div class="input-field col l4 s12">
+			          <i class="material-icons prefix iconfont icon-accountcircle"></i>
+			          <input id="icon_prefix" type="text" name="name">
+			          <label for="icon_prefix">捐献人名字</label>
+			        </div>
+			        <div class="input-field col l4 s12">
+			          <i class="material-icons prefix iconfont icon-attachmoney"></i>
+			          <input id="icon_telephone" type="number" name="money">
+			          <input type="hidden" name="templeid" value="{$temple.id}">
+			          <label for="icon_telephone">随喜的数目</label>
+			        </div>
+			        <div class="input-field col l4 s12">
+			        	<button class="btn waves-effect waves-light" type="submit" name="action">随喜
+					    	<i class="material-icons right iconfont icon-send"></i>
+					  	</button>
+			        </div>
+
+			      </div>
+			    </form>
+			  </div>
+            </div>
+          </div>
+        </div>
+</block>

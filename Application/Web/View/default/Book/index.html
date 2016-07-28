@@ -1,0 +1,31 @@
+<extend name="Base/webcom"/>
+<block name="body">
+    <div class="col s12 m7">
+        <div class="card">
+            <volist name='list' id='vo'>
+                <notempty name="vo.cateList">
+                    <div class="card-panel teal white-text">
+                        <h2 class="card-title" style="font-size:1.2em;font-weight:blod;">
+                           {$vo.title}
+                        </h2>
+                    </div>
+                    <div class="card-content row">
+                        <div class="row">
+                            <volist name='vo.cateList' id='v'>
+                                <div class="col l2 m3 s6 xiangdiv">
+                                    <a href="{:U('info',array('id'=>$v['id']))}" class="waves-effect waves-light btn jingBtn">
+                                        <img src="{$v.cover_id|get_picture_url}" alt="">
+                                        <p>{$v.title}</p>
+                                    </a>
+                                </div>
+                            </volist>
+                        </div>
+                    </div>
+                </notempty>
+
+
+            </volist>
+
+        </div>
+    </div>
+</block>

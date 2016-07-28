@@ -393,7 +393,7 @@ select {
 #login-page .login-form {
     background-color: #fff;
     box-shadow: 0 0 26px #041A36;
-    border-top-color: #42EC00;
+    border-top-color: #330000;
 }
 #login-page .login-form h3 {
     color: #8D9CAA;
@@ -428,10 +428,10 @@ select {
 }
 #login-page .login-form .login-btn {
     color: #FFFFFF;
-    background-color: #40C402;
+    background-color: #330000;
 }
 #login-page .login-form .login-btn:hover {
-    background-color: #42EC00;
+    background-color: #330000;
 }
 #login-page .login-form .login-btn[disabled] {
     opacity: 0.6;

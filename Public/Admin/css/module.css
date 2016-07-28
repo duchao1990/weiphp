@@ -282,7 +282,7 @@ label.textarea ~ .check-tips {
 /* = 按钮
 ------------------------------------------ */
 /* 常规按钮 */
-.btn {
+/*.btn {
     display: inline-block;
     margin-right: 5px;
     padding: 6px 16px;
@@ -331,10 +331,10 @@ label.textarea ~ .check-tips {
 }
 .btn-xlarge {
     padding: 10px 30px;
-}
+}*/
 
 /* 按钮组 */
-.btn-toolbar .btn {
+/*.btn-toolbar .btn {
 	float: left;
 	margin-left: -1px;
 	border-radius: 0;
@@ -344,10 +344,10 @@ label.textarea ~ .check-tips {
 }
 .btn-toolbar .btn:last-of-type {
 	border-radius: 0 3px 3px 0;
-}
+}*/
 
 /* 带下拉框的按钮组 */
-.btn-group,
+/*.btn-group,
 .btn-group-click {
 	display: inline-block;
     *display: inline;
@@ -358,8 +358,8 @@ label.textarea ~ .check-tips {
 .btn-group .btn,
 .btn-group-click .btn {
     margin-right: 0;
-}
-.btn-arrowdown,
+}*/
+/*.btn-arrowdown,
 .btn-arrowup {
     display: inline-block;
     margin-left: 10px;
@@ -368,14 +368,14 @@ label.textarea ~ .check-tips {
     vertical-align: middle;
     background-image: url(../images/bg_icon.png);
     background-repeat: no-repeat;
-}
-.btn-arrowdown {
+}*/
+/*.btn-arrowdown {
     background-position: 0 -25px;
 }
 .btn-arrowup {
     background-position: -25px -25px;
-}
-.btn-group .dropdown,
+}*/
+/*.btn-group .dropdown,
 .btn-group-click .dropdown {
     display: none;
 	position: absolute;
@@ -396,7 +396,7 @@ label.textarea ~ .check-tips {
 .btn-group .dropdown a:hover,
 .btn-group-click .dropdown a:hover {
     background-color: #eee;
-}
+}*/
 
 /* = 标签导航
 ------------------------------------------ */

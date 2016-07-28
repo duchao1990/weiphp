@@ -24,12 +24,23 @@
 <nav class="navbar-fixed">
     <div class="nav-wrapper">
         <a  href="{:U('index/index')}" class="brand-logo"><img src="__IMG__/logo.png" alt="" style="width: 64%;margin-top: 10px;margin-left: 10px;"></a>
+
         <ul class=" right hide-on-med-and-down">
+<!--             <li>
+                <div class="input-field">
+                  <input id="search" type="search" required style="height:64px;">
+                  <label for="search"><i class="material-icons iconfont icon-search"></i></label>
+                  <i class="material-icons iconfont icon-close"></i>
+                </div>
+            </li> -->
             <li>
-                <a href="{:U('Temple/index')}" target="_self">天下寺庙</a>
+                <a href="{:U('Index/allView')}" target="_self">首页</a>
             </li>
             <li>
-                <a href="{:U('News/index')}" target="_self">寺院动态</a>
+                <a href="{:U('Syuan/index')}" target="_self">天下寺庙</a>
+            </li>
+            <li>
+                <a href="{:U('Current/index')}" target="_self">寺院动态</a>
             </li>
             <li>
                 <a href="{:U('Ganwu/index')}" target="_self">大师感悟</a>

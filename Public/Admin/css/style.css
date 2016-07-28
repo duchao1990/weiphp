@@ -69,7 +69,6 @@ body{
     padding-bottom: 15px;
     width: 20px;
     height: 20px;
-    background: url(../images/bg_icon.png) no-repeat -150px 0;
 }
 .header .user-bar .user-entrance:hover {
     border-bottom: 0 none;

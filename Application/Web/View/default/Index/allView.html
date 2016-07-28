@@ -1,0 +1,18 @@
+<extend name="Base/webcom"/>
+<block name="body">
+    <div class="row">
+        <volist name='dataList' id='vo'>
+                <div class="col l3 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="{$vo.cover|get_picture_url}">
+                    </div>
+                    <div class="card-action">
+                      <a href="{:U('Syuan/index',array('id'=>$vo['id']))}">{$vo.temple|msubstr=0,12}</a>
+                    </div>
+                  </div>
+                </div>
+        </volist>
+        <div class="col l6 m12 offset-l6">{$page}</div>
+    </div>
+</block>

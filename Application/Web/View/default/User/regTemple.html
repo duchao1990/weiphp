@@ -3,20 +3,20 @@
     <header class="jumbotron subhead" id="overview">
         <div class="container">
             <h2>寺院免费入住登记</h2>
-            <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
+            <p><span><span class="pull-left"><span>寺院已经入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>
         </div>
     </header>
 </block>
 <block name="body">
     <div class="row ">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-8 col-lg-offset-2 col-md-12">
             <form id="role1" class="form-horizontal" role="form" method='post' action="{:U('')}">
                 <legend>寺院登记</legend>
 
                 <div class="form-group">
                     <label class="col-md-2 control-label">寺院名称</label>
                     <div class="col-md-10">
-                        <input type='text' name='temple' placeholder="如:白马寺" class='form-control' />
+                        <input type='text' name='temple' placeholder="如:白马寺" class='form-control input-lg' />
                     </div>
                 </div>
                 <div class="form-group">
@@ -29,25 +29,25 @@
                 <div class="form-group">
                     <label class="col-md-2 control-label">主持</label>
                     <div class="col-md-10">
-                        <input type='text' name='master' id='master' placeholder="如:法慧" class='form-control' />
+                        <input type='text' name='master' id='master' placeholder="如:法慧" class='form-control  input-lg' />
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label">联系方式</label>
                     <div class="col-md-10">
-                        <input type='tel' name='mobile' id='phone' placeholder="如:联系电话" class='form-control' />
+                        <input type='tel' name='mobile' id='phone' placeholder="如:联系电话" class='form-control input-lg' />
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label" id="captchaOperation"></label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
+                        <input type="text" class="form-control  input-lg" name="captcha" placeholder="请输入答案"/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label"></label>
                     <div class="col-md-10">
-                        <button class="btn btn-block btn-primary" type="submit">修行按钮</button>
+                        <button class="btn btn-block btn-primary btn-lg" type="submit">修行按钮</button>
                     </div>
                 </div>
             </form>

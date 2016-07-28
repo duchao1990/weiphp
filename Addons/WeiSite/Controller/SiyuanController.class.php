@@ -21,7 +21,6 @@ class SiyuanController extends BaseController{
 
 	function templeUser(){
 		$token=get_token();
-		if ($token!='gh_b0fd347506da'){
 		$map['token']=$token;
 
 		$map['title']='大师';
@@ -46,28 +45,6 @@ class SiyuanController extends BaseController{
 			}
 		}else{
 			$msg=array('code'=>0,'msg'=>'没有该分组');
-		}
-		}else{
-			$where['auth']=1;
-
-			$info=M('master')->where($where)->limit(6)->field('id,master')->select();
-			$coverModel=M('templeinfo');
-			foreach ($info as $index => $item) {
-				$where['masterid']=$item['id'];
-				$geren=$coverModel->where($where)->field('masterid,cover')->find();
-				$info[$index]['nickname']=$item['master'];
-				$info[$index]['headimgurl']=get_picture_url($geren['cover']);
-			}
-			$templeWhere['auth']=1;
-			$temple=M('temple')->where($templeWhere)->limit(6)->select();
-			foreach ($temple as $index => $item) {
-				$templeiWhere['templeid']=$item['id'];
-				$geren=$coverModel->where($templeiWhere)->field('templeid,cover')->find();
-				$temple[$index]['nickname']=$item['master'];
-				$temple[$index]['headimgurl']=get_picture_url($geren['cover']);
-			}
-
-			$msg=array('code'=>1,'temUser'=>$info,'temple'=>$temple);
 		}
 
 		echo json_encode($msg);

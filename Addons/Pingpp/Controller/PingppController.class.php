@@ -118,8 +118,9 @@ class PingppController extends BaseController{
     public function getPingSet($id, $update = false, $data = array()){
         $key = 'Ping_getInfo_' . $id;
         $info = S ( $key );
-        if ($info === false || $update) {
-            if (empty ( $data )){
+        $boolinfo=boolval($info);
+        if ( $boolinfo== false || $update) {
+            if (!empty ( $data )){
                 $info=$data;
             }else{
                 $where['token']=$id;

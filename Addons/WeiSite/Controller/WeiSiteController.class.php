@@ -37,60 +37,59 @@ class WeiSiteController extends BaseController {
 	// 首页
 	function index() {
 		// add_credit ( 'weisite', 86400 );
-		if (file_exists ( ONETHINK_ADDON_PATH . 'WeiSite/View/default/pigcms/Index_' . $this->config ['template_index'] . '.html' )) {
-			$this->pigcms_index ();
-			$this->display ( ONETHINK_ADDON_PATH . 'WeiSite/View/default/pigcms/Index_' . $this->config ['template_index'] . '.html' );
-		} else {
-			$map1 ['token'] = $map ['token'] = get_token ();
-			$map1 ['is_show'] = $map ['is_show'] = 1;
-			$map ['pid'] = 0; // 获取一级分类
+		// if (file_exists ( ONETHINK_ADDON_PATH . 'WeiSite/View/default/pigcms/Index_' . $this->config ['template_index'] . '.html' )) {
+		// 	$this->pigcms_index ();
+		// 	$this->display ( ONETHINK_ADDON_PATH . 'WeiSite/View/default/pigcms/Index_' . $this->config ['template_index'] . '.html' );
+		// } else {
+		// 	$map1 ['token'] = $map ['token'] = get_token ();
+		// 	$map1 ['is_show'] = $map ['is_show'] = 1;
+		// 	$map ['pid'] = 0; // 获取一级分类
 			
-			// 分类
-			$category = M ( 'weisite_category' )->where ( $map )->order ( 'sort asc, id desc' )->select ();
-			foreach ( $category as &$vo ) {
-				$vo ['icon'] = get_cover_url ( $vo ['icon'] );
-				empty ( $vo ['url'] ) && $vo ['url'] = addons_url ( 'WeiSite://WeiSite/lists', array (
-						'cate_id' => $vo ['id'] 
-				) );
-			}
-			$this->assign ( 'category', $category );
-			//dump($category);
-			// 幻灯片
-			$slideshow = M ( 'weisite_slideshow' )->where ( $map1 )->order ( 'sort asc, id desc' )->select ();
-			foreach ( $slideshow as &$vo ) {
-				$vo ['img'] = get_cover_url ( $vo ['img'] );
-			}
+		// 	// 分类
+		// 	$category = M ( 'weisite_category' )->where ( $map )->order ( 'sort asc, id desc' )->select ();
+		// 	foreach ( $category as &$vo ) {
+		// 		$vo ['icon'] = get_cover_url ( $vo ['icon'] );
+		// 		empty ( $vo ['url'] ) && $vo ['url'] = addons_url ( 'WeiSite://WeiSite/lists', array (
+		// 				'cate_id' => $vo ['id'] 
+		// 		) );
+		// 	}
+		// 	$this->assign ( 'category', $category );
+		// 	//dump($category);
+		// 	// 幻灯片
+		// 	$slideshow = M ( 'weisite_slideshow' )->where ( $map1 )->order ( 'sort asc, id desc' )->select ();
+		// 	foreach ( $slideshow as &$vo ) {
+		// 		$vo ['img'] = get_cover_url ( $vo ['img'] );
+		// 	}
 				
-			foreach ($slideshow as &$data){
-				foreach ($category as $cate){
-					if($data['cate_id']==$cate['id']&&empty($data['url'])){
-						$data['url']=$cate['url'];
-					}
-				}
-			}
-			$this->assign ( 'slideshow', $slideshow );
-			//dump($slideshow);
+		// 	foreach ($slideshow as &$data){
+		// 		foreach ($category as $cate){
+		// 			if($data['cate_id']==$cate['id']&&empty($data['url'])){
+		// 				$data['url']=$cate['url'];
+		// 			}
+		// 		}
+		// 	}
+		// 	$this->assign ( 'slideshow', $slideshow );
+		// 	//dump($slideshow);
 					
-			//dump($category);
-			$map2 ['token'] = $map ['token'];
-			$public_info = get_token_appinfo ( $map2 ['token'] );
-			$this->assign ( 'publicid', $public_info ['id'] );
+		// 	//dump($category);
+		// 	$map2 ['token'] = $map ['token'];
+		// 	$public_info = get_token_appinfo ( $map2 ['token'] );
+		// 	$this->assign ( 'publicid', $public_info ['id'] );
 			
-			$this->assign ( 'manager_id', $this->mid );
+		// 	$this->assign ( 'manager_id', $this->mid );
 			
-			// $this->_footer ();
-			// $backgroundimg=ONETHINK_ADDON_PATH.'WeiSite/View/default/TemplateIndex/'.$this->config['template_index'].'/icon.png';
-			if ($this->config ['show_background'] == 0) {
-				$this->config ['background'] = '';
-				$this->assign ( 'config', $this->config );
-			}
-			$html = empty ( $this->config ['template_index'] ) ? 'ColorV1' : $this->config ['template_index'];
-            $m ['token'] = get_token ();
-            $m ['cate_id'] =0;
-			$siyuan=M('custom_reply_news')->where($m)->find();
-			$this->assign('siyuan',$siyuan);
-			$this->display ( ONETHINK_ADDON_PATH . 'WeiSite/View/default/Temple/index.html' );
-		}
+		// 	// $this->_footer ();
+		// 	// $backgroundimg=ONETHINK_ADDON_PATH.'WeiSite/View/default/TemplateIndex/'.$this->config['template_index'].'/icon.png';
+		// 	if ($this->config ['show_background'] == 0) {
+		// 		$this->config ['background'] = '';
+		// 		$this->assign ( 'config', $this->config );
+		// 	}
+		 	//$html = empty ( $this->config ['template_index'] ) ? 'ColorV1' : $this->config ['template_index'];
+   //          $m ['token'] = get_token ();
+   //          $m ['cate_id'] =0;
+			// $siyuan=M('custom_reply_news')->where($m)->find();
+			// $this->assign('siyuan',$siyuan);
+			$this->display ( ONETHINK_ADDON_PATH . 'WeiSite/View/default/Temple/TtF.html' );
 	}
 	// 分类列表
 	function lists() {

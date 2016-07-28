@@ -2,7 +2,7 @@
 <block name="header">
     <header class="jumbotron subhead" id="overview">
         <div class="container">
-            <h2>{$title}</h2>
+            <h2>信息发布</h2>
             <!--<p><span><span class="pull-left"><span>还没有入驻? <a href="{:U('User/register')}">立即入驻</a></span> </span></p>-->
         </div>
     </header>
@@ -18,42 +18,49 @@
                 </div>
                 <div class="form-group">
                     <label>封面图片</label>
-                    <input id="templeCardImgID" name="newsCover" class="form-control" type="text" readonly>
+                    <input id="templeCardImgID" name="newsCover" class="form-control input-lg" type="text" value="{$data.cover}" readonly>
+                    <img src="{$data.cover|get_picture_url}" style="height:200px;">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputTitle">发布类型</label>
+                        <select name="cate_id" class="form-control input-lg">
+                            <option value="1" <if condition="$data['cate_id'] eq 1 ">selected</if>>新闻动态</option>
+                            <option value="2" <if condition="$data['cate_id'] eq 2 ">selected</if>>我的感悟</option>
+                            <option value="3" <if condition="$data['cate_id'] eq 3 ">selected</if>>招募义工</option>
+                            <option value="4" <if condition="$data['cate_id'] eq 4 ">selected</if>>寺院活动</option>
+                            <option value="5" <if condition="$data['cate_id'] eq 5 ">selected</if>>公益功德</option>
+                        </select>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="inputTitle">标题</label>
-                    <input type="text" id="inputTitle" class="form-control" placeholder="标题"  value="" name="title">
+                    <input type="text" id="inputTitle" class="form-control input-lg" placeholder="标题"  value="{$data.title}" name="title">
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="inputKeyword">关键字</label>
-                    <input type="text" id="inputKeyword" class="form-control" placeholder="关键字" name="keyword">
+                    <input type="text" id="inputKeyword" class="form-control input-lg" placeholder="关键字" name="keyword" value="{$data.keyword}">
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="inputDesc">简介</label>
-                    <textarea id="inputDesc" rows="5" class="form-control"  name="intro"></textarea>
+                    <textarea id="inputDesc" rows="5" class="form-control input-lg"  name="intro">{$data.intro}</textarea>
                 </div>
-                <div class="form-group">
-                    <label class="control-label" for="inputDesc">简介</label>
-                    <textarea id="inputContent" rows="5" class="form-control summernote"  name="content"></textarea>
-                </div>
+                <label class="textarea">
+                    <label class="control-label" for="inputDesc">介绍</label>
+                    <textarea name="content">{$data['content']}</textarea>
+                    {:hook('adminArticleEdit', array('name'=>'content','value'=>$data['content']))}
+                </label>
                 <div class="form-group">
                     <label class="control-label" id="captchaOperation"></label>
-                    <input type="text" class="form-control" name="captcha" placeholder="请输入答案"/>
+                    <input type="hidden" value="{data.id}" name="newsid"/>
+                    <input type="text" class="form-control input-lg" name="captcha" placeholder="请输入答案"/>
                 </div>
                 <div class="form-group">
                     <label class="control-label"></label>
-                    <button class="btn btn-block btn-primary" type="submit">登陆</button>
+                    <button class="btn btn-block btn-primary btn-lg" type="submit">发布</button>
                 </div>
             </form>
         </div>
     </section>
     <script type="text/javascript">
-            $('.summernote').summernote({
-                height: 200,
-                tabsize: 2,
-                lang: 'zh-CN'
-            });
-
         $('#templeCard').fileinput({
             language: 'zh',
             uploadUrl: "{:U('File/uploadPicture')}",
@@ -81,14 +88,6 @@
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                    newsCover: {
-                        validators: {
-                            notEmpty: {
-                                message: '请上传封面! '
-                            }
-                        }
-                    },
-
                     title: {
                         validators: {
                             notEmpty: {

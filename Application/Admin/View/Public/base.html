@@ -11,12 +11,34 @@
     <link rel="stylesheet" type="text/css" href="__CSS__/style.css?v={:SITE_VERSION}" media="all">
     <link rel="stylesheet" type="text/css" href="__CSS__/store.css?v={:SITE_VERSION}" media="all">
 	<link rel="stylesheet" type="text/css" href="__CSS__/{$Think.config.COLOR_STYLE}.css?v={:SITE_VERSION}" media="all">
-    <link rel="stylesheet" type="text/css" href="__STATIC__/zui/css/zui.min.css">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap-fileinput/4.3.2/css/fileinput.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="//at.alicdn.com/t/font_1467690581_0046227.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/toastr.js/latest/css/toastr.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet">
+<!--     <link rel="stylesheet" type="text/css" href="__STATIC__/zui/css/zui.min.css"> -->
      <!--[if lt IE 9]>
     <script type="text/javascript" src="__STATIC__/jquery-1.10.2.min.js"></script>
     <![endif]--><!--[if gte IE 9]><!-->
-    <script type="text/javascript" src="__STATIC__/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="__STATIC__/zui/js/zui.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--表格插件-->
+    <script src="//cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap-table/1.11.0/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+
+    <!--文件上传-->
+    <script src="//cdn.bootcss.com/bootstrap-fileinput/4.3.2/js/fileinput.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap-fileinput/4.3.2/js/locales/zh.js"></script>
+    <!--表单验证-->
+    <script src="//cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery.bootstrapvalidator/0.5.3/js/language/zh_CN.min.js"></script>
+    <!--Toastr提示框-->
+    <script src="//cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/common.js"></script>
     <script type="text/javascript" src="__JS__/jquery.mousewheel.js?v={:SITE_VERSION}"></script>
     <!--<![endif]-->
     <block name="style"></block>
@@ -88,12 +110,12 @@
     <!-- /边栏 -->
 
     <!-- 内容区 -->
-    <div id="main-content">
+    <div id="main-content" style="padding:20px;">
         <div id="top-alert" class="fixed alert alert-error" style="display: none;">
             <button class="close fixed" style="margin-top: 4px;">&times;</button>
             <div class="alert-content">这是内容</div>
         </div>
-        <div id="main" class="main">
+        <div id="main" class="main row">
             <block name="nav">
             <!-- nav -->
             <notempty name="_show_nav">
