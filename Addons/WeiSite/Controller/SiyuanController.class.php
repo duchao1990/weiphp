@@ -145,9 +145,9 @@ class SiyuanController extends BaseController{
 	function detail() {
 	
 			$map ['id'] = I ( 'get.id');
-			$info = M ( 'custom_reply_news' )->where ( $map )->find ();
-
-			M ( 'custom_reply_news' )->where ( $map )->setInc ( 'view_count' );
+		
+			M ( 'custom_reply_news' )->where ( $map )->setInc ( 'view_count',10 );
+			$info = M ( 'custom_reply_news' )->where ( $map )->field('content,view_count,cTime,title,author')->find ();
             $info['coverpath']=get_cover_url($info['cover']);
 			if((!$info['author']) && $info['fabuer']){
 				$name=M('user')->where('uid='.$info['fabuer'])->getField('nickname');
@@ -155,7 +155,8 @@ class SiyuanController extends BaseController{
 			}else{
 				$info['author']='志愿者';
 			}
-			echo json_encode($info);
+
+			echo json_encode(array('code'=>1,'info'=>$info));
 	}
 
 	function addView() {

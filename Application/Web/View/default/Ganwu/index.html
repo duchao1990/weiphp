@@ -1,6 +1,7 @@
 <extend name="Base/webcom"/>
 <block name="body">
     <div class="row">
+        
         <volist name='dataList' id='vo'>
                 <div class="col l4 m6 s12">
                   <a class="card carda" href="{:U('info',array('id'=>$vo['id']))}">

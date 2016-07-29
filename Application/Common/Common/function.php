@@ -3834,7 +3834,307 @@ function qrcode($data,$filename,$picPath=false,$logo=false,$size='4',$level='L',
     }
     return $filename;
 }
+/**
+ * @param string $json
+ * @param string $key
+ * @return mixed
+ */
+function json_val($key) {
+    $postdata=file_get_contents('php://input',true);
+    $data=json_decode($postdata,true);
+
+    $value=$data[$key];
+
+    return $value;
+}
 
 function getTrueAmout($number){
 	return $number/100;
 }
+
+    function getfoname($key) {
+        $foarray=array(
+            '0'=>'南无阿弥陀佛',
+            '8'=>'释迦摩尼佛',
+            '81'=>'阿弥陀佛',
+            '82'=>'大日如来佛',
+            '1'=>'虚空藏菩萨',
+            '11'=>'持金刚海音如来',
+            '12'=>'财源佛母',
+            '2'=>'药师如来',
+            '21'=>'日光菩萨',
+            '22'=>'月光菩萨',
+            '3'=>'观世音菩萨',
+            '31'=>'除盖障菩萨',
+            '32'=>'地藏王菩萨',
+            '4'=>'地藏王菩萨',
+            '41'=>'观世音菩萨',
+            '42'=>'准提菩萨',
+            '5'=>'文殊菩萨',
+            '51'=>'观世音菩萨',
+            '52'=>'地藏王菩萨',
+            '6'=>'观世音菩萨',
+            '61'=>'普贤菩萨',
+            '62'=>'绿度母',
+            '63'=>'圣多罗菩萨',
+            '7'=>'大势至菩萨',
+            '71'=>'金刚手菩萨',
+            '72'=>'弥勒佛',
+            '101'=>'千手观音菩萨',
+            '102'=>'虚空藏菩萨',
+            '103'=>'虚空藏菩萨',
+            '104'=>'文殊菩萨',
+            '105'=>'普贤菩萨',
+            '106'=>'普贤菩萨',
+            '107'=>'大势至菩萨',
+            '108'=>'大日如来',
+            '109'=>'大日如来',
+            '110'=>'不动尊菩萨',
+            '111'=>'阿弥陀佛',
+            '112'=>'阿弥陀佛'
+        );
+        return $foarray[$key];
+    
+    }
+    
+    function gethua($id,$field){
+        $hua=array (
+            0 =>
+            array (
+                'id' => '1',
+                'name' => '百合',
+                'jifen' => '0',
+                'face' => 'image/action/hua/baihe.png',
+                'desc' => '百合花供佛花香禅意！香花迎，香花请，香花供佛，佛佑众生！',
+            ),
+            1 =>
+            array (
+                'id' => '2',
+                'name' => '富贵鸟',
+                'jifen' => '1',
+                'face' => 'image/action/hua/fuguiniao.png',
+                'desc' => '富贵鸟花供佛能成就至善至美的事物或愿望，令人欢喜，极易增进善缘！',
+            ),
+            2 =>
+            array (
+                'id' => '3',
+                'name' => '莲花',
+                'jifen' => '10',
+                'face' => 'image/action/hua/hehua.png',
+                'desc' => '莲花在佛教被尊为“圣物”，供此花可发愿蒙佛接引往生西方极乐世界！',
+            ),
+            3 =>
+            array (
+                'id' => '4',
+                'name' => '菊花',
+                'jifen' => '1',
+                'face' => 'image/action/hua/juhua.png',
+                'desc' => '菊花供佛能使戒香充溢，增进菩萨修行，灭除身口恶业，保持三业清净！',
+            ),
+            4 =>
+            array (
+                'id' => '5',
+                'name' => '康乃馨',
+                'jifen' => '2',
+                'face' => 'image/action/hua/kangnaixin.png',
+                'desc' => '康乃馨花供佛能使菩萨诸像圆满，使人一见即心生欢乐，身心清净！',
+            ),
+            5 =>
+            array (
+                'id' => '6',
+                'name' => '绿菊',
+                'jifen' => '2',
+                'face' => 'image/action/hua/lvju.png',
+                'desc' => '绿菊花供佛能增进菩萨修行攻成，智慧福德庄严具足，比证菩提！',
+            ),
+            6 =>
+            array (
+                'id' => '7',
+                'name' => '梅花',
+                'jifen' => '3',
+                'face' => 'image/action/hua/meihua.png',
+                'desc' => '梅花供佛见者皆吉，助菩萨修习慈善之行，增加智慧福德，事事皆顺！ ',
+            ),
+            7 =>
+            array (
+                'id' => '8',
+                'name' => '水仙',
+                'jifen' => '3',
+                'face' => 'image/action/hua/shuixian.png',
+                'desc' => '水仙供佛可使其身以无喜乐，遍满身心，增进持戒修行，修定果报！',
+            ),
+            8 =>
+            array (
+                'id' => '9',
+                'name' => '向日葵',
+                'jifen' => '5',
+                'face' => 'image/action/hua/xiangrikui.png',
+                'desc' => '向日葵供佛可使一切天人皆喜悦意乐护持，增进菩萨修行功德圆满！',
+            ),
+            9 =>
+            array (
+                'id' => '10',
+                'name' => '月季',
+                'jifen' => '5',
+                'face' => 'image/action/hua/yueji.png',
+                'desc' => '月季供佛可使见者皆获吉利，易得六根清净，助菩萨善愿皆可成就！',
+            ),
+        );
+        if ($field) {
+            $result=$hua[$id-1][$field];
+        }else{
+            $result=$hua[$id-1];
+        }
+        return $result;
+    }
+    
+    function getguo($id,$field) {
+             $guo=array (
+                          0 => 
+                          array (
+                            'id' => '1',
+                            'name' => '草莓',
+                            'jifen' => '0',
+                            'face' => 'image/action/guo/caomei.png',
+                            'desc' => '草莓供佛可使使家人远离烦恼，家庭和谐充满关爱，使家人福报增加！',
+                          ),
+                          1 => 
+                          array (
+                            'id' => '2',
+                            'name' => '橙子',
+                            'jifen' => '1',
+                            'face' => 'image/action/guo/chengzi.png',
+                            'desc' => '橙子供佛能常得吉神拥护，一切瘟疫水火寇盗刀兵牢狱之灾，悉皆不受！',
+                          ),
+                          2 => 
+                          array (
+                            'id' => '3',
+                            'name' => '火龙果',
+                            'jifen' => '5',
+                            'face' => 'image/action/guo/huolongguo.png',
+                            'desc' => '火龙果供佛消除疾病、延长寿命，自然衣食丰足，家庭和睦，福寿绵长！',
+                          ),
+                          3 => 
+                          array (
+                            'id' => '4',
+                            'name' => '梨子',
+                            'jifen' => '1',
+                            'face' => 'image/action/guo/li.png',
+                            'desc' => '梨供佛能能为一切众生，种植善根。以众生心，做大福田，获天量胜果！',
+                          ),
+                          4 => 
+                          array (
+                            'id' => '5',
+                            'name' => '荔枝',
+                            'jifen' => '3',
+                            'face' => 'image/action/guo/lizhi.png',
+                            'desc' => '荔枝供佛能使相貌庄严，资财充足，见者皆生欢喜行布施菩提道！',
+                          ),
+                          5 => 
+                          array (
+                            'id' => '6',
+                            'name' => '李子',
+                            'jifen' => '5',
+                            'face' => 'image/action/guo/lizi.png',
+                            'desc' => '李子供佛得智慧圆满，证得涅盘，成就人天善道之因，得菩提果！',
+                          ),
+                          6 => 
+                          array (
+                            'id' => '7',
+                            'name' => '释迦果',
+                            'jifen' => '10',
+                            'face' => 'image/action/guo/shijiaguo.png',
+                            'desc' => '释迦果供佛能使今生和一切转生中，受到无上导师以现身或化身摄受护佑！ ',
+                          ),
+                          7 => 
+                          array (
+                            'id' => '8',
+                            'name' => '树莓',
+                            'jifen' => '5',
+                            'face' => 'image/action/guo/shumei.png',
+                            'desc' => '树莓供佛能使事业有增上缘，使工作事业更加顺利、兴旺发达，聚合财富！',
+                          ),
+                          8 => 
+                          array (
+                            'id' => '9',
+                            'name' => '桃子',
+                            'jifen' => '3',
+                            'face' => 'image/action/guo/taozi.png',
+                            'desc' => '桃子供佛能使人很快地完成忏罪的功课，并成就解脱，身业清净！',
+                          ),
+                          9 => 
+                          array (
+                            'id' => '10',
+                            'name' => '香蕉',
+                            'jifen' => '3',
+                            'face' => 'image/action/guo/xiangjiao.png',
+                            'desc' => '香蕉供佛可使学业增进，事业顺心，智慧增长，资财充足，善根增长！',
+                          ),
+                        );
+                
+        if ($field) {
+            $result=$guo[$id-1][$field];
+        }else{
+            $result=$guo[$id-1];
+        }
+        return $result;
+    }
+    
+    
+    function getxiang($id,$field){
+       $xiang=array (
+                  0 => 
+                  array (
+                    'id' => '1',
+                    'name' => '增缘香',
+                    'jifen' => '0',
+                    'face' => 'image/action/xiang/zengyuan.png',
+                    'xiang' => '#d71f74',
+                    'desc' => '命由己造，福由己求。烧此香，当放弃自私自利，发利益众生之大心愿，则增缘无量！',
+                  ),
+                  1 => 
+                  array (
+                    'id' => '2',
+                    'name' => '求子香',
+                    'jifen' => '2',
+                    'face' => 'image/action/xiang/qiuzi.png',
+                    'xiang' => '#79342b',
+                    'desc' => '烧此香应在佛菩萨像前忏悔，念经，顶礼叩拜，必能感召福德智慧双全，端正有相之子！',
+                  ),
+                  2 => 
+                  array (
+                    'id' => '3',
+                    'name' => '求财香',
+                    'jifen' => '5',
+                    'face' => 'image/action/xiang/qiucai.png',
+                    'xiang' => '#fbf300',
+                    'desc' => '燃香成灰是表示无私的奉献，想求财求福，先要舍财种福，财布施是因，得财富是果！',
+                  ),
+                  3 => 
+                  array (
+                    'id' => '4',
+                    'name' => '消灾香',
+                    'jifen' => '8',
+                    'face' => 'image/action/xiang/xiaozai.png',
+                    'xiang' => '#d42b39',
+                    'desc' => '佛氏门中，有求必应。若要消灾，则要多布施放生、少造或不造恶业，自然化凶为吉！',
+                  ),
+                  4 => 
+                  array (
+                    'id' => '5',
+                    'name' => '智慧香',
+                    'jifen' => '10',
+                    'face' => 'image/action/xiang/zhihui.png',
+                    'xiang' => '#cc7f23',
+                    'desc' => '普香十方，去染成净，奉献人生，觉悟人生。如此而行，自然福慧具足，明心见性！',
+                  ),
+                );
+        
+                
+        if ($field) {
+            $result=$xiang[$id-1][$field];
+        }else{
+            $result=$xiang[$id-1];
+        }
+        return $result;
+    }

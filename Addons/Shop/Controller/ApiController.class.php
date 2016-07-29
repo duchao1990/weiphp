@@ -16,24 +16,20 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 class ApiController extends AddonsController
 {
 
-    var $shop_id;
+    public $shop_id;
+    public $token;
     function _initialize() {
         parent::_initialize ();
+        $this->token=get_token();
+        $where['token']=$this->token;
+        $this->shop_id=M('shop')->where($where)->getField('id');
 
-        if (! empty ( $_REQUEST ['shop_id'] )) {
-            $this->shop_id = I ( 'shop_id' );
-            session ( 'wap_shop_id', $this->shop_id );
-        } else {
-            $this->shop_id = session ( 'wap_shop_id' );
-        }
         // dump ( $this->shop_id );
 
         if (empty ( $this->shop_id )) {
             $map ['token'] = get_token ();
             $shop = M ( 'shop' )->where ( $map )->find ();
             $this->shop_id = $shop ['id'];
-        } else {
-            $shop = D ( 'Shop' )->getInfo ( $this->shop_id );
         }
 
         $cart_count = count ( D ( 'Cart' )->getMyCart ( $this->mid, true ) );
@@ -44,8 +40,6 @@ class ApiController extends AddonsController
 
     function getShopIndex(){
 //        // banner
-//        dump($this->shop_id);
-//        die;
         $slideshow_list = D ( 'Slideshow' )->getShopList ( $this->shop_id );
         if ($slideshow_list){
             foreach ($slideshow_list as $key => $slide) {
@@ -53,7 +47,9 @@ class ApiController extends AddonsController
             }
         }
         // recommend_cate
-        $recommend_cate = D ( 'Category' )->getRecommendList ( $this->shop_id );
+        $where['shop_id']=$this->shop_id;
+        $where['is_show']=1;
+        $recommend_cate=M('shop_goods_category')->where($where)->order('sort desc ')->select();
         if ($recommend_cate){
             foreach ($recommend_cate as $key => $cate) {
                 $recommend_cate[$key]['img']=get_picture_url($cate['icon']);

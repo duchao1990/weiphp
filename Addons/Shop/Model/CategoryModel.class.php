@@ -33,13 +33,14 @@ class CategoryModel extends Model {
 		return $list;
 	}
 	function getRecommendList($shop_id) {
-		$map ['shop_id'] = $shop_id;
 		$map ['is_show'] = 1;
 		$map ['is_recommend'] = 1;
+		$map ['shop_id'] = $shop_id;
 		$map ['icon'] = array (
 				'gt',
 				0 
 		);
+
 		$list = $this->where ( $map )->select ();
 		return $list;
 	}

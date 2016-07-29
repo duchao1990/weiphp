@@ -1,6 +1,6 @@
 <ion-view view-title="详情" hide-nav-bar="true">
 	<ion-content has-subheader="false">
-		  <div class="list card">
+		  <div class="list card" style="padding-bottom:20px;">
             <div class="item">
                 <h2>{{chatinfo.title}}</h2>
                <p><span  class="utime">{{chatinfo.update_time*1000|date:"yyyy/MM/dd H:mm"}}</span> <span class="source">来源: {{chatinfo.source}}</span></p>
@@ -8,18 +8,10 @@
             <div class="item item-body" ng-bind-html="chatinfo.content">
 
             </div>
+            <a  class="button button-outline button-energized button-small btnforinfo button-block" ng-click="goPay()">
+                随喜赞赏
+            </a>
+            <p class="desc" style="text-align: center;color:#ccc;">如果你喜欢这个内容,就给大师随喜赞赏</p>
         </div>
 	</ion-content>
-        <div class="bar bar-footer bar-energized">
-          <div class="button-bar">
-            <a class="tab-item button button-clear" ng-click="viewAdd()" ng-disabled="infodis">
-                <i class="icon ion-thumbsup"><b style="color:#fcfcfc;font-size: 0.5em;font-weight: 500;">{{infoView}}</b></i>
-            </a>
-            <a  class="tab-item button button-clear" ng-click="goPay()">
-                <i class="icon iconfont iconfont icon-shang"><b style="color:#fcfcfc;font-size: 0.4em;font-weight: 500;">赞赏</b></i>
-            </a>
-            
-          </div>
-        </div>
-
 </ion-view>

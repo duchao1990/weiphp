@@ -1,9 +1,8 @@
  angular.module('fo.controllers')
-  .controller('BaseCtrl', ['$scope','$rootScope','$stateParams','$state','TempleSer','ionicToast','$ionicModal','$ionicPopup','PaySer',
-    function($scope,$rootScope,$stateParams,$state,TempleSer,ionicToast,$ionicModal,$ionicPopup,PaySer){
+  .controller('BaseCtrl', ['$scope','$rootScope','$stateParams','$state','SiyuanSer','ionicToast','$ionicModal','$ionicPopup','PaySer',
+    function($scope,$rootScope,$stateParams,$state,SiyuanSer,ionicToast,$ionicModal,$ionicPopup,PaySer){
      SiyuanSer.intro().$promise.then(function(succ) {
           $scope.intro=succ.intro;
-         console.log($scope.intro);
         }, function (error) {
           ionicToast.show('服务器错误','middle', false, 2500);
         });
@@ -252,17 +251,19 @@
   	    $scope.$broadcast("scroll.refreshComplete");
   	  };
   }])
-  .controller('SiyuanInfoCtrl', ['$scope','$stateParams','SiyuanSer','ionicToast','$ionicLoading','$timeout','$ionicPopup', 
-    function($scope,$stateParams,SiyuanSer,ionicToast,$ionicLoading,$timeout,$ionicPopup){
+  .controller('SiyuanInfoCtrl', ['$scope','$stateParams','SiyuanSer','ionicToast','$ionicLoading','$ionicPopup', 
+    function($scope,$stateParams,SiyuanSer,ionicToast,$ionicLoading,$ionicPopup){
       $ionicLoading.show({template: '正在加载...'});
-      $timeout(function(){$ionicLoading.hide();},1000);
       $scope.id=$stateParams.id;
       SiyuanSer.detail({id:$scope.id}).$promise.then(function (succ) {
-        $scope.info=succ;
-        $scope.infoView=succ.view_count;
+        $ionicLoading.hide();
+        $scope.info=succ.info;
+        console.log( $scope.info);
+        
       }, function (error) {
         ionicToast.show('网络服务错误,请稍后再试!','middle', false, 2500);
       })
+
       $scope.goPay = function() {
        $ionicPopup.alert({
             templateUrl: 'Html/html/popup/paypup.html',

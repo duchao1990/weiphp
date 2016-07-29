@@ -28,9 +28,11 @@ class BookController  extends Controller
 
     function info(){
     	$where['id']=I('get.id');
+    	$intro=M('document')->where($where)->find();
     	$doc=M('document_article')->where($where)->find();
     	// dump($doc);
     	// die;
+    	$this->assign('data',$intro);
     	$this->assign('info',$doc);
         $this->display();
     }

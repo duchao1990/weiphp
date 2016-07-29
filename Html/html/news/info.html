@@ -1,6 +1,6 @@
 <ion-view view-title="详情" hide-nav-bar="true">
 	<ion-content has-subheader="false">
-		  <div class="list card" style="padding-bottom:20px">
+		  <div class="list card" style="padding-bottom:20px;">
             <div class="item">
                 <h2 class="title">{{newsinfo.title}}</h2>
                 <p><span  class="utime">{{newsinfo.update_time*1000|date:"yyyy/MM/dd H:mm"}}</span> <span class="source">来源: {{newsinfo.source}}</span></p>
@@ -8,18 +8,11 @@
             <div class="item item-body" ng-bind-html="newsinfo.detail.content">
 
             </div>
+            <a  class="button button-outline button-energized button-small btnforinfo button-block" ng-click="goPay()">
+                随喜赞赏
+            </a>
+            <p class="desc" style="text-align: center;color:#ccc;">如果你喜欢这个内容,就给大师随喜赞赏</p>
         </div>
 	</ion-content>
-        <div class="bar bar-footer bar-energized">
-          <div class="button-bar">
-            <a class="tab-item button button-clear" ng-click="viewAdd()" ng-disabled="infodis">
-                <i class="icon ion-thumbsup"><b style="color:#fcfcfc;font-size: 0.5em;font-weight: 500;">{{infoView}}</b></i>
-            </a>
-            <a  class="tab-item button button-clear" ng-click="goPay()">
-                <i class="icon iconfont icon-shang"></i>
-            </a>
-            
-          </div>
-        </div>
 
 </ion-view>

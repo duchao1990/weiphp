@@ -4,6 +4,10 @@
 <script src="//cdn.bootcss.com/require.js/2.2.0/require.js"></script>
         <div class="col s12 m7" >
           <div class="card brown lighten-5">
+                <div class="card-panel teal white-text">
+                      <span class="card-title">{$data.title}</span>
+                      <p>{$data.description}</p>
+                </div>
                 <div class="card-content row jingContent">
                     <empty name="info.content">
                       <iframe src="{$info.source_url}" style="width:100%;max-width:670px;height:810px;"></iframe>
